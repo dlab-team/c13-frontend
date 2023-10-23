@@ -1,0 +1,494 @@
+.welcomeSection {
+  margin-bottom: 2em;
+  height: 600px;
+}
+
+.pilotSection {
+  margin-bottom: 2em;
+  height: 960px;
+}
+
+.middleSection {
+  position: absolute;
+  top: 729px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.botSection {
+  width: 100%;
+  left: 0px;
+  background: #739e2d;
+}
+
+.nav {
+  height: 180px;
+  top: 50%;
+  transform: translateY(40%);
+}
+
+.nav img {
+  float: left;
+}
+
+.nav button {
+  float: right;
+  margin-right: 2em;
+}
+
+.divButtons {
+  margin: 1em 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 24px;
+  width: 422px;
+}
+
+.loginButton {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  font-weight: 500;
+
+  width: 199px;
+  height: 48px;
+
+  background: #739e2d;
+  border-radius: 8px;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  /* or 171% */
+
+  text-align: center;
+  letter-spacing: 0.2px;
+}
+
+.divButtons a {
+  color: white;
+  text-decoration: none;
+}
+
+.registerButton {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  font-weight: 500;
+  width: 199px;
+  height: 48px;
+
+  background: #ffffff;
+  color: #739e2d;
+  border: 1px solid #739e2d;
+  border-radius: 8px;
+
+  flex: none;
+  order: 0;
+  flex-grow: 1;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  /* or 171% */
+
+  text-align: center;
+  letter-spacing: 0.2px;
+
+  /* #252B42 Dark */
+
+  color: #252b42;
+}
+
+.divButtons a {
+  color: #739e2d;
+  text-decoration: none;
+}
+
+.welcomeSection img {
+  position: relative;
+  margin: auto;
+  height: auto;
+  max-width: 100%;
+}
+
+.welcomeText {
+  position: relative;
+  top: 50%;
+  transform: translateY(15%);
+}
+
+.logoDashboard {
+  position: absolute;
+}
+
+.imageDashboard {
+  margin: auto;
+  width: 520px;
+  height: 520px;
+}
+
+.title {
+  font-family: Uni Neue Heavy Italic, Helvetica, Arial, sans-serif;
+
+  font-style: italic;
+  font-weight: 800;
+  font-size: 50px;
+  /* line-height: 80px; */
+  /* or 138% */
+  letter-spacing: 0.2px;
+  vertical-align: middle;
+  color: #252b42;
+}
+
+.subtitle {
+  /* <p> Parrafo */
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  /* or 188% */
+
+  letter-spacing: 0.2px;
+}
+
+/* LOGIN SECTION */
+.welcomeMessage {
+  font-family: Uni Neue Heavy Italic, Helvetica, Arial, sans-serif;
+  font-style: italic;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: #737373;
+}
+
+.welcomeMessage p {
+  font-size: 16px;
+}
+
+.signLogin {
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 464px;
+  min-height: 470px;
+  left: calc(50% - 464px/2);
+  top: calc(50% - 468px/2 - 0.5px);
+
+  background: #FFFFFF;
+  border: 1px solid rgba(241, 241, 241, 0.5);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+
+  filter: drop-shadow(0px 4px 30px rgba(115, 115, 115, 0.4));
+
+}
+
+.formContainer {
+
+  margin-top: 4em;
+
+}
+
+.labelCredentials {
+  width: 422px;
+  height: 16px;
+
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 100%;
+  margin: 0 1em 0 1em;
+
+  color: #252B42;
+
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+
+}
+
+.inputCredentials {
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 16px;
+  gap: 8px;
+
+  width: 422px;
+  height: 56px;
+  background: #FFFFFF;
+
+  border: 1px solid #739E2D;
+  border-radius: 5px;
+  margin: 0.5em 1em 1em 1em;
+
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+
+}
+
+.selectInput {
+  width: 90%;
+  padding: 0.5em;
+  border: 1px solid #739E2D;
+  border-radius: 5px;
+  margin: 0.5em 1em 1em 1em;
+  margin-top: 1em;
+  background-color: #ffffff;
+
+}
+
+.divLoginButton {
+  display: flex;
+  justify-content: center;
+}
+
+.cardBody {
+  position: absolute;
+  width: 280px;
+  height: 350px;
+  left: 0px;
+  top: 0px;
+  z-index: 3;
+
+  background: #ffffff;
+  /* Shadow */
+
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.cardTitle {
+  font-family: Uni Neue Heavy Italic, Helvetica, Arial, sans-serif;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 32px;
+  /* identical to box height, or 133% */
+
+  letter-spacing: 0.1px;
+}
+
+.cardText {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  /* or 143% */
+
+  letter-spacing: 0.2px;
+}
+
+.categoryList {
+  display: none;
+}
+
+.breadcrumb {
+  display: flex;
+  margin: 2em 0;
+}
+
+.breadcrumb a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  vertical-align: middle;
+}
+
+.svgButton {
+  stroke: #000;
+  display: -webkit-inline-box;
+  vertical-align: middle;
+  margin: 0 1em;
+  float: right;
+}
+
+.activeExercise a {
+  color: #739e2d;
+  font-weight: 600;
+}
+
+.breadContainer ul {
+  padding-left: 0;
+}
+
+.tituloPiloto {
+  padding: 0 4em;
+}
+
+.subtituloPiloto {
+  padding: 0 4em;
+  font-size: 22px;
+}
+
+.subtituloVamos {
+  font-size: 22px;
+  font-family: Uni Neue Heavy Italic, Helvetica, Arial, sans-serif;
+}
+
+@media only screen and (max-width: 768px) {
+  .base {
+    margin: 1em;
+  }
+
+  .nav {
+    height: auto;
+    top: 50%;
+    transform: translateY(40%);
+  }
+
+  .imagenDashboard2 {
+    display: none;
+  }
+
+  .welcomeSection {
+    height: 900px;
+  }
+
+  .pilotSection h1 {
+    font-size: 30px;
+    font-size: 25px;
+    font-style: italic;
+    font-weight: 800;
+    line-height: 30px;
+    letter-spacing: 0.10052632540464401px;
+    text-align: center;
+  }
+
+  .welcomeSection h1 {
+    font-size: 30px;
+    font-size: 25px;
+    font-style: italic;
+    font-weight: 800;
+    line-height: 30px;
+    letter-spacing: 0.10052632540464401px;
+    text-align: center;
+  }
+
+  .welcomeSection .logoDashboard {
+    align-items: center;
+  }
+
+  .welcomeSection .imagenDashboard {
+    align-items: center;
+    width: 340px;
+  }
+
+  .divButtons {
+    gap: 10px;
+    padding-left: 10px;
+  }
+
+  .welcomeText {
+    position: relative;
+    top: 50%;
+    transform: none
+  }
+
+  .registerButton {
+    width: 150px;
+  }
+
+  .loginButton {
+    width: 150px;
+  }
+
+  .subtitle {
+    margin-top: 2em;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: left;
+    color: #737373;
+  }
+
+  .loginButtonTop {
+    display: none;
+  }
+
+  .nav img {
+    float: none;
+  }
+
+  .middleSection {
+    display: none;
+  }
+
+  .botSection {
+    height: auto;
+  }
+
+  .breadContainer ul {
+    padding-left: 2.5em;
+  }
+
+  .tituloPiloto {
+    padding: 0;
+  }
+
+  .subtituloPiloto {
+    padding: 0;
+    font-size: 22px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .signLogin {
+    margin-top: 8em;
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 464px;
+    height: 468px;
+    left: calc(50% - 260px/2);
+    top: calc(50% - 468px/2 - 0.5px);
+
+    border: none;
+    box-shadow: none;
+    border-radius: none;
+
+    filter: none
+  }
+
+  .signLogin,
+  .loginButton,
+  .registerButton,
+  .divButtons,
+  .inputCredentials,
+  .labelCredentials {
+    width: auto;
+    margin-left: 0em;
+  }
+
+  .loginButton {
+    width: 130px;
+  }
+
+  .inputCredentials {
+    width: 255px;
+  }
+
+  .registerDiv button {
+    width: auto;
+  }
+
+  .divButtons {
+    gap: 15px;
+  }
+}
