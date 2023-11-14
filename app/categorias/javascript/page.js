@@ -1,7 +1,8 @@
-import React from 'react'
 
-export const JavascriptPrueba = () => {
+const JavascriptPrueba = () => {
   return (
     <div>JavascriptPrueba</div>
   )
 }
+
+export default JavascriptPrueba
