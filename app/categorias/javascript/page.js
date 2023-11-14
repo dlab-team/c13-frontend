@@ -24,6 +24,7 @@ const JavascriptPrueba = () => {
     <>
       <div>
         <div>JavascriptPrueba</div>
+        <h5>Inicializa una constante</h5>
         <div className="boxJsEditor">
           <Editor
             id="inputTexto"
@@ -45,7 +46,7 @@ const JavascriptPrueba = () => {
         </div>
         <div className="scriptButtons">
           <SendButton
-            className={`scriptButton`}
+            className={`queryButton`}
             type="submit"
             onClick={() => setToExecute(true)}
             buttonText={"Ejecuta tu script"}
