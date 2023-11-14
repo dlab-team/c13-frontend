@@ -5,9 +5,19 @@ import { useRef, useState } from "react"
 import SendButton from "../../_components/sendButton"
 
 const JavascriptPrueba = () => {
+
   const editorRef = useRef(null)
+  const [ejercicio, setEjercicio] = useState('')
+  const [toExecute, setToExecute] = useState(false)
+
   function handleEditorDidMount(editor, monaco) {
     editorRef.current = editor
+  }
+
+  if (toExecute == true) {
+    console.log('ejecutar script', ejercicio)
+    alert("ejecutar script: \n" + ejercicio)
+    setToExecute(false)
   }
 
   return (
@@ -25,6 +35,7 @@ const JavascriptPrueba = () => {
             options={{
               fontSize: "16px",
             }}
+            onChange={(value) => setEjercicio(value)}
             onMount={handleEditorDidMount}
           />
           <div className="text-white">
