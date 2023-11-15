@@ -51,7 +51,7 @@ const JavascriptPrueba = () => {
           name="script"
           theme="vs-dark"
           defaultLanguage="javascript"
-          height="60vh"
+          height="40vh"
           options={{
             fontSize: "16px",
           }}
