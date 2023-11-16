@@ -81,7 +81,7 @@ const JavascriptPrueba = () => {
             />
             <div className="text-white bg-dark">
               <h6>Consola</h6>
-              <p>El resultado de tu prueba irá aquí</p>
+              <p>El resultado de tu ejercicio irá aquí</p>
             </div>
           </div>
         </div>
