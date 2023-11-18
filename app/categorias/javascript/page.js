@@ -1,26 +1,29 @@
-"use client"
+"use client";
 
-import Editor from "@monaco-editor/react"
-import { useRef, useState } from "react"
-import SendButton from "../../_components/sendButton"
-import Footer from "@/app/Footer"
-import Image from "next/image"
+import Editor from "@monaco-editor/react";
+import { useRef, useState } from "react";
+import SendButton from "../../_components/sendButton";
+import Footer from "@/app/Footer";
+import Image from "next/image";
+import SqlExecuter from "@/app/_components/_exercises/sqlExecuter";
+import executeCode from "./codeExecution";
 
 const JavascriptPrueba = () => {
-  const editorRef = useRef(null)
-  const [ejercicio, setEjercicio] = useState("")
-  const [toExecute, setToExecute] = useState(false)
-
-  const text = '"Hola Mundo"'
+  const editorRef = useRef(null);
+  const [exercise, setExercise] = useState(""); // La variable exercise se inicializa aquí
+  const [ejercicio, setEjercicio] = useState("");
+  const [toExecute, setToExecute] = useState(false);
+  const [isExecuting, setIsExecuting] = useState(false);
+  const [tokenContent, setTokenContent] = useState(null);
+  const text = '"Hola Mundo"';
 
   function handleEditorDidMount(editor, monaco) {
-    editorRef.current = editor
+    editorRef.current = editor;
   }
 
   if (toExecute == true) {
-    console.log("ejecutar script", ejercicio)
-    alert("ejecutar script: \n" + ejercicio)
-    setToExecute(false)
+    console.log("ejecutar script", ejercicio);
+    setToExecute(false);
   }
 
   return (
@@ -88,21 +91,33 @@ const JavascriptPrueba = () => {
 
         <div className="text-end mt-4">
           <SendButton
-            className="queryButton"
+            className={`queryButton`}
             type="submit"
-            onClick={() => setToExecute(true)}
-            buttonText="Ejecuta tu script"
+            onClick={async () => {
+              const inputValue = editorRef.current.getValue();
+
+              // Llama a la función externa para ejecutar el código
+              await executeCode(inputValue, setTokenContent, setToExecute);
+            }}
+            buttonText={"Ejecuta tu consulta"}
           >
-            Ejecutar script
+            Ejecutar consulta
           </SendButton>
         </div>
+        <SqlExecuter
+          exercise={exercise}
+          toExecute={toExecute}
+          setToExecute={setToExecute}
+          editorRef={editorRef}
+          setIsExecuting={setIsExecuting}
+        />
         <div className="d-flex justify-content-between my-5">
           <button className="btn btn-secondary">Anterior</button>
           <button className="btn btn-secondary">Siguiente</button>
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default JavascriptPrueba
+export default JavascriptPrueba;
