@@ -5,3 +5,9 @@
 .IconUsuario{
     margin-left: 140px;
 }
+
+.BotonEstilos{
+  border: 4px solid #739e2d;
+  border-radius: 8px;
+}
+
