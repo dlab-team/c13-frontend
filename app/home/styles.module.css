@@ -1,0 +1,75 @@
+.home_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 30px;
+}
+
+.intro {
+    display: flex;
+    justify-content: center;
+}
+
+.text {
+    text-align: center;
+    font-size: 1.3rem;
+    max-width: 50%;
+}
+
+.title_text {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.whys {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+}
+
+.and_more {
+    background-color: #739e2d;
+}
+
+.why_card {
+    width: 20rem;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #dbe0e7;
+    border-radius: 20px;
+}
+
+.and_more {
+    background-color:#739e2d;
+}
+
+.title_card {
+    height: 70%;
+    display: flex;
+    align-items: center;
+}
+
+.buttons {
+    background-color: #fff;
+    border: green solid 2px;
+    border-radius: 10px;
+    height: 2.5rem;
+    font-size: 1rem;
+}
+
+.buttons:hover {
+    background-color: #739e2d;
+    color: #fff;
+}
+
+@media screen and (width > 500px){
+    .whys {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+    }
+}
