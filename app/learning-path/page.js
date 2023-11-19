@@ -7,42 +7,41 @@ export default function LeargningPath() {
 	return (
 		<>
 			<div className="container-fluid">
-				<div className="row">
-					<div className="col-8 ">
-						<picture>
+				<div className="row bg-body-secondary">
+					<div className="col-10 d-flex align-items-center">
+						<picture className={`${styles.IconUsuario} `}>
 							<Image
-								height={25}
-								width={25}
-								src="/images/icon-global.webp"
+								height={55}
+								width={55}
+								src="/images/Ellipse-icon.png"
 								alt="desafiolatam"
 								priority={true}
-								className={`text-center`}
+								className={`justify-content-center`}
 							/>
 						</picture>
 					</div>
-					<div className="col-4 ">
-						<div className=" border border-black justify-content-center text-center py-3 bg-secondary">
-							<picture>
+					<div className="col-2 py-4">
+						<div className=" border justify-content-center text-center p-2 bg-secondary">
+							<picture className="p-2">
 								<Image
 									height={25}
 									width={25}
-									src="/images/icon-global.webp"
+									src="/images/PersonIcon.png"
 									alt="desafiolatam"
 									priority={true}
 									className={`text-center`}
 								/>
-							</picture>{" "}
-							<p className="d-inline">Nombre de usuario</p>
+							</picture>
+							<p className="d-inline text-white">Nombre Usuario</p>
 						</div>
 					</div>
 				</div>
 				<div className="row">
 					<div className="col-4 bg-secondary">
-						1
 						<div className="text-center">
-							<p>CAPITULOS</p>
+							<p className="p-3 text-white fs-3">Capítulos</p>
 							<div className=" d-flex align-items-center justify-content-center">
-								<div className=" d-inline-flex align-items-center justify-content-center ">
+								<div className=" d-inline-flex align-items-center justify-content-center mb-5">
 									<Image
 										height={25}
 										width={25}
@@ -52,16 +51,21 @@ export default function LeargningPath() {
 										className={`d-flex text-center`}
 									/>
 									<div className="">
-										<button type="button" class="text-center">
-											Light
+										<button type="button" class="text-center btn btn-secondary">
+                      <Image
+                        height={4}
+                        width={190}
+                        src="/images/Line.png"
+                        alt="desafiolatam"
+                        priority={true}
+                        className={`d-flex text-center`}
+                      />
 										</button>
 									</div>
 								</div>
-
-								<p className="">------------------</p>
 							</div>
 							<div className=" d-flex align-items-center justify-content-center">
-								<div className=" d-inline-flex align-items-center justify-content-center ">
+								<div className=" d-inline-flex align-items-center justify-content-center mb-5">
 									<Image
 										height={25}
 										width={25}
@@ -71,16 +75,21 @@ export default function LeargningPath() {
 										className={`d-flex text-center`}
 									/>
 									<div className="">
-										<button type="button" class="text-center">
-											Light
+										<button type="button" class="text-center btn btn-secondary">
+                      <Image
+                        height={4}
+                        width={190}
+                        src="/images/Line.png"
+                        alt="desafiolatam"
+                        priority={true}
+                        className={`d-flex text-center`}
+                      />
 										</button>
 									</div>
 								</div>
-
-								<p className="">------------------</p>
 							</div>
-							<div className=" d-flex align-items-center justify-content-center">
-								<div className=" d-inline-flex align-items-center justify-content-center ">
+              <div className=" d-flex align-items-center justify-content-center">
+								<div className=" d-inline-flex align-items-center justify-content-center mb-5">
 									<Image
 										height={25}
 										width={25}
@@ -90,16 +99,21 @@ export default function LeargningPath() {
 										className={`d-flex text-center`}
 									/>
 									<div className="">
-										<button type="button" class="text-center">
-											Light
+										<button type="button" class="text-center btn btn-secondary">
+                      <Image
+                        height={4}
+                        width={190}
+                        src="/images/Line.png"
+                        alt="desafiolatam"
+                        priority={true}
+                        className={`d-flex text-center`}
+                      />
 										</button>
 									</div>
 								</div>
-
-								<p className="">------------------</p>
 							</div>
-							<div className=" d-flex align-items-center justify-content-center">
-								<div className=" d-inline-flex align-items-center justify-content-center ">
+              <div className=" d-flex align-items-center justify-content-center">
+								<div className=" d-inline-flex align-items-center justify-content-center mb-5">
 									<Image
 										height={25}
 										width={25}
@@ -109,174 +123,208 @@ export default function LeargningPath() {
 										className={`d-flex text-center`}
 									/>
 									<div className="">
-										<button type="button" class="text-center">
-											Light
+										<button type="button" class="text-center btn btn-secondary">
+                      <Image
+                        height={4}
+                        width={190}
+                        src="/images/Line.png"
+                        alt="desafiolatam"
+                        priority={true}
+                        className={`d-flex text-center`}
+                      />
 										</button>
 									</div>
 								</div>
-
-								<p className="">------------------</p>
+							</div>
+              <div className=" d-flex align-items-center justify-content-center">
+								<div className=" d-inline-flex align-items-center justify-content-center mb-5">
+									<Image
+										height={25}
+										width={25}
+										src="/images/gg_check-o.png"
+										alt="desafiolatam"
+										priority={true}
+										className={`d-flex text-center`}
+									/>
+									<div className="">
+										<button type="button" class="text-center btn btn-secondary">
+                      <Image
+                        height={4}
+                        width={190}
+                        src="/images/Line.png"
+                        alt="desafiolatam"
+                        priority={true}
+                        className={`d-flex text-center`}
+                      />
+										</button>
+									</div>
+								</div>
+							</div>
+              <div className=" d-flex align-items-center justify-content-center">
+								<div className=" d-inline-flex align-items-center justify-content-center mb-5">
+									<Image
+										height={25}
+										width={25}
+										src="/images/gg_check-o.png"
+										alt="desafiolatam"
+										priority={true}
+										className={`d-flex text-center`}
+									/>
+									<div className="">
+										<button type="button" class="text-center btn btn-secondary">
+                      <Image
+                        height={4}
+                        width={190}
+                        src="/images/Line.png"
+                        alt="desafiolatam"
+                        priority={true}
+                        className={`d-flex text-center`}
+                      />
+										</button>
+									</div>
+								</div>
+							</div>
+              <div className=" d-flex align-items-center justify-content-center">
+								<div className=" d-inline-flex align-items-center justify-content-center mb-5">
+									<Image
+										height={25}
+										width={25}
+										src="/images/gg_check-o.png"
+										alt="desafiolatam"
+										priority={true}
+										className={`d-flex text-center`}
+									/>
+									<div className="">
+										<button type="button" class="text-center btn btn-secondary">
+                      <Image
+                        height={4}
+                        width={190}
+                        src="/images/Line.png"
+                        alt="desafiolatam"
+                        priority={true}
+                        className={`d-flex text-center`}
+                      />
+										</button>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
-
-					<div className="col-8 bg-danger">
-						a2
-						<div class="container">
+{/* ______________SECCIÓN DE LECCIONES______________ */}
+					<div className="col-8 bg-white">
+						<div class="container mb-5">
 							<div class="row justify-content-between">
 								<div class="col-4 text-center">
-									<button type="button" class="btn btn-primary btn-sm">
+									<button type="button" class="btn bg-body-secondary btn-sm fw-bold fs-5 py-1 px-3">
 										PERFIL
-									</button>
+									</button> 
 								</div>
 								<div class="col-4 text-center">
-									<button type="button" class="btn btn-primary btn-sm">
+									<button type="button" class="btn bg-body-secondary btn-sm fw-bold fs-5 px-4 py-1">
 										SQL
 									</button>
 								</div>
 							</div>
 						</div>
-						<div className="text-center fs-1">JAVASCRIPT</div>
-						<div className="text-start fs-4">Lecciones</div>
-						<div className="py-1">
-							<div className=" bg-secondary border">
-								<div className=" d-inline-flex align-items-center justify-content-center bg-secondary">
-									<Image
-										height={25}
-										width={25}
-										src="/images/gg_check-o.png"
-										alt="desafiolatam"
-										priority={true}
-										className={`d-flex text-center`}
-									/>
-									<div className="">
-										<button type="button" class="btn text-center">
-											Tutorial
-										</button>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div className="py-1">
-							<div className="bg-secondary border">
-								<div className=" d-inline-flex align-items-center justify-content-center bg-secondary">
-									<Image
-										height={25}
-										width={25}
-										src="/images/gg_check-o.png"
-										alt="desafiolatam"
-										priority={true}
-										className={`d-flex text-center`}
-									/>
-									<div className="">
-										<button type="button" class="btn text-center">
-											Tarea #1
-										</button>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div className="py-1">
-							<div className=" bg-secondary border">
-								<div className=" d-inline-flex align-items-center justify-content-center bg-secondary">
-									<Image
-										height={25}
-										width={25}
-										src="/images/gg_check-o.png"
-										alt="desafiolatam"
-										priority={true}
-										className={`d-flex text-center`}
-									/>
-									<div className="">
-										<button type="button" class="btn text-center">
-											Tarea #1
-										</button>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div className="py-1">
-							<div className=" bg-secondary border">
-								<div className=" d-inline-flex align-items-center justify-content-center bg-secondary">
-									<Image
-										height={25}
-										width={25}
-										src="/images/gg_check-o.png"
-										alt="desafiolatam"
-										priority={true}
-										className={`d-flex text-center`}
-									/>
-									<div className="">
-										<button type="button" class="btn text-center">
-											Tarea #1
-										</button>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div className="py-1">
-							<div className="bg-secondary border">
-								<div className=" d-inline-flex align-items-center justify-content-center bg-secondary">
-									<Image
-										height={25}
-										width={25}
-										src="/images/gg_check-o.png"
-										alt="desafiolatam"
-										priority={true}
-										className={`d-flex text-center`}
-									/>
-									<div className="">
-										<button type="button" class="btn text-center">
-											Tarea #1
-										</button>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div className="py-1">
-							<div className="bg-secondary border">
-								<div className=" d-inline-flex align-items-center justify-content-center bg-secondary">
-									<Image
-										height={25}
-										width={25}
-										src="/images/gg_check-o.png"
-										alt="desafiolatam"
-										priority={true}
-										className={`d-flex text-center`}
-									/>
-									<div className="">
-										<button type="button" class="btn text-center">
-											Tarea #1
-										</button>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div className="py-1">
-							<div className="bg-secondary border">
-								<div className=" d-inline-flex align-items-center justify-content-center bg-secondary">
-									<Image
-										height={25}
-										width={25}
-										src="/images/gg_check-o.png"
-										alt="desafiolatam"
-										priority={true}
-										className={`d-flex text-center`}
-									/>
-									<div className="">
-										<button type="button" class="btn text-center">
-											Tarea #1
-										</button>
-									</div>
-								</div>
-							</div>
+						<div className="text-center fs-1 fw-bold">
+              JavaScript
+            </div>
+            <div className="col-10 ms-5 justity-content-center"> 
+              <div className="col-1 ms-5"><p className="text-start fs-4 fw-bold">Lecciones</p></div>
+              <div className=" d-flex justify-content-center m-2 mb-3">
+                  <div className="col-10 py-1 px-3 d-inline-flex align-items-center bg-body-secondary">
+                    <Image
+                      height={18}
+                      width={18}
+                      src="/images/check-mark.png"
+                      alt="desafiolatam"
+                      priority={true}
+                      className={`d-flex text-center m-2`}
+                    />
+                    <div className="fs-5">
+                      <button type="button" class="btn text-center fw-bold px-3">
+                        Tutorial
+                      </button>
+                    </div>
+                  </div>
+              </div>
+              <div className=" d-flex justify-content-center m-2 mb-3">
+                  <div className="col-10 py-1 px-3 d-inline-flex align-items-center bg-body-secondary">
+                    <Image
+                      height={18}
+                      width={18}
+                      src="/images/check-mark.png"
+                      alt="desafiolatam"
+                      priority={true}
+                      className={`d-flex text-center m-2`}
+                    />
+                    <div className="fs-5">
+                      <button type="button" class="btn text-center fw-bold px-3">
+                        Tutorial #2
+                      </button>
+                    </div>
+                  </div>
+              </div>
+              <div className=" d-flex justify-content-center m-2 mb-3">
+                  <div className="col-10 py-1 px-3 d-inline-flex align-items-center bg-body-secondary">
+                    <Image
+                      height={18}
+                      width={18}
+                      src="/images/check-mark.png"
+                      alt="desafiolatam"
+                      priority={true}
+                      className={`d-flex text-center m-2`}
+                    />
+                    <div className="fs-5">
+                      <button type="button" class="btn text-center fw-bold px-3">
+                        Tutorial #3
+                      </button>
+                    </div>
+                  </div>
+              </div>
+              <div className=" d-flex justify-content-center m-2 mb-3">
+                  <div className="col-10 py-1 px-3 d-inline-flex align-items-center bg-body-secondary">
+                    <Image
+                      height={18}
+                      width={18}
+                      src="/images/check-mark.png"
+                      alt="desafiolatam"
+                      priority={true}
+                      className={`d-flex text-center m-2`}
+                    />
+                    <div className="fs-5">
+                      <button type="button" class="btn text-center fw-bold px-3">
+                        Tutorial #4
+                      </button>
+                    </div>
+                  </div>
+              </div>
+              <div className=" d-flex justify-content-center m-2 mb-3">
+                  <div className="col-10 py-1 px-3 d-inline-flex align-items-center bg-body-secondary">
+                    <Image
+                      height={18}
+                      width={18}
+                      src="/images/check-mark.png"
+                      alt="desafiolatam"
+                      priority={true}
+                      className={`d-flex text-center m-2`}
+                    />
+                    <div className="fs-5">
+                      <button type="button" class="btn text-center fw-bold px-3">
+                        Tutorial #5
+                      </button>
+                    </div>
+                  </div>
+              </div>
 						</div>
 					</div>
-					<div class="h-auto bg-primary">
-						Este div tendrá altura basada en su contenido
-					</div>
+					
 				</div>
 			</div>
+      <section>
+        <div class="py-5 bg-body-secondary"></div>
+        <div class="py-5 bg-body-secondary"></div>
+      </section>
 		</>
 	);
 }
