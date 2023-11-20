@@ -1,0 +1,39 @@
+.why_card {
+    width: 20rem;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #dbe0e7;
+    border-radius: 20px;
+}
+
+.and_more {
+    background-color: #739e2d;
+    color:#fff;
+}
+
+.title_text {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.title_card {
+    height: 70%;
+    display: flex;
+    align-items: center;
+}
+
+.buttons {
+    background-color: #fff;
+    border: green solid 0.1rem;
+    border-radius: 10px;
+    height: 2.5rem;
+    font-size: 1rem;
+}
+
+.buttons:hover {
+    background-color: #739e2d;
+    color: #fff;
+}

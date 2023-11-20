@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Roboto } from "next/font/google";
 import SendButton from "../_components/sendButton";
 import style from "./styles.module.css"
+import HomeCard from "../_components/home-card";
 
 const roboto = Roboto({
   weight: ['300', '700'],
@@ -28,6 +29,9 @@ const fetch_ex = {
 
 
 export default function Page() {
+
+
+
   return (
     <>
       <main className={style.home_content}>
@@ -41,34 +45,21 @@ export default function Page() {
         <section className={style.whys}>
           {fetch_ex.why.map((e, index) => {
             return (
-              <div key={index} className={style.why_card}>
-                <div className={style.title_card}>
-                  <h1
-                  className={style.title_text}
-                  >{e.lenguaje}</h1>
-                </div>
-                <div>
-                  <button
-                    className={`${roboto.className} ${style.buttons}`}
-                    style={{}}
-                  >Por que {e.lenguaje}?</button>
-                </div>
-              </div>
+              <HomeCard
+                key={index}
+                title={e.lenguaje}
+                content={e.content_modal}
+
+              ></HomeCard>
             )
-          })}
-          <div className={`${style.why_card} ${style.and_more}`} >
-                <div className={style.title_card}>
-                  <h1
-                  className={style.title_text}
-                  > Y muchos mas</h1>
-                </div>
-                <div>
-                  <button
-                    className={`${roboto.className} ${style.buttons}`}
-                    style={{}}
-                  >Ver todos los lenguajes</button>
-                </div>
-              </div>
+          }
+          )}
+          <HomeCard
+            title="Y mas lenguajes"
+            content={null}
+            last={true}
+          >  
+          </HomeCard>
         </section>
         <section>
           <Link href={"/ingreso/signup"}>

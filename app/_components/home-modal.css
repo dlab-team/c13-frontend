@@ -1,0 +1,18 @@
+dialog {
+    position: absolute;
+    border-radius: 10px;
+    background-color: #063a7d;
+    width: 90%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+
+.close-modal {
+    display: none;
+}
+
+.why {
+    width: 80%;
+}
