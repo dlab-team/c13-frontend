@@ -34,7 +34,7 @@ const JavascriptPrueba = () => {
         </div>
 
         <div className="row">
-          <div className="col-md-6" style={{ background: "#739e2d" }}>
+          <div className="col-md-6" style={{ background: "#FFF" }}>
             <h3 className="m-2">Ejercicio 1: Hola Mundo</h3>
             <p className="m-2">
               <strong>Objetivo:</strong> Escribe y ejecuta tu primer código en
@@ -49,18 +49,23 @@ const JavascriptPrueba = () => {
                   programa en JavaScript.
                 </li>
               </ul>
-              <div className="container bg-white">
+              <div className="d-flex align-items-start">
                 <Image
-                  width={95}
-                  height={95}
-                  src={"/images/Hint.png"}
+                  width={50}
+                  height={50}
+                  src={"/images/HintRed.png"}
                   alt="desafiolatam"
                   priority={true}
                   className={"hintImage mt-4"}
                 />
-                <p style={{ height: "100px" }}>
-                  *Tip por si hay un error en tu respuesta
-                </p>
+                <div
+                  className="container"
+                  style={{ background: "#D9D9D9", width: "38.625rem" }}
+                >
+                  <p style={{ height: "100px" }}>
+                    *Tip por si hay un error en tu respuesta
+                  </p>
+                </div>
               </div>
             </div>
           </div>
