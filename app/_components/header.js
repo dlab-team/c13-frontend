@@ -184,7 +184,8 @@ export default function Header() {
               </li>
             ) : (
               <li>
-                <Link className="link-login" href="/ingreso/login">
+                {/* <Link className="link-login" href="/ingreso/login"> */}
+                <Link className="link-login" href="/ingreso">
                   <SendButton
                     className={`navButton`}
                     buttonText={"Iniciar sesión"}
