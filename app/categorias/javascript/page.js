@@ -68,8 +68,8 @@ const JavascriptPrueba = () => {
               onMount={handleEditorDidMount}
             />
             <div className="text-white bg-dark">
-              <h6>Consola</h6>
-              <p>El resultado de tu ejercicio irá aquí</p>
+              <h6 >Consola</h6>
+              <p className="m-2">El resultado de tu ejercicio irá aquí</p>
               <div className="d-flex align-items-start">
                 <Image
                   width={50}
@@ -83,7 +83,7 @@ const JavascriptPrueba = () => {
                   className="container"
                   
                 >
-                  <p style={{ height: "90px" }}>
+                  <p style={{ height: "90px", marginTop: "30px" }}>
                     *Tip por si hay un error en tu respuesta
                   </p>
                 </div>
