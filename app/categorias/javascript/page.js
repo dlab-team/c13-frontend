@@ -9,6 +9,9 @@ import Image from "next/image"
 const JavascriptPrueba = () => {
   const editorRef = useRef(null)
   const [ejercicio, setEjercicio] = useState("")
+  const [resultado, setResultado] = useState(
+    "El resultado de tu ejercicio irá aquí"
+  )
   const [toExecute, setToExecute] = useState(false)
 
   const text = '"Hola Mundo"'
@@ -19,7 +22,10 @@ const JavascriptPrueba = () => {
 
   if (toExecute == true) {
     console.log("ejecutar script", ejercicio)
-    alert("ejecutar script: \n" + ejercicio)
+    setResultado(ejercicio)
+    console.log('resultado', resultado)
+    // alert("ejecutar script: \n" + ejercicio)
+    // enviar ejercicio para su ejecución
     setToExecute(false)
   }
 
@@ -71,7 +77,7 @@ const JavascriptPrueba = () => {
             />
             <div className="text-white bg-dark">
               <h6>Consola</h6>
-              <p className="m-2">El resultado de tu ejercicio irá aquí</p>
+              <p className="m-2">{resultado}</p>
               <div className="d-flex align-items-start">
                 <Image
                   width={50}
