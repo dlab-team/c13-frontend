@@ -18,11 +18,30 @@
 
 .home_witness {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
     width: 100%;
     gap: 30px;
+    margin-top: 100px;
+    position: relative;
 }
+
+.section_witness {
+    
+    display: flex;
+    max-width: 800px; /* Ajusta el ancho máximo según tus necesidades */
+    margin: auto;
+}
+
+.image_witness {
+    display: inline-block;
+    margin-right: 50px;
+    margin-bottom: 25px;
+    height: 150px;
+    width: 150px;
+    background-color: #739e2d;
+    border-radius: 50%;
+  }
 
 .intro {
     display: flex;
@@ -33,6 +52,12 @@
     text-align: center;
     font-size: 1.3rem;
     max-width: 90%;
+}
+
+.witness_text {
+    flex: 1;
+    box-sizing: border-box;
+    padding: 20px;
 }
 
 .title_text {
