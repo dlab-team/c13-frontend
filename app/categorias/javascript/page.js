@@ -27,10 +27,13 @@ const JavascriptPrueba = () => {
     <>
       <div className="container">
         <div className="text-center my-5">
-          <button className="btn btn-dark rounded-0 w-50">Curso</button>
-          <button className="btn btn-secondary rounded-0 w-50">
-            Nivel(Básico)
+          <button
+            className="btn btn-dark rounded-0 w-50"
+            style={{ background: "#739e2d" }}
+          >
+            JavaScript
           </button>
+          <button className="btn btn-secondary rounded-0 w-50">Básico</button>
         </div>
 
         <div className="row">
@@ -49,7 +52,6 @@ const JavascriptPrueba = () => {
                   programa en JavaScript.
                 </li>
               </ul>
-              
             </div>
           </div>
 
@@ -68,7 +70,7 @@ const JavascriptPrueba = () => {
               onMount={handleEditorDidMount}
             />
             <div className="text-white bg-dark">
-              <h6 >Consola</h6>
+              <h6>Consola</h6>
               <p className="m-2">El resultado de tu ejercicio irá aquí</p>
               <div className="d-flex align-items-start">
                 <Image
@@ -79,10 +81,7 @@ const JavascriptPrueba = () => {
                   priority={true}
                   className={"hintImage mt-4"}
                 />
-                <div
-                  className="container"
-                  
-                >
+                <div className="container">
                   <p style={{ height: "90px", marginTop: "30px" }}>
                     *Tip por si hay un error en tu respuesta
                   </p>
@@ -103,8 +102,18 @@ const JavascriptPrueba = () => {
           </SendButton>
         </div>
         <div className="d-flex justify-content-between my-5">
-          <button className="btn btn-secondary">Anterior</button>
-          <button className="btn btn-secondary">Siguiente</button>
+          <button
+            className="btn btn-secondary"
+            style={{ background: "#739e2d" }}
+          >
+            Anterior
+          </button>
+          <button
+            className="btn btn-secondary"
+            style={{ background: "#739e2d" }}
+          >
+            Próximo
+          </button>
         </div>
       </div>
     </>
