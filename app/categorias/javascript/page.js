@@ -49,24 +49,7 @@ const JavascriptPrueba = () => {
                   programa en JavaScript.
                 </li>
               </ul>
-              <div className="d-flex align-items-start">
-                <Image
-                  width={50}
-                  height={50}
-                  src={"/images/HintRed.png"}
-                  alt="desafiolatam"
-                  priority={true}
-                  className={"hintImage mt-4"}
-                />
-                <div
-                  className="container"
-                  style={{ background: "#D9D9D9", width: "38.625rem" }}
-                >
-                  <p style={{ height: "100px" }}>
-                    *Tip por si hay un error en tu respuesta
-                  </p>
-                </div>
-              </div>
+              
             </div>
           </div>
 
@@ -87,6 +70,24 @@ const JavascriptPrueba = () => {
             <div className="text-white bg-dark">
               <h6>Consola</h6>
               <p>El resultado de tu ejercicio irá aquí</p>
+              <div className="d-flex align-items-start">
+                <Image
+                  width={50}
+                  height={50}
+                  src={"/images/HintRed.png"}
+                  alt="desafiolatam"
+                  priority={true}
+                  className={"hintImage mt-4"}
+                />
+                <div
+                  className="container"
+                  
+                >
+                  <p style={{ height: "90px" }}>
+                    *Tip por si hay un error en tu respuesta
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
