@@ -1,40 +1,56 @@
-"use client"
+"use client";
 
-import Editor from "@monaco-editor/react"
-import { useRef, useState } from "react"
-import SendButton from "../../_components/sendButton"
-import Footer from "@/app/Footer"
-import Image from "next/image"
+import Editor from "@monaco-editor/react";
+import { useRef, useState } from "react";
+import SendButton from "../../_components/sendButton";
+import Footer from "@/app/Footer";
+import Image from "next/image";
+import SqlExecuter from "@/app/_components/_exercises/sqlExecuter";
+import executeCode from "./codeExecution";
 
 const JavascriptPrueba = () => {
-  const editorRef = useRef(null)
-  const [ejercicio, setEjercicio] = useState("")
-  const [toExecute, setToExecute] = useState(false)
 
-  const text = '"Hola Mundo"'
+  const editorRef = useRef(null);
+  const [exercise, setExercise] = useState(""); // La variable exercise se inicializa aquí
+  const [ejercicio, setEjercicio] = useState("");
+  const [resultado, setResultado] = useState(
+    "El resultado de tu ejercicio irá aquí"
+  )
+  const [toExecute, setToExecute] = useState(false);
+  const [isExecuting, setIsExecuting] = useState(false);
+  const [tokenContent, setTokenContent] = useState(null);
+  const text = '"Hola Mundo"';
+
 
   function handleEditorDidMount(editor, monaco) {
-    editorRef.current = editor
+    editorRef.current = editor;
   }
 
   if (toExecute == true) {
     console.log("ejecutar script", ejercicio)
-    alert("ejecutar script: \n" + ejercicio)
+    setResultado(ejercicio)
+    console.log('resultado', resultado)
+    // alert("ejecutar script: \n" + ejercicio)
+    // enviar ejercicio para su ejecución
     setToExecute(false)
+
   }
 
   return (
     <>
       <div className="container">
         <div className="text-center my-5">
-          <button className="btn btn-dark rounded-0 w-50">Curso</button>
-          <button className="btn btn-secondary rounded-0 w-50">
-            Nivel(Básico)
+          <button
+            className="btn btn-dark rounded-0 w-50"
+            style={{ background: "#739e2d" }}
+          >
+            JavaScript
           </button>
+          <button className="btn btn-secondary rounded-0 w-50">Básico</button>
         </div>
 
         <div className="row">
-          <div className="col-md-6" style={{ background: "#739e2d" }}>
+          <div className="col-md-6" style={{ background: "#FFF" }}>
             <h3 className="m-2">Ejercicio 1: Hola Mundo</h3>
             <p className="m-2">
               <strong>Objetivo:</strong> Escribe y ejecuta tu primer código en
@@ -49,19 +65,6 @@ const JavascriptPrueba = () => {
                   programa en JavaScript.
                 </li>
               </ul>
-              <div className="container bg-white">
-                <Image
-                  width={95}
-                  height={95}
-                  src={"/images/Hint.png"}
-                  alt="desafiolatam"
-                  priority={true}
-                  className={"hintImage mt-4"}
-                />
-                <p style={{ height: "100px" }}>
-                  *Tip por si hay un error en tu respuesta
-                </p>
-              </div>
             </div>
           </div>
 
@@ -81,28 +84,65 @@ const JavascriptPrueba = () => {
             />
             <div className="text-white bg-dark">
               <h6>Consola</h6>
-              <p>El resultado de tu ejercicio irá aquí</p>
+              <p className="m-2">{resultado}</p>
+              <div className="d-flex align-items-start">
+                <Image
+                  width={50}
+                  height={50}
+                  src={"/images/HintRed.png"}
+                  alt="desafiolatam"
+                  priority={true}
+                  className={"hintImage mt-4"}
+                />
+                <div className="container">
+                  <p style={{ height: "90px", marginTop: "30px" }}>
+                    *Tip por si hay un error en tu respuesta
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
         <div className="text-end mt-4">
           <SendButton
-            className="queryButton"
+            className={`queryButton`}
             type="submit"
-            onClick={() => setToExecute(true)}
-            buttonText="Ejecuta tu script"
+            onClick={async () => {
+              const inputValue = editorRef.current.getValue();
+
+              // Llama a la función externa para ejecutar el código
+              await executeCode(inputValue, setTokenContent, setToExecute);
+            }}
+            buttonText={"Ejecuta tu consulta"}
           >
-            Ejecutar script
+            Ejecutar consulta
           </SendButton>
         </div>
+        <SqlExecuter
+          exercise={exercise}
+          toExecute={toExecute}
+          setToExecute={setToExecute}
+          editorRef={editorRef}
+          setIsExecuting={setIsExecuting}
+        />
         <div className="d-flex justify-content-between my-5">
-          <button className="btn btn-secondary">Anterior</button>
-          <button className="btn btn-secondary">Siguiente</button>
+          <button
+            className="btn btn-secondary"
+            style={{ background: "#739e2d" }}
+          >
+            Anterior
+          </button>
+          <button
+            className="btn btn-secondary"
+            style={{ background: "#739e2d" }}
+          >
+            Próximo
+          </button>
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default JavascriptPrueba
+export default JavascriptPrueba;
