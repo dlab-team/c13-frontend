@@ -17,24 +17,22 @@ export default function HomeModal({ title, content, show, setShow }) {
 
   return (
     <>
-      <dialog className={`${open? "": "close-modal"}`}>
-        <button onClick={closeDialog}>X</button>
+      <dialog className={`${open ? "" : "close-modal"}`}>
+        <div className="button_container">
+          <button className="close_buttom" onClick={closeDialog}>X</button>
+        </div>
         <h1>
           ¿Porque estudiar {title}?
         </h1>
-        <section>
-          <div>
-            ex
-          </div>
-          <div>
-            ex
-          </div>
-          <div>
-            ex
-          </div>
-          <div>
-            ex
-          </div>
+        <section className="dialog_content">
+          {content
+            ? content.map((text, index) => {
+              return (
+                <div key={index}>
+                  <p>{text}</p>
+                </div>
+              )
+            }) : ""}
         </section>
       </dialog>
     </>

@@ -41,7 +41,7 @@
     color: #fff;
 }
 
-@media screen and (width > 500px){
+@media screen and (width > 700px){
     .whys {
         display: grid;
         grid-template-columns: 1fr 1fr;

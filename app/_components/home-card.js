@@ -3,6 +3,7 @@ import { useState } from "react";
 import "./home-card.css"
 import HomeModal from "./home-modal"
 import { Roboto } from "next/font/google";
+import Image from "next/image";
 
 const roboto = Roboto({
   weight: ['300', '700'],
@@ -10,7 +11,7 @@ const roboto = Roboto({
 });
 
 
-export default function HomeCard({ key = null, last=false, title, content }) {
+export default function HomeCard({ last = false, title, content }) {
   const [openDialog, setOpenDialog] = useState(false)
 
   const showDialog = () => {
@@ -19,24 +20,35 @@ export default function HomeCard({ key = null, last=false, title, content }) {
 
   return (
     <>
-      <div key={key} className={`why_card ${last? "and_more": ""}`} >
-        <div className="title_card">
-          <h1
-            className="title_text"
-          >{title}</h1>
-        </div>
-        <div>
-          <button
-            className={`${roboto.className} buttons`}
-            onClick={showDialog}
-          >Por que {title}?</button>
-        </div>
-        <HomeModal
-        title={title}
-        content={content}
-        show={openDialog}
-        setShow={setOpenDialog}
-        ></HomeModal>
+      <div className={`why_card ${last ? "and_more" : ""}`} >
+        <section className="img_card">
+          {content
+            ? <Image src={content.card_img} width={500} height={500} alt="lenguaje_img" />
+            : ""}
+        </section>
+        <section className="content_card">
+          <div className="title_card">
+            <h3
+              className="title_text"
+            >Curso {title}</h3>
+          </div>
+          <p className="description_card">
+            {content.card_description}
+          </p>
+          <div className="button_container_card">
+            <button
+              className={`${roboto.className} buttons`}
+              onClick={showDialog}
+            >Por que {title}?</button>
+          </div>
+        </section>
+        {!last ?
+          <HomeModal
+            title={title}
+            content={content.content_modal}
+            show={openDialog}
+            setShow={setOpenDialog}
+          ></HomeModal> : ""}
       </div>
     </>
   )
