@@ -1,8 +1,10 @@
 "use client"
 import { useEffect, useState } from "react"
+import { useRouter } from "next/router";
 import "./home-modal.css"
+import Link from "next/link";
 
-export default function HomeModal({ title, content, show, setShow }) {
+export default function HomeModal({ title, content, show, setShow, learningPathContent }) {
   const [open, setOpen] = useState(false);
 
 
@@ -34,6 +36,7 @@ export default function HomeModal({ title, content, show, setShow }) {
               )
             }) : ""}
         </section>
+        <Link href={`/que-aprenderas/[content]?content=${JSON.stringify(learningPathContent)}`}>Que Aprendere?</Link>
       </dialog>
     </>
   )
