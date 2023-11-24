@@ -3,6 +3,7 @@ import { Roboto } from "next/font/google";
 import SendButton from "../_components/sendButton";
 import style from "./styles.module.css"
 import HomeCard from "../_components/home-card";
+import Footer from "../Footer";
 
 const roboto = Roboto({
   weight: ['300', '700'],
@@ -81,8 +82,6 @@ const fetch_ex = {
 
 export default function Page() {
 
-
-
   return (
     <>
       <main className={style.home_content}>
@@ -120,6 +119,60 @@ export default function Page() {
           </Link>
         </section>
       </main>
+      
+      <main className={style.home_survey}>
+        <section className={style.intro}>
+          <h1 className={style.title_survey}>
+            Resultado de encuestas o informaciones varias
+          </h1>
+        </section>
+      </main>
+
+      <main className={style.home_witness}>
+        <section className={style.intro}>
+          <h1 className={style.title_survey}>
+            Testimonios 
+          </h1>
+        </section>
+
+        <section className={style.section_witness}>
+          <div className={style.image_witness}>
+
+          </div>
+          <p className={style.witness_text}>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi porta lacus ante, at congue eros mattis eget. 
+          Maecenas vitae ultricies nisi.
+          </p>
+        </section>
+
+        <section className={style.section_witness}>
+          <div className={style.image_witness}>
+            
+          </div>
+          <p className={style.witness_text}>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi porta lacus ante, at congue eros mattis eget. 
+          Maecenas vitae ultricies nisi.
+          </p>
+        </section>
+
+        <section className={style.section_witness}>
+          <div className={style.image_witness}>
+            
+          </div>
+          <p className={style.witness_text}>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi porta lacus ante, at congue eros mattis eget. 
+          Maecenas vitae ultricies nisi.
+          </p>
+        </section>
+
+        
+      </main>
+
+      <div className={`${style.botSection} col-12`}>
+        <Footer />
+      </div>
+
     </>
+    
   )
 }
