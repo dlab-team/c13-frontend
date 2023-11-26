@@ -1,0 +1,77 @@
+dialog {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    background-color: #063a7d;
+    width: 98%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+
+.dialog_content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    overflow-y: auto;
+}
+
+.dialog_content>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #dbe0e7;
+    border-radius: 20px;
+    color: #000;
+}
+
+.dialog_content>div>p {
+    font-size: 1rem;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+.button_container {
+    position: sticky;
+    display: flex;
+    justify-content: center;
+}
+
+.close_buttom {
+    position: absolute;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    top: -40px;
+    background-color: #739e2d;
+    color: #fff;
+}
+
+.close_buttom:hover {
+    scale: 1.1;
+}
+
+.close-modal {
+    display: none;
+}
+
+@media screen and (width > 700px) {
+    .dialog_content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+    }
+}
