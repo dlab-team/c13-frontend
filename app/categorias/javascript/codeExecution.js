@@ -2,14 +2,20 @@
 
 //corregir el caso donde la palabra console por si sola da una buena ejecucion
 
-async function executeCode(inputValue, setTokenContent, setToExecute) {
+async function executeCode(
+  inputValue,
+  setTokenContent,
+  setToExecute,
+  languageId
+) {
   const jsonData = {
     source_code: inputValue,
-    language_id: 63,
+    language_id: languageId,
   };
 
   try {
-    const response = await fetch("http://127.0.0.1:2358/submissions", {
+    console.log("JUDGE0_URL:", process.env.JUDGE0_URL);
+    const response = await fetch(`${process.env.JUDGE0_URL}/submissions`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -28,10 +34,9 @@ async function executeCode(inputValue, setTokenContent, setToExecute) {
     try {
       if (token) {
         let accepted = false;
-
         while (!accepted) {
           const getResponse = await fetch(
-            `http://127.0.0.1:2358/submissions/${token}`
+            `${process.env.JUDGE0_URL}/submissions/${token}`
           );
           const getData = await getResponse.json();
 
