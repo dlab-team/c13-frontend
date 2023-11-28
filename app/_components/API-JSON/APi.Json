@@ -1,0 +1,32 @@
+{
+
+    "0": [{
+        "id": 330, 
+        "name": "Seleccionando columnas", 
+        "exercises":[{
+            "0":{"id": 1, "tittle":"Tutorial"},
+            "1":{"id": 2, "tittle":"Seleccionando todas las columnas de una tabla"},
+            "2":{"id": 1, "tittle":"Tutorial"},
+            "3":{"id": 1, "tittle":"Tutorial"},
+            "4":{"id": 1, "tittle":"Tutorial"},
+            "5":{"id": 1, "tittle":"Tutorial"}
+        }]
+            
+    }],
+    "1": [{
+        "id": 330, 
+        "name": "Seleccionando Filas", 
+        "exercises":[{
+            "0":{"id": 1, "tittle":"Tutorial"},
+            "1":{"id": 2, "tittle":"Seleccionando todas las columnas de una tabla"},
+            "2":{"id": 1, "tittle":"Tutorial"},
+            "3":{"id": 1, "tittle":"Tutorial"},
+            "4":{"id": 1, "tittle":"Tutorial"},
+            "5":{"id": 1, "tittle":"Tutorial"}
+        }]
+            
+    }]
+         
+        
+
+}

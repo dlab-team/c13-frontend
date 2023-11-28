@@ -1,329 +1,119 @@
-import React from "react";
-import PropTypes from "prop-types";
-import Image from "next/image";
-import styles from "../learning-path.module.css";
+// "use client"
+// import { useState } from "react";
+// import { Roboto, Inter } from "next/font/google";
+// import Image from "next/image";
+// import Link from "next/link";
 
-export default function LeargningPath() {
-	return (
-		<>
-			<div className="container-fluid">
-				<div className="row bg-body-secondary">
-					<div className="col-10 d-flex align-items-center">
-						<picture className={`${styles.IconUsuario} `}>
-							<Image
-								height={55}
-								width={55}
-								src="/images/Ellipse-icon.png"
-								alt="desafiolatam"
-								priority={true}
-								className={`justify-content-center`}
-							/>
-						</picture>
-					</div>
-					<div className="col-2 py-4">
-						<div className={` ${styles.BotonEstilos} border justify-content-center text-center p-2 bg-secondary `}>
-							<picture className="p-2">
-								<Image
-									height={25}
-									width={25}
-									src="/images/PersonIcon.png"
-									alt="desafiolatam"
-									priority={true}
-									className={`text-center`}
-								/>
-							</picture>
-							<p className="d-inline text-white">Nombre Usuario</p>
-						</div>
-					</div>
-				</div>
-				<div className="row">
-					<div className="col-4 bg-secondary">
-						<div className="text-center">
-							<p className="p-3 text-white fs-3">Capítulos</p>
-							<div className=" d-flex align-items-center justify-content-center">
-								<div className=" d-inline-flex align-items-center justify-content-center mb-5">
-									<Image
-										height={25}
-										width={25}
-										src="/images/gg_check-o.png"
-										alt="desafiolatam"
-										priority={true}
-										className={`d-flex text-center`}
-									/>
-									<div className="">
-										<button type="button" class="text-center btn btn-secondary">
-											<Image
-												height={4}
-												width={190}
-												src="/images/Line.png"
-												alt="desafiolatam"
-												priority={true}
-												className={`d-flex text-center`}
-											/>
-										</button>
-									</div>
-								</div>
-							</div>
-							<div className=" d-flex align-items-center justify-content-center">
-								<div className=" d-inline-flex align-items-center justify-content-center mb-5">
-									<Image
-										height={25}
-										width={25}
-										src="/images/gg_check-o.png"
-										alt="desafiolatam"
-										priority={true}
-										className={`d-flex text-center`}
-									/>
-									<div className="">
-										<button type="button" class="text-center btn btn-secondary">
-											<Image
-												height={4}
-												width={190}
-												src="/images/Line.png"
-												alt="desafiolatam"
-												priority={true}
-												className={`d-flex text-center`}
-											/>
-										</button>
-									</div>
-								</div>
-							</div>
-              				<div className=" d-flex align-items-center justify-content-center">
-								<div className=" d-inline-flex align-items-center justify-content-center mb-5">
-									<Image
-										height={25}
-										width={25}
-										src="/images/gg_check-o.png"
-										alt="desafiolatam"
-										priority={true}
-										className={`d-flex text-center`}
-									/>
-									<div className="">
-										<button type="button" class="text-center btn btn-secondary">
-											<Image
-												height={4}
-												width={190}
-												src="/images/Line.png"
-												alt="desafiolatam"
-												priority={true}
-												className={`d-flex text-center`}
-											/>
-										</button>
-									</div>
-								</div>
-							</div>
-              				<div className=" d-flex align-items-center justify-content-center">
-								<div className=" d-inline-flex align-items-center justify-content-center mb-5">
-									<Image
-										height={25}
-										width={25}
-										src="/images/gg_check-o.png"
-										alt="desafiolatam"
-										priority={true}
-										className={`d-flex text-center`}
-									/>
-									<div className="">
-										<button type="button" class="text-center btn btn-secondary">
-											<Image
-												height={4}
-												width={190}
-												src="/images/Line.png"
-												alt="desafiolatam"
-												priority={true}
-												className={`d-flex text-center`}
-											/>
-										</button>
-									</div>
-								</div>
-							</div>
-              				<div className=" d-flex align-items-center justify-content-center">
-								<div className=" d-inline-flex align-items-center justify-content-center mb-5">
-									<Image
-										height={25}
-										width={25}
-										src="/images/gg_check-o.png"
-										alt="desafiolatam"
-										priority={true}
-										className={`d-flex text-center`}
-									/>
-									<div className="">
-										<button type="button" class="text-center btn btn-secondary">
-											<Image
-												height={4}
-												width={190}
-												src="/images/Line.png"
-												alt="desafiolatam"
-												priority={true}
-												className={`d-flex text-center`}
-											/>
-										</button>
-									</div>
-								</div>
-							</div>
-              				<div className=" d-flex align-items-center justify-content-center">
-								<div className=" d-inline-flex align-items-center justify-content-center mb-5">
-									<Image
-										height={25}
-										width={25}
-										src="/images/gg_check-o.png"
-										alt="desafiolatam"
-										priority={true}
-										className={`d-flex text-center`}
-									/>
-									<div className="">
-										<button type="button" class="text-center btn btn-secondary">
-											<Image
-												height={4}
-												width={190}
-												src="/images/Line.png"
-												alt="desafiolatam"
-												priority={true}
-												className={`d-flex text-center`}
-											/>
-										</button>
-									</div>
-								</div>
-							</div>
-              				<div className=" d-flex align-items-center justify-content-center">
-								<div className=" d-inline-flex align-items-center justify-content-center mb-5">
-									<Image
-										height={25}
-										width={25}
-										src="/images/gg_check-o.png"
-										alt="desafiolatam"
-										priority={true}
-										className={`d-flex text-center`}
-									/>
-									<div className="">
-										<button type="button" class="text-center btn btn-secondary">
-											<Image
-												height={4}
-												width={190}
-												src="/images/Line.png"
-												alt="desafiolatam"
-												priority={true}
-												className={`d-flex text-center`}
-											/>
-										</button>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-{/* ______________SECCIÓN DE LECCIONES______________ */}
-					<div className="col-8 bg-white">
-						<div class="container mb-5">
-							<div class="row justify-content-between">
-								<div class="col-4 text-center">
-									<button type="button" class="btn bg-body-secondary btn-sm fw-bold fs-5 py-1 px-3">
-										PERFIL
-									</button> 
-								</div>
-								<div class="col-4 text-center">
-									<button type="button" class="btn bg-body-secondary btn-sm fw-bold fs-5 px-4 py-1">
-										SQL
-									</button>
-								</div>
-							</div>
-						</div>
-						<div className="text-center fs-1 fw-bold">
-              				JavaScript
-            			</div>
-					<div className="col-10 ms-5 justity-content-center"> 
-					<div className="col-1 ms-5"><p className="text-start fs-4 fw-bold">Lecciones</p></div>
-					<div className=" d-flex justify-content-center m-2 mb-3">
-						<div className="col-10 py-1 px-3 d-inline-flex align-items-center bg-body-secondary">
-							<Image
-							height={18}
-							width={18}
-							src="/images/check-mark.png"
-							alt="desafiolatam"
-							priority={true}
-							className={`d-flex text-center m-2`}
-							/>
-							<div className="fs-5">
-								<button type="button" class="btn text-center fw-bold px-3">
-									Tutorial
-								</button>
-							</div>
-						</div>
-					</div>
-					<div className=" d-flex justify-content-center m-2 mb-3">
-						<div className="col-10 py-1 px-3 d-inline-flex align-items-center bg-body-secondary">
-							<Image
-							height={18}
-							width={18}
-							src="/images/check-mark.png"
-							alt="desafiolatam"
-							priority={true}
-							className={`d-flex text-center m-2`}
-							/>
-							<div className="fs-5">
-								<button type="button" class="btn text-center fw-bold px-3">
-									Tutorial #2
-								</button>
-							</div>
-						</div>
-					</div>
-					<div className=" d-flex justify-content-center m-2 mb-3">
-						<div className="col-10 py-1 px-3 d-inline-flex align-items-center bg-body-secondary">
-							<Image
-							height={18}
-							width={18}
-							src="/images/check-mark.png"
-							alt="desafiolatam"
-							priority={true}
-							className={`d-flex text-center m-2`}
-							/>
-							<div className="fs-5">
-								<button type="button" class="btn text-center fw-bold px-3">
-									Tutorial #3
-								</button>
-							</div>
-						</div>
-					</div>
-					<div className=" d-flex justify-content-center m-2 mb-3">
-						<div className="col-10 py-1 px-3 d-inline-flex align-items-center bg-body-secondary">
-							<Image
-							height={18}
-							width={18}
-							src="/images/check-mark.png"
-							alt="desafiolatam"
-							priority={true}
-							className={`d-flex text-center m-2`}
-							/>
-							<div className="fs-5">
-								<button type="button" class="btn text-center fw-bold px-3">
-									Tutorial #4
-								</button>
-							</div>
-						</div>
-					</div>
-					<div className=" d-flex justify-content-center m-2 mb-3">
-						<div className="col-10 py-1 px-3 d-inline-flex align-items-center bg-body-secondary">
-							<Image
-							height={18}
-							width={18}
-							src="/images/check-mark.png"
-							alt="desafiolatam"
-							priority={true}
-							className={`d-flex text-center m-2`}
-							/>
-							<div className="fs-5">
-								<button type="button" class="btn text-center fw-bold px-3">
-									Tutorial #5
-								</button>
-							</div>
-						</div>
-					</div>
-				</div>
-				</div>
-			</div>
-			</div>
-      <section>
-        <div class="py-5 bg-body-secondary"></div>
-        <div class="py-5 bg-body-secondary"></div>
-      </section>
-		</>
-	);
-}
+// const roboto = Roboto({
+//   subsets: ["latin"],
+//   weight: ["300", "700"],
+// });
+
+// const LearningPath = ({ categories }) => {
+
+//   console.log(categories)
+
+//   const [active, setActive] = useState([true, ...Array(categories.length - 1).fill(false)]);
+
+//   const handleClick = (index) => {
+//     const newActive = Array(categories.length).fill(false); // Create a new array with all categories set to false
+
+//     // Set the clicked category to true
+//     newActive[index] = true;
+
+//     setActive(newActive);
+//   }
+//   return (  
+//     <>
+//       <div className="row">
+//         <div className="collapse-navbar col-12 d-md-none">
+//           <nav className="navbar navbar-expand-lg navbar-light ">
+//             <div className="container-fluid">
+//               <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+//                 <span className="navbar-toggler-icon"></span>
+//               </button>
+//               <div className="collapse navbar-collapse" id="navbarNav">
+//                 <ul className="navbar-nav">
+//                   {categories.map((element, index) => (
+//                     <li key={element.id} className="nav-item" >
+//                       <Link className="nav-link active" style={{
+//                         color: ` ${active[index] ? "#739E2D" : "#000"}`,
+//                       }} aria-current="page" href="#" onClick={() => handleClick(index)}>
+//                         {element.name}
+//                       </Link>
+//                     </li>
+//                   ))}
+//                 </ul>
+//               </div>
+//             </div>
+//           </nav>
+//         </div>
+//       </div>
+
+
+//       <div className="dashboard">
+//         <div className={`${roboto.className} sidebar`}>
+//           <ul className="navbar-nav">
+//             {categories.map((category, index) => (
+//               <li key={category.id}>
+//                 <Link style={{
+//                   color: ` ${active[index] ? "#739E2D" : "#000"}`,
+//                 }}
+//                   href="#" onClick={() => handleClick(index)}>
+//                   {category.name}
+//                   <small>
+//                     {" "}
+//                     (
+//                     {
+//                       category.exercises.filter(
+//                         (exercise) => exercise.completed == true
+//                       ).length
+//                     }{" "}
+//                     / {category.exercises.length})
+//                   </small>
+//                 </Link>
+//               </li>
+//             ))}
+//           </ul>
+//         </div>
+
+
+//         <div className={`${roboto.className} content`}>
+//           {categories.map((element, index) => (
+//             <div key={element.id}>
+//               <h3 key={index} className={`${active[index] ? "submenu active" : "d-none"} mb-4`}>
+//                 {element.name}
+//               </h3>
+//               {/* <p className={`${active[index] ? "submenu active" : "d-none"} mb-4`}>
+//                 Texto por definir para cada categoria
+//               </p> */}
+//               <ul key={categories.id} className={`${active[index] ? "submenu active" : "d-none"}  `}>
+//                 {element.exercises.map((sub) => (
+//                     <li key={sub.id}
+//                     >
+//                       <Link
+//                         className={`${"link-menu"}`}
+//                         href={`/categorias/${element.id}/ejercicios/${sub.id}`}
+//                       >
+//                         <button className="span-categories ">
+//                           {sub.completed ? (
+//                             <Image src="/images/success-vector.png" height={17} width={17} alt="Academia Desafío Latam" title="Academia Desafío Latam" />
+//                           ) : (
+//                             <Image src="/images/elipse.png" height={17} width={17} alt="Academia Desafío Latam" title="Academia Desafío Latam" />
+//                           )}
+//                           {sub.title}
+//                         </button>
+//                       </Link>
+//                     </li>
+//                 ))}
+//               </ul>
+//             </div>
+//           ))}
+//         </div>
+//       </div>
+//     </>
+//   );
+// };
+
+// export default LearningPath;
+
