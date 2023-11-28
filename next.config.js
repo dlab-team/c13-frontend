@@ -1,9 +1,10 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+const nextConfig = {};
 
 module.exports = {
   env: {
-    API_BASE_URL:'https://tutorial-interactivo-sql.onrender.com/api/v1'
+    API_BASE_URL: "https://tutorial-interactivo-sql.onrender.com/api/v1",
+    JUDGE0_URL: process.env.JUDGE0_URL,
   },
   webpack: (config, { isServer, webpack }) => {
     console.log(`Webpack version: ${webpack.version}`);
@@ -15,4 +16,3 @@ module.exports = {
     return config;
   },
 };
-

@@ -9,31 +9,26 @@ import SqlExecuter from "@/app/_components/_exercises/sqlExecuter";
 import executeCode from "./codeExecution";
 
 const JavascriptPrueba = () => {
-
   const editorRef = useRef(null);
   const [exercise, setExercise] = useState(""); // La variable exercise se inicializa aquí
   const [ejercicio, setEjercicio] = useState("");
   const [resultado, setResultado] = useState(
     "El resultado de tu ejercicio irá aquí"
-  )
+  );
   const [toExecute, setToExecute] = useState(false);
   const [isExecuting, setIsExecuting] = useState(false);
   const [tokenContent, setTokenContent] = useState(null);
   const text = '"Hola Mundo"';
-
 
   function handleEditorDidMount(editor, monaco) {
     editorRef.current = editor;
   }
 
   if (toExecute == true) {
-    console.log("ejecutar script", ejercicio)
-    setResultado(ejercicio)
-    console.log('resultado', resultado)
+    setResultado(ejercicio);
     // alert("ejecutar script: \n" + ejercicio)
     // enviar ejercicio para su ejecución
-    setToExecute(false)
-
+    setToExecute(false);
   }
 
   return (
@@ -95,7 +90,10 @@ const JavascriptPrueba = () => {
                   className={"hintImage mt-4"}
                 />
                 <div className="container">
-                  <p style={{ height: "90px", marginTop: "30px" }}>
+                  <p
+                    className="tip"
+                    style={{ height: "90px", marginTop: "30px" }}
+                  >
                     *Tip por si hay un error en tu respuesta
                   </p>
                 </div>
@@ -110,9 +108,14 @@ const JavascriptPrueba = () => {
             type="submit"
             onClick={async () => {
               const inputValue = editorRef.current.getValue();
-
+              const languageId = 63;
               // Llama a la función externa para ejecutar el código
-              await executeCode(inputValue, setTokenContent, setToExecute);
+              await executeCode(
+                inputValue,
+                setTokenContent,
+                setToExecute,
+                languageId
+              );
             }}
             buttonText={"Ejecuta tu consulta"}
           >
