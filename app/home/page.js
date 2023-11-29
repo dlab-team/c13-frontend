@@ -24,15 +24,7 @@ const fetch_ex = {
         "Aprender SQL también te permite comprender mejor cómo funcionan las bases de datos, lo que es crucial para el desarrollo de aplicaciones y sistemas. Ya sea que estés trabajando como desarrollador, analista de datos o administrador de bases de datos, el conocimiento de SQL te proporciona una base sólida para optimizar el rendimiento y garantizar la integridad de los datos.",
         "En resumen, aprender SQL es esencial para cualquier persona interesada en trabajar con datos. Desde la gestión de bases de datos hasta el análisis de datos, SQL es una herramienta poderosa que te permitirá destacar en tu campo y contribuir de manera significativa al éxito de proyectos y empresas.",
         "Al adquirir habilidades en SQL, te conviertes en un profesional más completo y valioso en el ámbito de la tecnología. Con la creciente importancia de los datos en el mundo actual, el conocimiento de SQL se ha vuelto casi indispensable para aquellos que buscan carreras exitosas en áreas como el desarrollo de software, la analítica de datos y la gestión de bases de datos."
-      ],
-      learning_path: {
-        "Conceptos Básicos de SQL": "Aprenderás los conceptos fundamentales de SQL, como qué es una base de datos, una tabla, una fila, una columna, un registro y una consulta. Estos son los componentes básicos de cualquier sistema de gestión de bases de datos relacional (RDBMS).",
-        "Manipulación de Datos": "Aprenderás a insertar, actualizar y eliminar datos en una base de datos utilizando instrucciones SQL. Esto es esencial para administrar la información en una base de datos.",
-        "Consulta de Datos": "Te familiarizarás con cómo realizar consultas para recuperar datos específicos de una base de datos. Aprenderás a usar la cláusula SELECT, filtros WHERE, ordenamiento de resultados y cómo agrupar y resumir datos.",
-        "Relaciones y Joins": "Entenderás cómo funcionan las relaciones entre tablas en una base de datos relacional y cómo realizar uniones (joins) entre tablas para combinar datos de múltiples fuentes.",
-        "Funciones y Agregaciones": "Conocerás las funciones SQL que te permiten realizar cálculos y agregaciones en los datos, como SUM, COUNT, AVG, MAX y MIN.",
-        "Subconsultas": "Aprenderás a realizar subconsultas, que son consultas anidadas dentro de otras consultas. Esto es útil para consultar datos de manera más compleja y obtener resultados específicos."
-      }
+      ]
     },
     {
       lenguaje: "JavaScript",
@@ -45,15 +37,7 @@ const fetch_ex = {
         "JavaScript también se ha expandido más allá del navegador gracias a entornos de ejecución como Node.js. Esto significa que puedes utilizar JavaScript para desarrollar aplicaciones del lado del servidor, lo que amplía aún más tus oportunidades como desarrollador. La versatilidad de JavaScript y su presencia en ambos lados, cliente y servidor, lo convierten en un lenguaje esencial en el mundo del desarrollo.",
         "Aprender JavaScript no solo te proporciona habilidades técnicas, sino que también te introduce en conceptos de programación fundamentales. Comprender temas como variables, funciones, y objetos en el contexto de JavaScript te facilita la transición a otros lenguajes de programación, lo que es valioso a medida que expandes tus habilidades.",
         "En resumen, aprender JavaScript es crucial para cualquier persona interesada en el desarrollo web. Desde la creación de páginas web interactivas hasta el desarrollo de aplicaciones complejas del lado del cliente y del servidor, JavaScript es una herramienta esencial que te coloca en el centro del mundo digital en constante evolución."
-      ],
-      learning_path: {
-        "Fundamentos de JavaScript": "Comprenderás los conceptos fundamentales de JavaScript, incluyendo variables, tipos de datos, operadores y estructuras de control de flujo.",
-        "Manipulación del DOM": "Aprenderás a interactuar con el Document Object Model (DOM) para manipular la estructura y el contenido de las páginas web de forma dinámica.",
-        "Eventos y Asincronía": "Te familiarizarás con el manejo de eventos para responder a las interacciones del usuario y entenderás los conceptos de programación asíncrona en JavaScript.",
-        "Funciones y Objetos": "Conocerás el uso de funciones para estructurar tu código y trabajar con objetos para modelar y organizar la información.",
-        "Frameworks y Bibliotecas": "Explorarás el ecosistema de JavaScript, incluyendo bibliotecas como jQuery y frameworks como React, Angular y Vue.js.",
-        "Desarrollo del Lado del Servidor": "Comprenderás cómo utilizar JavaScript en el lado del servidor con Node.js, lo que te permitirá construir aplicaciones web completas."
-      }
+      ]
     },
     {
       lenguaje: "Python",
@@ -66,15 +50,7 @@ const fetch_ex = {
         "La simplicidad de Python no implica una limitación en cuanto a su potencial. Puedes utilizar Python para una variedad de tareas, incluido el desarrollo web con frameworks como Django y Flask, análisis de datos con pandas y visualización con bibliotecas como Matplotlib y Seaborn. La versatilidad de Python te permite adaptarte a diferentes roles y proyectos según tus intereses y habilidades.",
         "Python es utilizado en empresas líderes en tecnología y en sectores como finanzas, salud y ciencia. Al aprender Python, estás adquiriendo habilidades que son altamente demandadas en el mercado laboral actual. La capacidad de escribir código eficiente y efectivo en Python te hace valioso en una variedad de contextos profesionales.",
         "En resumen, aprender Python es una inversión inteligente para cualquier persona interesada en la programación. Su versatilidad, comunidad activa y aplicaciones en campos de vanguardia hacen de Python un lenguaje esencial para desarrolladores de todos los niveles. Ya sea que estés comenzando en la programación o busques avanzar en tu carrera, Python es una elección sólida que te abrirá puertas en el amplio mundo de la tecnología."
-      ],
-      learning_path: {
-        "Introducción a Python": "Aprenderás los fundamentos de Python, incluyendo sintaxis, variables, tipos de datos y estructuras de control de flujo.",
-        "Funciones y Módulos": "Comprenderás cómo definir y utilizar funciones en Python, así como la importancia de organizar el código en módulos reutilizables.",
-        "Estructuras de Datos": "Explorarás las diferentes estructuras de datos en Python, como listas, tuplas, conjuntos y diccionarios, y aprenderás a trabajar con ellas de manera efectiva.",
-        "Programación Orientada a Objetos": "Conocerás los principios de la programación orientada a objetos (POO) en Python y cómo crear clases y objetos.",
-        "Manejo de Archivos y Excepciones": "Aprenderás a trabajar con archivos, manejar excepciones y garantizar la integridad y seguridad de tu código.",
-        "Proyectos Prácticos": "Aplicarás tus conocimientos mediante la creación de proyectos prácticos, consolidando tus habilidades en el desarrollo con Python."
-      }
+      ]
     }
   ]
 }

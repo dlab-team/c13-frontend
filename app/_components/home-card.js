@@ -46,7 +46,6 @@ export default function HomeCard({ last = false, title, content }) {
           <HomeModal
             title={title}
             content={content.content_modal}
-            learningPathContent={content.learning_path}
             show={openDialog}
             setShow={setOpenDialog}
           ></HomeModal> : ""}
