@@ -15,7 +15,7 @@ export default async function Page() {
   return (
     <>
       <div>
-      <Link href={"/_components/learningPath/learningPath"}>
+      <Link href={'/learningPath'}>
           <SendButton className={`${roboto.className} ${styles.registerButton} `} buttonText={'LEARNING PATH'}>
           </SendButton>
       </Link>

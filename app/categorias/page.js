@@ -3,7 +3,6 @@ import useSWR from "swr";
 import Categories from "./../_components/categories/categories";
 import Cookies from "js-cookie";
 import SkeletonLoader from "../_components/skeletonLoader";
-import LearningPath from "./../_components/learningPath/learningPath";
 
 const fetcher = (url) => {
   return fetch(url, { headers: { Authorization: `Bearer ${Cookies.get("JWT-cookie")}` } }).then((r) => r.json());
@@ -19,5 +18,5 @@ export default function Page() {
     return <div>Error </div>;  // Asegúrate de manejar cualquier error que pueda surgir.
   }
 
-  return <Categories categories={data} />, <LearningPath categories={data}/>;
+  return <Categories categories={data} />;
 }
