@@ -215,7 +215,7 @@ export default function LeargningPath() {
 						<div class="container mb-5">
 							<div class="row justify-content-between">
 								<div class="col-4 text-center" >
-									<button type="button" class= {`${styles.BotonEstilos} row btn bg-body-danger fw-bold fs-5 py-1 px-3`}>
+									<button type="button" class= {`${styles.BotonEstilos} row btn bg-body- fw-bold fs-5 py-1 px-3`}>
 										PERFIL
 									</button> 
 								</div>

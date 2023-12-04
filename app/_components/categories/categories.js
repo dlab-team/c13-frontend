@@ -53,6 +53,7 @@ const Categories = ({ categories }) => {
 
       <div className="dashboard">
         <div className={`${roboto.className} sidebar`}>
+        <ul className="navbar-nav"></ul>
           <ul className="navbar-nav">
             {categories.map((category, index) => (
               <li key={category.id}>
