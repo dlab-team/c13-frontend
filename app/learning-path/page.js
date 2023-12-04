@@ -211,16 +211,16 @@ export default function LeargningPath() {
 						</div>
 					</div>
 {/* ______________SECCIÓN DE LECCIONES______________ */}
-					<div className="col-8 bg-white">
+					<div className= "col-8">
 						<div class="container mb-5">
 							<div class="row justify-content-between">
-								<div class="col-4 text-center">
-									<button type="button" class="btn bg-body-secondary btn-sm fw-bold fs-5 py-1 px-3">
+								<div class="col-4 text-center" >
+									<button type="button" class= {`${styles.BotonEstilos} row btn bg-body-danger fw-bold fs-5 py-1 px-3`}>
 										PERFIL
 									</button> 
 								</div>
 								<div class="col-4 text-center">
-									<button type="button" class="btn bg-body-secondary btn-sm fw-bold fs-5 px-4 py-1">
+									<button type="button" class= {`${styles.BotonEstilos} row btn bg-body-success btn-sm fw-bold fs-5 px-4 py-1`}>
 										SQL
 									</button>
 								</div>
