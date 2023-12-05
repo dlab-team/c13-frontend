@@ -5,6 +5,11 @@
     width: 100%;
     height: auto;
     gap: 30px;
+    margin-bottom: 79px;
+}
+
+.home_content > section {
+    width: 100%;
 }
 
 .home_survey {
@@ -46,13 +51,23 @@
 
 .intro {
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 33px;
+}
+
+.intro>h1 {
+    text-align: center;
 }
 
 .text {
     text-align: center;
-    font-size: 1.3rem;
     max-width: 90%;
+    font-style: normal;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0.20000000298023224px;
 }
 
 .witness_text {
@@ -62,8 +77,11 @@
 }
 
 .title_text {
-    font-size: 3rem;
+    font-family: Uni Neue Heavy Italic, Helvetica, Arial, sans-serif;
+    font-weight: 800;
+    font-size: 1.5rem;
     text-align: center;
+    line-height: normal;
 }
 
 .title_survey {
@@ -76,12 +94,28 @@
     flex-direction: column;
 }
 
+.buttons_container {
+    display: flex;
+    gap: 68px;
+}
+
 .buttons {
     background-color: #fff;
-    border: green solid 2px;
-    border-radius: 10px;
-    height: 2.5rem;
-    font-size: 1rem;
+    border: #729E2E solid 3px;
+    border-radius: 40px;
+    height: 1.938rem;
+    flex-shrink: 0;
+    color: #729E2E;
+    width: 8rem;
+    
+    font-size: 0.938rem;
+    font-family: Inter;
+    font-weight: 400;
+}
+
+.button_login {
+    background-color: #729E2E;
+    color: #fff
 }
 
 .buttons:hover {
