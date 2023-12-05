@@ -4,6 +4,7 @@ import SendButton from "../_components/sendButton";
 import style from "./styles.module.css"
 import HomeCard from "../_components/home-card";
 import Footer from "../Footer";
+import Image from "next/image";
 
 const roboto = Roboto({
   weight: ['300', '700'],
@@ -24,29 +25,34 @@ export default function Page() {
     <>
       <main className={style.home_content}>
         <section className={style.intro}>
-          <h1 className={`${style.title_text}`}>
-            ¡Tu puerta de entrada al mundo del Análisis de Datos y Desarrollo Web!
-          </h1>
-          <p className={`${style.text} ${roboto.className}`}>
-            ¿Te interesa el Análisis de Datos? ¿Estás adentrándote
-            en el fascinante mundo del Data Science? ¿O tal vez estás
-            buscando fortalecer tus habilidades para proyectos FullStack?
-            Independientemente de tu objetivo, el dominio de SQL es crucial
-            en el mundo tecnológico actual.
-          </p>
-          <div className={style.buttons_container}>
-            <Link href={"/ingreso/signup"}>
-              <SendButton
-                className={`${roboto.className} ${style.buttons}`}
-                buttonText={'Registrate'}>
-              </SendButton>
-            </Link>
-            <Link href={"/ingreso/login"}>
-              <SendButton
-                className={`${roboto.className} ${style.buttons} ${style.button_login}`}
-                buttonText={'Empieza Ahora'}>
-              </SendButton>
-            </Link>
+          <div>
+            <h1 className={`${style.title_text}`}>
+              ¡Tu puerta de entrada al mundo del Análisis de Datos y Desarrollo Web!
+            </h1>
+            <p className={`${style.text} ${roboto.className}`}>
+              ¿Te interesa el Análisis de Datos? ¿Estás adentrándote
+              en el fascinante mundo del Data Science? ¿O tal vez estás
+              buscando fortalecer tus habilidades para proyectos FullStack?
+              Independientemente de tu objetivo, el dominio de SQL es crucial
+              en el mundo tecnológico actual.
+            </p>
+            <div className={style.buttons_container}>
+              <Link href={"/ingreso/signup"}>
+                <SendButton
+                  className={`${roboto.className} ${style.buttons}`}
+                  buttonText={'Registrate'}>
+                </SendButton>
+              </Link>
+              <Link href={"/ingreso/login"}>
+                <SendButton
+                  className={`${roboto.className} ${style.buttons} ${style.button_login}`}
+                  buttonText={'Empieza Ahora'}>
+                </SendButton>
+              </Link>
+            </div>
+          </div>
+          <div>
+            <Image className={style.welcome_img} src="/images/img_welcome.png" width={400} height={419} alt="welcome"></Image>
           </div>
         </section>
         <section className={style.lenguage_carts}>

@@ -32,7 +32,13 @@
     scale: 1.1;
 }
 
-@media screen and (width > 700px) {
+@media screen and (width > 500px) {
+    .link_cart {
+        width: max-content;
+    }
+}
+
+@media screen and (width > 800px) {
     .link_cart {
         width: 100%;
     }

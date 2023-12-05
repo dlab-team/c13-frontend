@@ -136,7 +136,19 @@
     justify-items: center;
 }
 
+.welcome_img{
+    display: none;
+}
+
 @media screen and (width > 700px) {
+    .intro {
+        flex-direction: row;
+    }
+
+    .welcome_img{
+        display: block;
+    }
+
     .lenguage_carts{
         gap: 50px;
     }
@@ -146,6 +158,12 @@
     }
 
     .text {
-        max-width: 50%;
+        max-width: 90%;
+        text-align: start;
+    }
+
+    .title_text{
+        text-align: start;
+        font-size: 2.8rem;
     }
 }
