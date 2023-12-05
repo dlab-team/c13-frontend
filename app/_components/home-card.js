@@ -14,8 +14,8 @@ import Link from "next/link";
 export default function HomeCard({lenguage = "", url_img }) {
   return (
     <>
-      <Link href={`/que-aprenderas/${lenguage.replace(" ", "-")}`}>
-        <Image src={url_img} width={361} height={141} alt="lenguage cart" ></Image>
+      <Link className="link_cart" href={`/que-aprenderas/${lenguage.replace(" ", "-")}`}>
+        <Image className="imgcart" src={url_img} width={361} height={141} alt="lenguage cart" ></Image>
       </Link>
     </>
   )

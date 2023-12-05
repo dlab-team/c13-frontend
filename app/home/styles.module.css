@@ -9,7 +9,7 @@
 }
 
 .home_content > section {
-    width: 100%;
+    width:100%;
 }
 
 .home_survey {
@@ -88,11 +88,11 @@
     text-align: center;
 }
 
-.whys {
+/* .lenguage_carts {
     display: flex;
     gap: 30px;
     flex-direction: column;
-}
+} */
 
 .buttons_container {
     display: flex;
@@ -129,11 +129,20 @@
     background: #739e2d;
 }
 
+.lenguage_carts {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    justify-items: center;
+}
+
 @media screen and (width > 700px) {
-    .whys {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+    .lenguage_carts{
         gap: 50px;
+    }
+
+    .home_content > section {
+        width:80%;
     }
 
     .text {

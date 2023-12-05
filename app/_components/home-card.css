@@ -18,11 +18,22 @@
     align-items: center;
 } */
 
-img{
-    transition: all 0.2s ease;
+.link_cart {
     width: 100%;
 }
 
-img:hover{
+.imgcart{
+    transition: all 0.2s ease;
+    width: 100%;
+    max-width: 361px;
+}
+
+.imgcart:hover{
     scale: 1.1;
+}
+
+@media screen and (width > 700px) {
+    .link_cart {
+        width: 100%;
+    }
 }

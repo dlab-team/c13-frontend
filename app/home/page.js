@@ -49,7 +49,7 @@ export default function Page() {
             </Link>
           </div>
         </section>
-        <section className={style.whys}>
+        <section className={style.lenguage_carts}>
           {ex_fetch.map((e, index) => {
             return (
               <HomeCard
