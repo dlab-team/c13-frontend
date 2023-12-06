@@ -74,24 +74,22 @@ const roboto = Roboto({
 
 
         <div className={`${roboto.className} content`}>
-            <button><Link  href={'/learningPath'} >Javascript</Link></button>
-            <button><Link href={'/categorias'}>SQL</Link></button>
           {learningPath.map((element, index) => (
             <div key={element.id}>
               <h3 key={index} className={`${active[index] ? "submenu active" : "d-none"} mb-4`}>
-                {element.company.name}
+                {element.name}
               </h3>
 
               {/* <p className={`${active[index] ? "submenu active" : "d-none"} mb-4`}>
                 Texto por definir para cada categoria
               </p> */}
               <ul key={learningPath.id} className={`${active[index] ? "submenu active" : "d-none"}  `}>
-                {learningPath.map((sub) => (
+                {element.exercises.map((sub) => (
                     <li key={sub.id}
                     >
                       <Link
                         className={`${"link-menu"}`}
-                        href={``}
+                        href={`/categorias/${element.id}/ejercicios/${sub.id}`}
                       >
                         <button className="span-categories ">
                           {sub.completed ? (
@@ -99,7 +97,7 @@ const roboto = Roboto({
                           ) : (
                             <Image src="/images/elipse.png" height={17} width={17} alt="Academia Desafío Latam" title="Academia Desafío Latam" />
                           )}
-                          {sub.company.name}
+                          {sub.title}
                         </button>
                       </Link>
                     </li>
