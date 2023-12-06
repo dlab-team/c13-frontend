@@ -77,24 +77,11 @@ const LearningPath = ({ learningPath }) => {
 
 				<div className={`${roboto.className} content`}>
 					<div class="container mb-5">
+						<div className={`${styles.TituloJs}`}>
+							Javascript
+						</div>
 						<div class="row justify-content-between">
-							<div class="col-4 text-center">
-								<button
-									type="button"
-									className={`${styles.BotonEstilos} row btn bg-body-danger fw-bold fs-5 py-1 px-3`}
-								>
-									<Link href={"/learningPath"}>  Javascript</Link>
-								</button>
-							</div>
-
-							<div class="col-4 text-center">
-								<button
-									type="button"
-									className={`${styles.BotonEstilos} row btn bg-body-danger fw-bold fs-5 py-1 px-3 `}
-								>
-									<a className="text-decoration-none"s href={"/categorias"}> SQL </a>  {/* //Cambio //link por a */}
-								</button>
-							</div>
+							<div class="col-4 text-center"></div>
 						</div>
 					</div>
 					{learningPath.map((element, index) => (
@@ -146,8 +133,8 @@ const LearningPath = ({ learningPath }) => {
 					))}
 				</div>
 			</div>
-      
-        <Footer />
+
+			<Footer />
 		</>
 	);
 };
