@@ -6,7 +6,7 @@ import Link from "next/link";
 import LearningPath from "../_components/learningPath/learningPath";
 
   async function getData () {
-    const res = await fetch('/data.json')
+    const res = await fetch('./data.json')
     const data = await res.json()
     
     console.log(data)
