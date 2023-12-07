@@ -1,24 +1,16 @@
-"use client"
-import { useState, useEffect } from "react";
-import { Roboto, Inter } from "next/font/google";
-import Image from "next/image";
-import Link from "next/link";
+"use client";
 import LearningPath from "../_components/learningPath/learningPath";
 
-  async function getData () {
-    const res = await fetch('./data.json')
-    const data = await res.json()
-    
-    console.log(data)
-    return data;
-  }
-  
- export default async function Page() {
-   const data = await getData();
-    
+async function getData() {
+  const res = await fetch(`${process.env.HOST}/data.json`);
+  const data = await res.json();
 
-    return <LearningPath learningPath={data}/>
-     
-  }
+  console.log(data);
+  return data;
+}
 
+export default async function Page() {
+  const data = await getData();
 
+  return <LearningPath learningPath={data} />;
+}
