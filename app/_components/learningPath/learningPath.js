@@ -3,7 +3,6 @@ import { useState } from "react";
 import { Roboto, Inter } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
-import { Button } from "bootstrap";
 const roboto = Roboto({
   subsets: ["latin"],
   weight: ["300", "700"],
@@ -74,6 +73,7 @@ const roboto = Roboto({
 
 
         <div className={`${roboto.className} content`}>
+        <div><p className={` text-success text-center descripcion fs-1 mb-4 mt-0 fw-bold `}>JavaScript</p></div>
           {learningPath.map((element, index) => (
             <div key={element.id}>
               <h3 key={index} className={`${active[index] ? "submenu active" : "d-none"} mb-4`}>
