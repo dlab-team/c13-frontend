@@ -5,7 +5,6 @@ module.exports = {
   env: {
     API_BASE_URL: "https://tutorial-interactivo-sql.onrender.com/api/v1",
     JUDGE0_URL: process.env.JUDGE0_URL,
-    HOST: process.env.HOST,
   },
   webpack: (config, { isServer, webpack }) => {
     console.log(`Webpack version: ${webpack.version}`);
