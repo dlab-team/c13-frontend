@@ -9,7 +9,7 @@ const roboto = Roboto({
 });
 
 
-  
+
   const LearningPath = ({ learningPath }) => {
     
     // console.log(getData)
