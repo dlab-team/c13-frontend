@@ -1,24 +1,22 @@
-"use client"
-import { useState, useEffect } from "react";
-import { Roboto, Inter } from "next/font/google";
-import Image from "next/image";
-import Link from "next/link";
+//"use client";
+import fsPromises from "fs/promises";
+import path from "path";
 import LearningPath from "../_components/learningPath/learningPath";
 
-  async function getData () {
-    const res = await fetch('/public/data.json')
-    const data = await res.json()
-    
-    console.log(data)
-    return data;
-  }
-  
- export default async function Page() {
-   const data = await getData();
-    
+async function getData() {
+  // Get the path of the json file
+  const filePath = path.join(process.cwd(), "app/learningPath/data.json");
+  // Read the json file
+  const jsonData = await fsPromises.readFile(filePath);
+  // Parse data as json
+  const data = JSON.parse(jsonData);
 
-    return <LearningPath learningPath={data}/>
-     
-  }
+  console.log(data);
+  return data;
+}
 
+export default async function Page() {
+  const data = await getData();
 
+  return <LearningPath learningPath={data} />;
+}

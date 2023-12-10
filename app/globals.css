@@ -405,6 +405,8 @@ td {
     height: auto;
   }
 
+  
+
 }
 
 .sidebar ul {
@@ -477,6 +479,16 @@ td {
   justify-content: center;
   align-items: center;
   height: 25vh;
+  border: 1px solid #d9d9d9;
+  background-color: #000;
+}
+
+.boxJsEditor {
+  /* display: flex; */
+  float: right;
+  /* align-items: center; */
+  height: 80vh;
+  width: 50vw;
   border: 1px solid #d9d9d9;
   background-color: #000;
 }
@@ -996,7 +1008,7 @@ table th {
   }
 
   .hintImage {
-    margin-left: 5.5em;
+    margin-left: 1.5em;
   }
 
   .hintSection p {

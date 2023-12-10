@@ -1,0 +1,169 @@
+.home_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    gap: 30px;
+    margin-bottom: 79px;
+}
+
+.home_content > section {
+    width:100%;
+}
+
+.home_survey {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 30px;
+    background-color: #739e2d;
+}
+
+.home_witness {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 30px;
+    margin-top: 100px;
+    position: relative;
+}
+
+.section_witness {
+
+    display: flex;
+    max-width: 800px;
+    /* Ajusta el ancho máximo según tus necesidades */
+    margin: auto;
+}
+
+.image_witness {
+    display: inline-block;
+    margin-right: 50px;
+    margin-bottom: 25px;
+    height: 150px;
+    width: 150px;
+    background-color: #739e2d;
+    border-radius: 50%;
+}
+
+.intro {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 33px;
+}
+
+.intro>h1 {
+    text-align: center;
+}
+
+.text {
+    text-align: center;
+    max-width: 90%;
+    font-style: normal;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0.20000000298023224px;
+}
+
+.witness_text {
+    flex: 1;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.title_text {
+    font-family: Uni Neue Heavy Italic, Helvetica, Arial, sans-serif;
+    font-weight: 800;
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: normal;
+}
+
+.title_survey {
+    text-align: center;
+}
+
+/* .lenguage_carts {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+} */
+
+.buttons_container {
+    display: flex;
+    gap: 68px;
+}
+
+.buttons {
+    background-color: #fff;
+    border: #729E2E solid 3px;
+    border-radius: 40px;
+    height: 1.938rem;
+    flex-shrink: 0;
+    color: #729E2E;
+    width: 8rem;
+    
+    font-size: 0.938rem;
+    font-family: Inter;
+    font-weight: 400;
+}
+
+.button_login {
+    background-color: #729E2E;
+    color: #fff
+}
+
+.buttons:hover {
+    background-color: #739e2d;
+    color: #fff;
+}
+
+.botSection {
+    width: 100%;
+    left: 0px;
+    background: #739e2d;
+}
+
+.lenguage_carts {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    justify-items: center;
+}
+
+.welcome_img{
+    display: none;
+}
+
+@media screen and (width > 700px) {
+    .intro {
+        flex-direction: row;
+    }
+
+    .welcome_img{
+        display: block;
+    }
+
+    .lenguage_carts{
+        gap: 50px;
+    }
+
+    .home_content > section {
+        width:80%;
+    }
+
+    .text {
+        max-width: 90%;
+        text-align: start;
+    }
+
+    .title_text{
+        text-align: start;
+        font-size: 2.8rem;
+    }
+}
