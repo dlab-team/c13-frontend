@@ -3,7 +3,6 @@ import { useState } from "react";
 import { Roboto, Inter } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
-import { Button } from "bootstrap";
 import styles from "../../learning-path.module.css";
 import Footer from "../../Footer";
 
@@ -102,9 +101,9 @@ const LearningPath = ({ learningPath }) => {
 								key={learningPath.id}
 								className={`${active[index] ? "submenu active" : "d-none"}  `}
 							>
-								{learningPath.map((sub) => (
+								{element.exercises.map((sub) => (
 									<li key={sub.id}>
-										<Link className={`${"link-menu"}`} href={``}>
+										<Link className={`${"link-menu"}`} href={`/categorias/${element.id}/ejercicios/${sub.id}`}>
 											<button className="span-categories ">
 												{sub.completed ? (
 													<Image
@@ -123,7 +122,7 @@ const LearningPath = ({ learningPath }) => {
 														title="Academia Desafío Latam"
 													/>
 												)}
-												{sub.company.name}
+												{sub.title}
 											</button>
 										</Link>
 									</li>

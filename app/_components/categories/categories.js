@@ -80,6 +80,7 @@ const Categories = ({ categories }) => {
 
 
         <div className={`${roboto.className} content`}>
+           
           {categories.map((element, index) => (
             <div key={element.id}>
               <h3 key={index} className={`${active[index] ? "submenu active" : "d-none"} mb-4`}>

@@ -5,9 +5,8 @@ import Image from "next/image";
 import Link from "next/link";
 import LearningPath from "../_components/learningPath/learningPath";
 
- 
   async function getData () {
-    const res = await fetch('https://jsonplaceholder.typicode.com/users')
+    const res = await fetch('/data.json')
     const data = await res.json()
     
     console.log(data)
@@ -15,12 +14,11 @@ import LearningPath from "../_components/learningPath/learningPath";
   }
   
  export default async function Page() {
-   const users = await getData();
+   const data = await getData();
+    
 
-    return (
-      <>
-        <LearningPath learningPath={users}/>
-      </>
-        )
+    return <LearningPath learningPath={data}/>
+     
   }
+
 
