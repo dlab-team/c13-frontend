@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { Roboto, Inter } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
+import styles from "/app/learning-path.module.css"
 
 const roboto = Roboto({
 	subsets: ["latin"],
@@ -62,7 +63,7 @@ const roboto = Roboto({
         </div>
 
 				<div className={`${roboto.className} content`}>
-					<div class="container mb-5">
+					<div class=" container mb-5">
 						<div className={`${styles.TituloJs}`}>
 							Javascript
 						</div>
