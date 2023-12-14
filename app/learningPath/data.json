@@ -1,53 +1,53 @@
 [
     {
         "id": 330,
-        "name": "Seleccionando columnas",
+        "name": "Ejercicios Javascript",
         "exercises": [
             {
                 "id": 3100,
-                "title": "Tutorial",
+                "title": "Primer Ejercicio de Javascript",
                 "url": "",
                 "description": "Aprendiendo a utilizar la sintaxis básica de SELECT para recuperar datos de una tabla",
                 "completed": false
             },
             {
                 "id": 3101,
-                "title": "Seleccionando todas las columnas de una tabla",
+                "title": "Segundo Ejercicio de Javascript",
                 "url": null,
                 "description": "Aprendiendo a utilizar la sintaxis básica de SELECT para recuperar datos de una tabla",
                 "completed": false
             },
             {
                 "id": 3102,
-                "title": "Seleccionando una columna de la tabla",
+                "title": "Tercer Ejercicio de Javascirpt",
                 "url": null,
                 "description": "Aprendiendo a utilizar la sintaxis básica de SELECT para recuperar datos de una tabla",
                 "completed": false
             },
             {
                 "id": 3103,
-                "title": "Seleccionando múltiples columnas de una tabla",
+                "title": "Cuarto Ejercicio de Javascirpt",
                 "url": null,
                 "description": "Aprendiendo a utilizar la sintaxis básica de SELECT para recuperar datos de una tabla",
                 "completed": false
             },
             {
                 "id": 3104,
-                "title": "Asignando un alias a una columna con \"AS\"",
+                "title": "Quinto Ejercicio de Javascirpt",
                 "url": "",
                 "description": "Aprendiendo a utilizar la sintaxis básica de SELECT para recuperar datos de una tabla",
                 "completed": false
             },
             {
                 "id": 3105,
-                "title": "Asignando alias a varias columnas con \"AS\"",
+                "title": "Sexto Ejercicio de Javascirpt",
                 "url": "",
                 "description": "Aprendiendo a utilizar la sintaxis básica de SELECT para recuperar datos de una tabla",
                 "completed": false
             },
             {
                 "id": 3106,
-                "title": "Asignando un alias con AS y comillas dobles",
+                "title": "Septimo Ejercicio de Javascirpt",
                 "url": "",
                 "description": "Aprendiendo a utilizar la sintaxis básica de SELECT para recuperar datos de una tabla",
                 "completed": false

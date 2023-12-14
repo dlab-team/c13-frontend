@@ -7,9 +7,8 @@ import Footer from "@/app/Footer";
 import Image from "next/image";
 import SqlExecuter from "@/app/_components/_exercises/sqlExecuter";
 import executeCode from "./codeExecution";
-import Link from "next/link";
 
-const JavascriptPrueba = () => {
+const JavascriptEjercicio = () => {
   const editorRef = useRef(null);
   const [exercise, setExercise] = useState(""); // La variable exercise se inicializa aquí
   const [ejercicio, setEjercicio] = useState("");
@@ -42,11 +41,7 @@ const JavascriptPrueba = () => {
           >
             JavaScript
           </button>
-          <button className="btn btn-secondary rounded-0 w-50 text-decoration-none custom-link-style">
-            <Link href={"/categorias/html"}>
-            Básico
-            </Link>
-            </button>
+          <button className="btn btn-secondary rounded-0 w-50">Básico</button>
         </div>
 
         <div className="row">
@@ -153,4 +148,4 @@ const JavascriptPrueba = () => {
   );
 };
 
-export default JavascriptPrueba;
+export default JavascriptEjercicio;

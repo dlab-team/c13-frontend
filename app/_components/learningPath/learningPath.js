@@ -1,8 +1,9 @@
 "use client"
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Roboto, Inter } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
+
 const roboto = Roboto({
   subsets: ["latin"],
   weight: ["300", "700"],
@@ -15,42 +16,31 @@ const roboto = Roboto({
     // console.log(getData)
 
     const [active, setActive] = useState([true, ...Array(learningPath.length - 1).fill(false)]);
+    const [apiId, setApiId] = useState(null);
       
-      const handleClick = (index) => {
+      const handleClick = (index, subId) => {
         const newActive = Array(learningPath.length).fill(false); // Create a new array with all categories set to false
     
         // Set the clicked category to true
         newActive[index] = true;
     
         setActive(newActive);
+        setApiId(subId);
       }
-    return  (
-        <>
-      {/* <div className="row">
-        <div className="collapse-navbar col-12 d-md-none">
-          <nav className="navbar navbar-expand-lg navbar-light ">
-            <div className="container-fluid">
-              <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span className="navbar-toggler-icon"></span>
-              </button>
-              <div className="collapse navbar-collapse" id="navbarNav">
-                <ul className="navbar-nav">
-                  {learningPath.map((element, index) => (
-                    <li key={element.id} className="nav-item">
-                      <Link className="nav-link active" style={{
-                        color: ` ${active[index] ? "#739E2D" : "#000"}`,
-                      }} aria-current="page" href="#" onClick={() => handleClick(index)}>
-                        {element.names}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-          </nav>
-        </div>
-      </div> */}
 
+      const getCategoryBySubId = (subId) => {
+        if (subId >= 3100 && subId <= 3106) {
+          return '/javascript';
+        } else if (subId >= 3107 && subId <= 3309) {
+          return '/html';
+        } else {
+          // Puedes manejar otros casos si es necesario
+          return 'otra-categoria';
+        }
+      };
+
+    return  (
+      <>
       <div className="dashboard">
         <div className={`${roboto.className} sidebar`}>
           <ul className="navbar-nav">
@@ -59,7 +49,7 @@ const roboto = Roboto({
                 <Link style={{
                   color: ` ${active[index] ? "#739E2D" : "#000"}`,
                 }}
-                  href="#" onClick={() => handleClick(index)}>
+                  href={'#'} onClick={() => handleClick(index)}>
                   {element.name}
                   <small>
                     {""}
@@ -70,7 +60,6 @@ const roboto = Roboto({
             ))}
           </ul>
         </div>
-
 
         <div className={`${roboto.className} content`}>
         <div><p className={` text-success text-center descripcion fs-1 mb-4 mt-0 fw-bold `}>JavaScript</p></div>
@@ -89,7 +78,8 @@ const roboto = Roboto({
                     >
                       <Link
                         className={`${"link-menu"}`}
-                        href={`/categorias/${element.id}/ejercicios/${sub.id}`}
+                        href={`/categorias/${getCategoryBySubId(sub.id)}`}
+                        as={`/categorias/${getCategoryBySubId(sub.id)}`}
                       >
                         <button className="span-categories ">
                           {sub.completed ? (
