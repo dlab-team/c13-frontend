@@ -91,7 +91,7 @@ const LearningPath = ({ learningPath }) => {
 									active[index] ? "submenu active" : "d-none"
 								} mb-4`}
 							>
-								{element.company.name}
+								{element.name}
 							</h3>
 
 							{/* <p className={`${active[index] ? "submenu active" : "d-none"} mb-4`}>
