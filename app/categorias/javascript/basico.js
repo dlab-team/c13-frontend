@@ -9,7 +9,7 @@ import SqlExecuter from "@/app/_components/_exercises/sqlExecuter";
 import executeCode from "./codeExecution";
 import Link from "next/link";
 
-const JavascriptPrueba = () => {
+const Basico = () => {
   const editorRef = useRef(null);
   const [exercise, setExercise] = useState(""); // La variable exercise se inicializa aquí
   const [ejercicio, setEjercicio] = useState("");
@@ -42,11 +42,7 @@ const JavascriptPrueba = () => {
           >
             JavaScript
           </button>
-          <button className="btn btn-secondary rounded-0 w-50 text-decoration-none custom-link-style">
-            <Link href={"/categorias/html"}>
-            Básico
-            </Link>
-            </button>
+          <button className="btn btn-secondary rounded-0 w-50">Básico</button>
         </div>
 
         <div className="row">
@@ -82,6 +78,19 @@ const JavascriptPrueba = () => {
               onChange={(value) => setEjercicio(value)}
               onMount={handleEditorDidMount}
             />
+            <Editor
+              id="inputTexto"
+              type="text"
+              name="script"
+              theme="vs-dark"
+              defaultLanguage="javascript"
+              height="40vh"
+              options={{
+                fontSize: "16px",
+              }}
+              onChange={(value) => setEjercicio(value)}
+              onMount={handleEditorDidMount}
+            />
             <div className="text-white bg-dark">
               <h6>Consola</h6>
               <p className="m-2">{resultado}</p>
@@ -104,6 +113,9 @@ const JavascriptPrueba = () => {
                 </div>
               </div>
             </div>
+          </div>
+          <div className="col-md-6">
+            Hola
           </div>
         </div>
 
@@ -153,4 +165,4 @@ const JavascriptPrueba = () => {
   );
 };
 
-export default JavascriptPrueba;
+export default Basico;

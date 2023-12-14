@@ -6,10 +6,10 @@ import SendButton from "../../_components/sendButton";
 import Footer from "@/app/Footer";
 import Image from "next/image";
 import SqlExecuter from "@/app/_components/_exercises/sqlExecuter";
-import executeCode from "./codeExecution";
+// import executeCode from "./codeExecution";
 import Link from "next/link";
 
-const JavascriptPrueba = () => {
+const Basico = () => {
   const editorRef = useRef(null);
   const [exercise, setExercise] = useState(""); // La variable exercise se inicializa aquí
   const [ejercicio, setEjercicio] = useState("");
@@ -37,21 +37,17 @@ const JavascriptPrueba = () => {
       <div className="container">
         <div className="text-center my-5">
           <button
-            className="btn btn-dark rounded-0 w-50"
+            className="btn btn-dark rounded-0 w-50 text-decoration-none"
             style={{ background: "#739e2d" }}
           >
-            JavaScript
+           <Link href={"/categorias/javascript"}>JavaScript</Link> 
           </button>
-          <button className="btn btn-secondary rounded-0 w-50 text-decoration-none custom-link-style">
-            <Link href={"/categorias/html"}>
-            Básico
-            </Link>
-            </button>
+          <button className="btn btn-secondary rounded-0 w-50">Básico</button>
         </div>
 
         <div className="row">
-          <div className="col-md-6" style={{ background: "#FFF" }}>
-            <h3 className="m-2">Ejercicio 1: Hola Mundo</h3>
+          <div className="col-md-4" style={{ background: "#FFF" }}>
+            <h3 className="m-2">Ejercicio 2: Hola Mundo</h3>
             <p className="m-2">
               <strong>Objetivo:</strong> Escribe y ejecuta tu primer código en
               JavaScript para mostrar el mensaje {text}
@@ -68,7 +64,20 @@ const JavascriptPrueba = () => {
             </div>
           </div>
 
-          <div className="col-md-6">
+          <div className="col-4">
+            <Editor
+              id="inputTexto"
+              type="text"
+              name="script"
+              theme="vs-dark"
+              defaultLanguage="javascript"
+              height="40vh"
+              options={{
+                fontSize: "16px",
+              }}
+              onChange={(value) => setEjercicio(value)}
+              onMount={handleEditorDidMount}
+            />
             <Editor
               id="inputTexto"
               type="text"
@@ -104,6 +113,12 @@ const JavascriptPrueba = () => {
                 </div>
               </div>
             </div>
+          </div>
+          <div className="col-md-2">
+            <h3 className="m-2">Vista HTML:</h3>
+              <p className="m-2">
+                <strong>HTML:</strong> a continuación veras tu código HTML {text}
+              </p>
           </div>
         </div>
 
@@ -153,4 +168,4 @@ const JavascriptPrueba = () => {
   );
 };
 
-export default JavascriptPrueba;
+export default Basico;
