@@ -48,8 +48,8 @@ const JavascriptPrueba = () => {
               <ul>
                 <li>Deberías ver en la consola el mensaje {text}.</li>
                 <li>
-                  Si ves el mensaje, ¡felicidades! Has completado tu primer
-                  programa en JavaScript.
+                  ASasSasAS Si ves el mensaje, ¡felicidades! Has completado tu
+                  primer programa en JavaScript.
                 </li>
               </ul>
               <div className="container bg-white">
@@ -61,7 +61,7 @@ const JavascriptPrueba = () => {
                   priority={true}
                   className={"hintImage mt-4"}
                 />
-                <p style={{ height: "100px" }}>
+                <p className="tip" style={{ height: "100px" }}>
                   *Tip por si hay un error en tu respuesta
                 </p>
               </div>
