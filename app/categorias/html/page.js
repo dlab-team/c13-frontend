@@ -36,7 +36,6 @@ const Basico = () => {
   const handleEditorChange = (value) => {
     // Actualiza el estado con el nuevo código HTML
     setCodigoHTML(value);
-    // También puedes realizar otras acciones según sea necesario
   };
 
   return (

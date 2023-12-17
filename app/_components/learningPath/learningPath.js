@@ -1,6 +1,7 @@
 "use client"
 import { useState, useEffect } from "react";
 import { Roboto, Inter } from "next/font/google";
+import styles from "/app/learning-path.module.css";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -62,7 +63,7 @@ const roboto = Roboto({
         </div>
 
         <div className={`${roboto.className} content`}>
-          <div><p className={` text-center fs-1 mb-4 mt-0 fw-bold`} >JavaScript</p></div>
+          <div><h1 className={` ${styles.TituloJs}`} >JavaScript</h1></div>
           {learningPath.map((element, index) => (
             <div key={element.id}>
               <h3 key={index} className={`${active[index] ? "submenu active" : "d-none"} mb-4`}>
