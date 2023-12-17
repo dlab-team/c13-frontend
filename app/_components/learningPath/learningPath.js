@@ -34,7 +34,7 @@ const roboto = Roboto({
         } else if (subId >= 3107 && subId <= 3309) {
           return '/html';
         } else {
-          // Puedes manejar otros casos si es necesario
+          
           return 'otra-categoria';
         }
       };
@@ -62,7 +62,7 @@ const roboto = Roboto({
         </div>
 
         <div className={`${roboto.className} content`}>
-        <div><p className={` text-success text-center descripcion fs-1 mb-4 mt-0 fw-bold `}>JavaScript</p></div>
+          <div><p className={` text-center fs-1 mb-4 mt-0 fw-bold`} >JavaScript</p></div>
           {learningPath.map((element, index) => (
             <div key={element.id}>
               <h3 key={index} className={`${active[index] ? "submenu active" : "d-none"} mb-4`}>

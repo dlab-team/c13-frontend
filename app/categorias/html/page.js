@@ -32,13 +32,20 @@ const Basico = () => {
     setToExecute(false);
   }
 
+  const [codigoHTML, setCodigoHTML] = useState("");
+  const handleEditorChange = (value) => {
+    // Actualiza el estado con el nuevo código HTML
+    setCodigoHTML(value);
+    // También puedes realizar otras acciones según sea necesario
+  };
+
   return (
     <>
       <div className="container">
         <div className="text-center my-5">
           <button
             className="btn btn-dark rounded-0 w-50 text-decoration-none"
-            style={{ background: "#739e2d" }}
+            style={{ background: "#739e2d"  }}
           >
            <Link href={"/categorias/javascript"}>JavaScript</Link> 
           </button>
@@ -70,12 +77,12 @@ const Basico = () => {
               type="text"
               name="script"
               theme="vs-dark"
-              defaultLanguage="javascript"
+              defaultLanguage="html"
               height="40vh"
               options={{
                 fontSize: "16px",
               }}
-              onChange={(value) => setEjercicio(value)}
+              onChange={handleEditorChange}
               onMount={handleEditorDidMount}
             />
             <Editor
@@ -114,11 +121,9 @@ const Basico = () => {
               </div>
             </div>
           </div>
-          <div className="col-md-2">
+          <div className="col-md-4">
             <h3 className="m-2">Vista HTML:</h3>
-              <p className="m-2">
-                <strong>HTML:</strong> a continuación veras tu código HTML {text}
-              </p>
+              <div dangerouslySetInnerHTML={{ __html: codigoHTML }}></div>
           </div>
         </div>
 
