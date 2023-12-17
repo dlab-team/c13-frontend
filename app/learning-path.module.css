@@ -6,9 +6,25 @@
 	margin-left: 140px;
 }
 
-.BotonEstilos {
-	border: 4px solid #739e2d;
-	border-radius: 8px;
+.BotonEstilos{
+  border: 4px solid #739e2d;
+  border-radius: 8px;
+}
+
+.TituloJs {
+  color: #739e2d;
+  font-family: Uni Neue Heavy Italic;
+  font-style: italic;
+  font-weight: 800;
+  font-size: 50px;
+  letter-spacing: 0.2px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+
+.bgObjectlist{
+  background: #739e2d;
 }
 
 .TituloJs {
