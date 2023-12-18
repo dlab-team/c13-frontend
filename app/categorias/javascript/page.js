@@ -12,6 +12,9 @@ const JavascriptPrueba = () => {
   const editorRef = useRef(null);
   const [exercise, setExercise] = useState(""); // La variable exercise se inicializa aquí
   const [ejercicio, setEjercicio] = useState("");
+  const [resultado, setResultado] = useState(
+    "El resultado de tu ejercicio irá aquí"
+  );
   const [toExecute, setToExecute] = useState(false);
   const [isExecuting, setIsExecuting] = useState(false);
   const [tokenContent, setTokenContent] = useState(null);
@@ -22,7 +25,9 @@ const JavascriptPrueba = () => {
   }
 
   if (toExecute == true) {
-    console.log("ejecutar script", ejercicio);
+    setResultado(ejercicio);
+    // alert("ejecutar script: \n" + ejercicio)
+    // enviar ejercicio para su ejecución
     setToExecute(false);
   }
 
@@ -30,14 +35,17 @@ const JavascriptPrueba = () => {
     <>
       <div className="container">
         <div className="text-center my-5">
-          <button className="btn btn-dark rounded-0 w-50">Curso</button>
-          <button className="btn btn-secondary rounded-0 w-50">
-            Nivel(Básico)
+          <button
+            className="btn btn-dark rounded-0 w-50"
+            style={{ background: "#739e2d" }}
+          >
+            JavaScript
           </button>
+          <button className="btn btn-secondary rounded-0 w-50">Básico</button>
         </div>
 
         <div className="row">
-          <div className="col-md-6" style={{ background: "#739e2d" }}>
+          <div className="col-md-6" style={{ background: "#FFF" }}>
             <h3 className="m-2">Ejercicio 1: Hola Mundo</h3>
             <p className="m-2">
               <strong>Objetivo:</strong> Escribe y ejecuta tu primer código en
@@ -84,7 +92,25 @@ const JavascriptPrueba = () => {
             />
             <div className="text-white bg-dark">
               <h6>Consola</h6>
-              <p>El resultado de tu ejercicio irá aquí</p>
+              <p className="m-2">{resultado}</p>
+              <div className="d-flex align-items-start">
+                <Image
+                  width={50}
+                  height={50}
+                  src={"/images/HintRed.png"}
+                  alt="desafiolatam"
+                  priority={true}
+                  className={"hintImage mt-4"}
+                />
+                <div className="container">
+                  <p
+                    className="tip"
+                    style={{ height: "90px", marginTop: "30px" }}
+                  >
+                    *Tip por si hay un error en tu respuesta
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -95,9 +121,14 @@ const JavascriptPrueba = () => {
             type="submit"
             onClick={async () => {
               const inputValue = editorRef.current.getValue();
-
+              const languageId = 63;
               // Llama a la función externa para ejecutar el código
-              await executeCode(inputValue, setTokenContent, setToExecute);
+              await executeCode(
+                inputValue,
+                setTokenContent,
+                setToExecute,
+                languageId
+              );
             }}
             buttonText={"Ejecuta tu consulta"}
           >
@@ -112,8 +143,18 @@ const JavascriptPrueba = () => {
           setIsExecuting={setIsExecuting}
         />
         <div className="d-flex justify-content-between my-5">
-          <button className="btn btn-secondary">Anterior</button>
-          <button className="btn btn-secondary">Siguiente</button>
+          <button
+            className="btn btn-secondary"
+            style={{ background: "#739e2d" }}
+          >
+            Anterior
+          </button>
+          <button
+            className="btn btn-secondary"
+            style={{ background: "#739e2d" }}
+          >
+            Próximo
+          </button>
         </div>
       </div>
     </>

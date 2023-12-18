@@ -6,6 +6,7 @@ const Sqldb = ({ queries, toExecute, executeQuery, onError, setdbResults, modifi
 
   const [db, setDb] = useState(null);
   const [ready, setReady] = useState(false);
+  const [error, setError] = useState(false)
 
   useEffect(() => {
     initSqlJs({
