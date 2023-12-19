@@ -1,9 +1,9 @@
 "use client"
 import { useState, useEffect } from "react";
 import { Roboto, Inter } from "next/font/google";
+import styles from "/app/learning-path.module.css";
 import Image from "next/image";
 import Link from "next/link";
-import styles from "/app/learning-path.module.css"
 
 const roboto = Roboto({
 	subsets: ["latin"],
@@ -35,7 +35,7 @@ const roboto = Roboto({
         } else if (subId >= 3107 && subId <= 3309) {
           return '/html';
         } else {
-          // Puedes manejar otros casos si es necesario
+          
           return 'otra-categoria';
         }
       };
@@ -62,25 +62,13 @@ const roboto = Roboto({
           </ul>
         </div>
 
-				<div className={`${roboto.className} content`}>
-					<div class=" container mb-5">
-						<div className={`${styles.TituloJs}`}>
-							Javascript
-						</div>
-						<div class="row justify-content-between">
-							<div class="col-4 text-center"></div>
-						</div>
-					</div>
-					{learningPath.map((element, index) => (
-						<div key={element.id}>
-							<h3
-								key={index}
-								className={`${
-									active[index] ? "submenu active" : "d-none"
-								} mb-4`}
-							>
-								{element.name}
-							</h3>
+        <div className={`${roboto.className} content`}>
+          <div><h1 className={` ${styles.TituloJs}`} >JavaScript</h1></div>
+          {learningPath.map((element, index) => (
+            <div key={element.id}>
+              <h3 key={index} className={`${active[index] ? "submenu active" : "d-none"} mb-4`}>
+                {element.name}
+              </h3>
 
 							{/* <p className={`${active[index] ? "submenu active" : "d-none"} mb-4`}>
                 Texto por definir para cada categoria

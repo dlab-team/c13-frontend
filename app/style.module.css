@@ -33,6 +33,7 @@
   float: left;
 }
 
+
 .nav button {
   float: right;
   margin-right: 2em;
@@ -491,4 +492,5 @@
   .divButtons {
     gap: 15px;
   }
+
 }
