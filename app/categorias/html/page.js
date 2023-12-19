@@ -6,6 +6,7 @@ import SendButton from "../../_components/sendButton";
 import Footer from "@/app/Footer";
 import Image from "next/image";
 import SqlExecuter from "@/app/_components/_exercises/sqlExecuter";
+import styles from "/app/learning-path.module.css";
 // import executeCode from "./codeExecution";
 import Link from "next/link";
 
@@ -36,19 +37,21 @@ const Basico = () => {
   const handleEditorChange = (value) => {
     // Actualiza el estado con el nuevo código HTML
     setCodigoHTML(value);
+    setIframeUrl(`data:text/html;charset=utf-8,${encodeURIComponent(value)}`);
   };
+  const [iframeUrl, setIframeUrl] = useState('');
 
   return (
     <>
       <div className="container">
-        <div className="text-center my-5">
+        <div className={`${styles.contenedorBotonesLearningPath} text-center my-5`} >
           <button
-            className="btn btn-dark rounded-0 w-50 text-decoration-none"
+            className={`${styles.BotonesLeaningPath} btn btn-dark rounded-5`}
             style={{ background: "#739e2d"  }}
           >
-           <Link href={"/categorias/javascript"}>JavaScript</Link> 
+           <Link  className={`${styles.BotonesLeaningPath}`} href={"/categorias/javascript"}>JavaScript</Link> 
           </button>
-          <button className="btn btn-secondary rounded-0 w-50">Básico</button>
+          <button className={`${styles.BotonesLeaningPath} btn btn-light rounded-5`}>Básico</button>
         </div>
 
         <div className="row">
@@ -56,7 +59,7 @@ const Basico = () => {
             <h3 className="m-2">Ejercicio 2: Hola Mundo</h3>
             <p className="m-2">
               <strong>Objetivo:</strong> Escribe y ejecuta tu primer código en
-              JavaScript para mostrar el mensaje {text}
+              HTML para mostrar el mensaje {text}
             </p>
             <div className="m-2">
               <strong>Esperado:</strong>
@@ -122,7 +125,12 @@ const Basico = () => {
           </div>
           <div className="col-md-4">
             <h3 className="m-2">Vista HTML:</h3>
-              <div dangerouslySetInnerHTML={{ __html: codigoHTML }}></div>
+            <iframe
+              title="Vista HTML"
+              src={iframeUrl}
+              style={{ width: '100%', height: '400px', border: 'none' }}
+            ></iframe>
+            {/* <div dangerouslySetInnerHTML={{ __html: codigoHTML }}></div> */}
           </div>
         </div>
 
