@@ -21,8 +21,8 @@ export default function creditos() {
       name: "Luis Molina",
       role: "Desarrollador Fullstack",
       image: "/images/image 4.png",
-      linkedInUrl: "https://www.linkedin.com/in/luis-molina/",
-      githubUrl: "https://github.com/luis-molina",
+      linkedInUrl: "https://www.linkedin.com/in/molina-luis/",
+      githubUrl: "https://github.com/goluismolina",
       imageRed: "/images/logo_github.png"
     },
 
@@ -52,7 +52,7 @@ export default function creditos() {
       role: "Desarrollador Fullstack",
       image: "/images/image 7.png",
       linkedInUrl: "https://www.linkedin.com/in/luis-molina/",
-      githubUrl: "https://github.com/luis-molina",
+      githubUrl: "https://github.com/GastonTB",
       imageRed: "/images/logo_github.png"
     },
 
@@ -61,8 +61,8 @@ export default function creditos() {
       name: "Javier Arroyo",
       role: "Desarrollador Fullstack",
       image: "/images/image 10.png",
-      linkedInUrl: "https://www.linkedin.com/in/luis-molina/",
-      githubUrl: "https://github.com/luis-molina",
+      linkedInUrl: "https://www.linkedin.com/in/javier-arroyo-guerra-80232b212/",
+      githubUrl: "https://github.com/BotDeIA",
       imageRed: "/images/logo_github.png"
     },
 
