@@ -51,7 +51,7 @@ export default function creditos() {
       name: 'Gastón Toledo',
       role: 'Desarrollador Fullstack',
       image: '/images/image 7.png',
-      linkedInUrl: 'https://www.linkedin.com/in/luis-molina/',
+      linkedInUrl: '#',
       githubUrl: 'https://github.com/GastonTB',
       imageRed: '/images/logo_github.png'
     },
