@@ -505,6 +505,7 @@ hr {
 
 footer {
   margin-top: 2em;
+  position: relative;
 }
 
 .editor p {
@@ -1776,9 +1777,102 @@ html {
   line-height: normal;
   display: flex;
   justify-content: center;
-  position: absolute;
+  height: auto;
+  /* position: absolute;
   transform: translateY(-50%); /* Centra verticalmente */
 }
+
+.text-center__caracters {
+  text-align: center;
+  font-family: "roboto";
+  font-weight: 600;
+  font-size: 20px;
+  font-style: italic;
+  margin-bottom: 100px;
+  line-height: 37.5px;
+  color: #014700;
+}
+
+.container__characters {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.container__characters img {
+  align-self: center;
+}
+
+.member-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.card__name h5 {
+  color: #729E2E;
+  font-weight: 700;
+  font-size: 30px;
+  text-align: center;
+  font-style: italic;
+}
+.card__name p {
+  color: #014700;
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  font-style: italic;
+  font-family: "roboto";
+ 
+}
+
+
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 10px;
+}
+.social-icons img:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.social-icons img {
+  width: 35px;
+  height: auto;
+}
+
+.border-style {
+  border: 2px solid #729E2E; /* o cualquier otro color que prefieras */
+  border-radius: 15px; /* para bordes redondeados */
+  overflow: hidden; /* para asegurar que los hijos no sobresalgan */
+  transition: box-shadow 0.3s ease-in-out; /* para efecto suave al cambiar sombras */
+  padding: 10px;
+}
+
+.footer-button button{
+  position: absolute;
+  bottom: 40px; /* Ajusta esto según tu diseño específico */
+  right: 100px; /* Ajusta esto según tu diseño específico */
+  background-color: white;
+  color: #729E2E;
+  font-size: 25px;
+  font-weight: 700;
+  font-style: italic;
+  border-radius: 25px;
+  border: none;
+}
+
+.footer-button button:hover {
+  background-color: white;
+  color: #729E2E;
+}
+
 
 .nombre-pc {
   bottom: 20%;
@@ -1863,3 +1957,4 @@ html {
     font-size: 20px;
   }
 }
+
