@@ -1,5 +1,10 @@
 
 
+.descripcion {
+  text-wrap: wrap;
+  width: 70%;
+}
+
 .queAprenderas ul {
   --col-gap: 2rem;
   --row-gap: 2rem;
