@@ -42,11 +42,11 @@ const Basico = () => {
           >
             JavaScript
           </button>
-          <button className="btn btn-secondary rounded-0 w-50">Básico</button>
+          <button className="btn btn-secondary rounded-50 w-50">Básico</button>
         </div>
 
         <div className="row">
-          <div className="col-md-6" style={{ background: "#FFF" }}>
+          <div className="col-md-6" style={{ background: "#739e2d" }}>
             <h3 className="m-2">Ejercicio 1: Hola Mundo</h3>
             <p className="m-2">
               <strong>Objetivo:</strong> Escribe y ejecuta tu primer código en

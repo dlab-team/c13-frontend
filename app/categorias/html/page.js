@@ -8,7 +8,7 @@ import Image from "next/image";
 import SqlExecuter from "@/app/_components/_exercises/sqlExecuter";
 // import executeCode from "./codeExecution";
 import Link from "next/link";
-import styles from "/app/html-style.module.css";
+import styles from "/app/learning-path.module.css";
 
 const Basico = () => {
 	const editorRef = useRef(null);
@@ -26,106 +26,146 @@ const Basico = () => {
 		editorRef.current = editor;
 	}
 
-  if (toExecute == true) {
-    setResultado(ejercicio);
-    // alert("ejecutar script: \n" + ejercicio)
-    // enviar ejercicio para su ejecución
-    setToExecute(false);
-  }
+	if (toExecute == true) {
+		setResultado(ejercicio);
+		// alert("ejecutar script: \n" + ejercicio)
+		// enviar ejercicio para su ejecución
+		setToExecute(false);
+	}
 
-  const [codigoHTML, setCodigoHTML] = useState("");
-  const handleEditorChange = (value) => {
-    // Actualiza el estado con el nuevo código HTML
-    setCodigoHTML(value);
-  };
+	const [codigoHTML, setCodigoHTML] = useState("");
+	const handleEditorChange = (value) => {
+		// Actualiza el estado con el nuevo código HTML
+		setCodigoHTML(value);
+	};
 
-  return (
-    <>
-      <div className="container">
-        <div className="text-center my-5">
-          <button
-            className="btn btn-dark rounded-0 w-50 text-decoration-none"
-            style={{ background: "#739e2d"  }}
-          >
-           <Link href={"/categorias/javascript"}>JavaScript</Link> 
-          </button>
-          <button className="btn btn-secondary rounded-0 w-50">Básico</button>
-        </div>
+	return (
+		<>
+			<div className="container ">
+				<div
+					className="
+					text-center my-5"
+					style={{ display: "flex", justifyContent: "space-between" }}
+				>
+					<button
+						className={`${styles.BotonesLeaningPath} btn btn-white  text-decoration-none d-flex justify-content-center align-items-center`}
+						style={{ background: "#739e2d", height: "50px" }}
+					>
+						<Link
+							href={"/categorias/javascript"}
+							style={{ textDecoration: "none", color: "white" }}
+						>
+							<p className={`${styles.textoJBotonLearningPath }`}>JavaScript</p>
+						</Link>
+					</button>
+					<button
+						className={`${styles.BotonesLeaningPath} btn btn-success text-decoration-none d-flex justify-content-center align-items-center`}
+						style={{ background: "#ffffff", height: "50px" }}
+					>
+						<Link
+							href={"/categorias/javascript"}
+							style={{ textDecoration: "none", color: "#739e2d" }}
+						>
+							<p className={`${styles.textoBBotonLearningPath }`}>Básico</p>
+						</Link>
+					</button>
+				</div>
 
-        <div className="row">
-          <div className="col-md-4" style={{ background: "#FFF" }}>
-            <h3 className="m-2">Ejercicio 2: Hola Mundo</h3>
-            <p className="m-2">
-              <strong>Objetivo:</strong> Escribe y ejecuta tu primer código en
-              JavaScript para mostrar el mensaje {text}
-            </p>
-            <div className="m-2">
-              <strong>Esperado:</strong>
-              <ul>
-                <li>Deberías ver en la consola el mensaje {text}.</li>
-                <li>
-                  Si ves el mensaje, ¡felicidades! Has completado tu primer
-                  programa en JavaScript.
-                </li>
-              </ul>
-            </div>
-          </div>
+				<div className="row">
+					<div
+						className="col-md-4"
+						style={{
+							backgroundColor: "#FFF",
+							borderColor: "#739e2d",
+							borderStyle: "solid",
+						}}
+					>
+						<h3 className="m-2">Ejercicio 2: Hola Mundo</h3>
+						<p className="m-2">
+							<strong>Objetivo:</strong> Escribe y ejecuta tu primer código en
+							JavaScript para mostrar el mensaje {text}
+						</p>
+						<div className="m-2">
+							<strong>Esperado:</strong>
+							<ul>
+								<li>Deberías ver en la consola el mensaje {text}.</li>
+								<li>
+									Si ves el mensaje, ¡felicidades! Has completado tu primer
+									programa en JavaScript.
+								</li>
+							</ul>
+						</div>
+					</div>
 
-          <div className="col-4">
-            <Editor
-              id="inputTexto"
-              type="text"
-              name="script"
-              theme="vs-dark"
-              defaultLanguage="html"
-              height="40vh"
-              options={{
-                fontSize: "16px",
-              }}
-              onChange={handleEditorChange}
-              onMount={handleEditorDidMount}
-            />
-            <Editor
-              id="inputTexto"
-              type="text"
-              name="script"
-              theme="vs-dark"
-              defaultLanguage="javascript"
-              height="40vh"
-              options={{
-                fontSize: "16px",
-              }}
-              onChange={(value) => setEjercicio(value)}
-              onMount={handleEditorDidMount}
-            />
-            <div className="text-white bg-dark">
-              <h6>Consola</h6>
-              <p className="m-2">{resultado}</p>
-              <div className="d-flex align-items-start">
-                <Image
-                  width={50}
-                  height={50}
-                  src={"/images/HintRed.png"}
-                  alt="desafiolatam"
-                  priority={true}
-                  className={"hintImage mt-4"}
-                />
-                <div className="container">
-                  <p
-                    className="tip"
-                    style={{ height: "90px", marginTop: "30px" }}
-                  >
-                    *Tip por si hay un error en tu respuesta
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-4">
-            <h3 className="m-2">Vista HTML:</h3>
-              <div dangerouslySetInnerHTML={{ __html: codigoHTML }}></div>
-          </div>
-        </div>
+					<div className="col-md-4 ">
+						<div className="my-1">
+							{" "}
+							<Editor
+								id="inputTexto"
+								type="text"
+								name="script"
+								theme="vs-dark"
+								defaultLanguage="html"
+								height="40vh"
+								options={{
+									fontSize: "16px",
+								}}
+								onChange={handleEditorChange}
+								onMount={handleEditorDidMount}
+							/>
+						</div>
+						<div className="my-1">
+							<Editor
+								id="inputTexto"
+								type="text"
+								name="script"
+								theme="vs-dark"
+								defaultLanguage="javascript"
+								height="40vh"
+								options={{
+									fontSize: "16px",
+								}}
+								onChange={(value) => setEjercicio(value)}
+								onMount={handleEditorDidMount}
+							/>
+						</div>
+						<div className={` ${styles.boxTips}`}>
+							<div className="row">
+								<h6>Consola</h6>
+								<p className="m-2">{resultado}</p>
+							</div>
+							<div className="d-flex align-items-start">
+								<Image
+									width={50}
+									height={50}
+									src={"/images/HintRed.png"}
+									alt="desafiolatam"
+									priority={true}
+									className={"hintImage mt-4"}
+								/>
+								<div className="container">
+									<p
+										className="tip"
+										style={{ height: "90px", marginTop: "30px" }}
+									>
+										*Tip por si hay un error en tu respuesta
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div
+						className="col-md-4"
+						style={{
+							backgroundColor: "#FFF",
+							borderColor: "#739e2d",
+							borderStyle: "solid",
+						}}
+					>
+						<h3 className="m-2 ">Vista HTML:</h3>
+						<div dangerouslySetInnerHTML={{ __html: codigoHTML }}></div>
+					</div>
+				</div>
 
 				<div className="text-end mt-4">
 					<SendButton
