@@ -138,7 +138,7 @@ export default function creditos() {
         </h1>
         <div className='text-center__caracters'>
           <p>
-            'Queremos reconocer y destacar el excepcional trabajo de estos
+            Queremos reconocer y destacar el excepcional trabajo de estos
             talentosos profesionales que dedicaron su experiencia y pasión a la
             construcción de este sitio dedicado al aprendizaje de lenguajes de
             programación. Su profesionalismo y compromiso han sido fundamentales
@@ -146,7 +146,7 @@ export default function creditos() {
             Agradecemos sinceramente su contribución, la cual ha sido esencial
             para hacer de este espacio un recurso invaluable para la comunidad
             de aprendices y desarrolladores. ¡Su dedicación ha marcado la
-            diferencia y les agradecemos por su arduo trabajo!'
+            diferencia y les agradecemos por su arduo trabajo!
           </p>
         </div>
 
