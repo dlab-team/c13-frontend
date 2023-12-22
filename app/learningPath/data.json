@@ -1,53 +1,53 @@
 [
     {
         "id": 330,
-        "name": "Seleccionando columnas",
+        "name": "Ejercicios Javascript",
         "exercises": [
             {
                 "id": 3100,
-                "title": "Tutorial",
+                "title": "Primer Ejercicio de Javascript",
                 "url": "",
                 "description": "Aprendiendo a utilizar la sintaxis básica de SELECT para recuperar datos de una tabla",
                 "completed": false
             },
             {
                 "id": 3101,
-                "title": "Seleccionando todas las columnas de una tabla",
+                "title": "Segundo Ejercicio de Javascript",
                 "url": null,
                 "description": "Aprendiendo a utilizar la sintaxis básica de SELECT para recuperar datos de una tabla",
                 "completed": false
             },
             {
                 "id": 3102,
-                "title": "Seleccionando una columna de la tabla",
+                "title": "Tercer Ejercicio de Javascirpt",
                 "url": null,
                 "description": "Aprendiendo a utilizar la sintaxis básica de SELECT para recuperar datos de una tabla",
                 "completed": false
             },
             {
                 "id": 3103,
-                "title": "Seleccionando múltiples columnas de una tabla",
+                "title": "Cuarto Ejercicio de Javascirpt",
                 "url": null,
                 "description": "Aprendiendo a utilizar la sintaxis básica de SELECT para recuperar datos de una tabla",
                 "completed": false
             },
             {
                 "id": 3104,
-                "title": "Asignando un alias a una columna con \"AS\"",
+                "title": "Quinto Ejercicio de Javascirpt",
                 "url": "",
                 "description": "Aprendiendo a utilizar la sintaxis básica de SELECT para recuperar datos de una tabla",
                 "completed": false
             },
             {
                 "id": 3105,
-                "title": "Asignando alias a varias columnas con \"AS\"",
+                "title": "Sexto Ejercicio de Javascirpt",
                 "url": "",
                 "description": "Aprendiendo a utilizar la sintaxis básica de SELECT para recuperar datos de una tabla",
                 "completed": false
             },
             {
                 "id": 3106,
-                "title": "Asignando un alias con AS y comillas dobles",
+                "title": "Septimo Ejercicio de Javascirpt",
                 "url": "",
                 "description": "Aprendiendo a utilizar la sintaxis básica de SELECT para recuperar datos de una tabla",
                 "completed": false
@@ -56,67 +56,67 @@
     },
     {
         "id": 331,
-        "name": "Seleccionando filas",
+        "name": "Ejercicios con HTML",
         "exercises": [
             {
                 "id": 3126,
-                "title": "Utilizando el operador mayor que",
+                "title": "Primer ejercicio con HTMl",
                 "url": null,
                 "description": "Cómo recuperar datos específicos de una tabla utilizando la cláusula SELECT junto con la cláusula WHERE para filtrar y seleccionar solo las filas que cumplen con ciertas condiciones o criterios especificados, permitiendo obtener resultados más precisos y relevantes de la base de datos.",
                 "completed": false
             },
             {
                 "id": 3127,
-                "title": "Ejercitando el uso del operador mayor que",
+                "title": "Segundo ejercicio con HTMl",
                 "url": "",
                 "description": "Cómo recuperar datos específicos de una tabla utilizando la cláusula SELECT junto con la cláusula WHERE para filtrar y seleccionar solo las filas que cumplen con ciertas condiciones o criterios especificados, permitiendo obtener resultados más precisos y relevantes de la base de datos.",
                 "completed": false
             },
             {
                 "id": 3107,
-                "title": "Utilizando el operador  mayor o igual que",
+                "title": "Tercer ejercicio con HTMl",
                 "url": "",
                 "description": "Cómo recuperar datos específicos de una tabla utilizando la cláusula SELECT junto con la cláusula WHERE para filtrar y seleccionar solo las filas que cumplen con ciertas condiciones o criterios especificados, permitiendo obtener resultados más precisos y relevantes de la base de datos.",
                 "completed": false
             },
             {
                 "id": 3108,
-                "title": "Utilizando el operador \"menor que\" ",
+                "title": "Cuarto ejercicio con HTMl",
                 "url": null,
                 "description": "Cómo recuperar datos específicos de una tabla utilizando la cláusula SELECT junto con la cláusula WHERE para filtrar y seleccionar solo las filas que cumplen con ciertas condiciones o criterios especificados, permitiendo obtener resultados más precisos y relevantes de la base de datos.",
                 "completed": false
             },
             {
                 "id": 3109,
-                "title": "Utilizando el operador \"menor o igual que\" en una condición",
+                "title": "Quinto ejercicio con HTMl",
                 "url": "",
                 "description": "Cómo recuperar datos específicos de una tabla utilizando la cláusula SELECT junto con la cláusula WHERE para filtrar y seleccionar solo las filas que cumplen con ciertas condiciones o criterios especificados, permitiendo obtener resultados más precisos y relevantes de la base de datos.",
                 "completed": false
             },
             {
                 "id": 3110,
-                "title": "Seleccionando multiples filas bajo una condición",
+                "title": "Sexto ejercicio con HTMl",
                 "url": "",
                 "description": "Cómo recuperar datos específicos de una tabla utilizando la cláusula SELECT junto con la cláusula WHERE para filtrar y seleccionar solo las filas que cumplen con ciertas condiciones o criterios especificados, permitiendo obtener resultados más precisos y relevantes de la base de datos.",
                 "completed": false
             },
             {
                 "id": 3111,
-                "title": "Seleccionando filas bajo una condición de igualdad",
+                "title": "Septimo ejercicio con HTMl",
                 "url": null,
                 "description": "Cómo recuperar datos específicos de una tabla utilizando la cláusula SELECT junto con la cláusula WHERE para filtrar y seleccionar solo las filas que cumplen con ciertas condiciones o criterios especificados, permitiendo obtener resultados más precisos y relevantes de la base de datos.",
                 "completed": false
             },
             {
                 "id": 3113,
-                "title": "Seleccionando filas bajo una condición de igualdad (tipo de dato string)",
+                "title": "Octavo ejercicio con HTMl",
                 "url": "",
                 "description": "Cómo recuperar datos específicos de una tabla utilizando la cláusula SELECT junto con la cláusula WHERE para filtrar y seleccionar solo las filas que cumplen con ciertas condiciones o criterios especificados, permitiendo obtener resultados más precisos y relevantes de la base de datos.",
                 "completed": false
             },
             {
                 "id": 3112,
-                "title": "Seleccionando filas bajo una condición de igualdad (tipo de dato string) parte 2",
+                "title": "Noveno ejercicio con HTMl",
                 "url": "",
                 "description": "Cómo recuperar datos específicos de una tabla utilizando la cláusula SELECT junto con la cláusula WHERE para filtrar y seleccionar solo las filas que cumplen con ciertas condiciones o criterios especificados, permitiendo obtener resultados más precisos y relevantes de la base de datos.",
                 "completed": false
