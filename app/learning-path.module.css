@@ -33,9 +33,21 @@
   border: solid #739e2d;
   width: 40rem;
   text-decoration: none;
-  color: inherit;
+  color: white;
+  background-color: #739e2d;
+  font-size: 1.25rem;
+  font-weight: 800;
+  line-height: normal;
+  
   
 }
+
+.BotonesLeaningPath:hover{
+  background-color: white;
+  color: #739e2d;
+  border: solid #739e2d;
+}
+
 
 .contenedorBotonesLearningPath{
   display: flex;
@@ -53,4 +65,17 @@
   font-weight: 800;
   line-height: normal;
 
+}
+
+/* Estilos seccion TIPS */
+
+.seccionTips{
+  fill: #D9D9D9;
+  background-color: #D9D9D9;
+  border: solid #FEFAFC;
+  stroke-width: 1px;
+}
+
+.seccionTipsTitulos{
+  color: #739e2d;
 }

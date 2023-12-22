@@ -15,7 +15,7 @@ const Basico = () => {
   const [exercise, setExercise] = useState(""); // La variable exercise se inicializa aquí
   const [ejercicio, setEjercicio] = useState("");
   const [resultado, setResultado] = useState(
-    "El resultado de tu ejercicio irá aquí"
+    `"Estos datos provienen de la evaluación del codigo"`
   );
   const [toExecute, setToExecute] = useState(false);
   const [isExecuting, setIsExecuting] = useState(false);
@@ -45,26 +45,28 @@ const Basico = () => {
     <>
       <div className="container">
         <div className={`${styles.contenedorBotonesLearningPath} text-center my-5`} >
-          <button
-            className={`${styles.BotonesLeaningPath} btn btn-dark rounded-5`}
-            style={{ background: "#739e2d"  }}
-          >
-           <Link  className={`${styles.BotonesLeaningPath}`} href={"/categorias/javascript"}>JavaScript</Link> 
-          </button>
-          <button className={`${styles.BotonesLeaningPath} btn btn-light rounded-5`}>Básico</button>
+          <Link className={`${styles.BotonesLeaningPath}   rounded-5`} href={"/categorias/javascript"}>
+           HTML
+          </Link>
+          <button className={`${styles.BotonesLeaningPath} rounded-5`}>Básico</button>
         </div>
 
         <div className="row">
-          <div className="col-md-4" style={{ background: "#FFF" }}>
-            <h3 className="m-2">Ejercicio 2: Hola Mundo</h3>
+
+          <div className="col-md-4" style={{
+							backgroundColor: "#FFF",
+							borderColor: "#739e2d",
+							borderStyle: "solid",
+						}}>
+            <h3 className="m-2">Ejercicio: Visualiza HTML</h3>
             <p className="m-2">
-              <strong>Objetivo:</strong> Escribe y ejecuta tu primer código en
+              <strong>Objetivo:</strong> Escribe tu primer código en
               HTML para mostrar el mensaje {text}
             </p>
             <div className="m-2">
               <strong>Esperado:</strong>
               <ul>
-                <li>Deberías ver en la consola el mensaje {text}.</li>
+                <li>Deberías ver en el DOM el mensaje {text}.</li>
                 <li>
                   Si ves el mensaje, ¡felicidades! Has completado tu primer
                   programa en JavaScript.
@@ -80,29 +82,15 @@ const Basico = () => {
               name="script"
               theme="vs-dark"
               defaultLanguage="html"
-              height="40vh"
+              height="80vh"
               options={{
                 fontSize: "16px",
               }}
               onChange={handleEditorChange}
               onMount={handleEditorDidMount}
             />
-            <Editor
-              id="inputTexto"
-              type="text"
-              name="script"
-              theme="vs-dark"
-              defaultLanguage="javascript"
-              height="40vh"
-              options={{
-                fontSize: "16px",
-              }}
-              onChange={(value) => setEjercicio(value)}
-              onMount={handleEditorDidMount}
-            />
-            <div className="text-white bg-dark">
-              <h6>Consola</h6>
-              <p className="m-2">{resultado}</p>
+            <div className={`text-white ${styles.seccionTips}`}>
+              <p className={`${styles.seccionTipsTitulos} m-2 text-center`}>{resultado}</p>
               <div className="d-flex align-items-start">
                 <Image
                   width={50}
@@ -114,8 +102,8 @@ const Basico = () => {
                 />
                 <div className="container">
                   <p
-                    className="tip"
-                    style={{ height: "90px", marginTop: "30px" }}
+                    className={`${styles.seccionTipsTitulos} m-2 tip`}
+                    
                   >
                     *Tip por si hay un error en tu respuesta
                   </p>
@@ -123,8 +111,12 @@ const Basico = () => {
               </div>
             </div>
           </div>
-          <div className="col-md-4">
-            <h3 className="m-2">Vista HTML:</h3>
+          <div className="col-md-4" style={{
+							backgroundColor: "#FFF",
+							borderColor: "#739e2d",
+							borderStyle: "solid",
+						}}>
+            <h3 className="text-center m-2">HTML</h3>
             <iframe
               title="Vista HTML"
               src={iframeUrl}
