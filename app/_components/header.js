@@ -90,7 +90,7 @@ export default function Header() {
         <div className="collapse navbar-collapse" id="navbarNavDropdown">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <Link className="nav-link" href="/categorias/javascript">
+              <Link className="nav-link" href="/learningPath">
                 Javascript interactivo
               </Link>
             </li>

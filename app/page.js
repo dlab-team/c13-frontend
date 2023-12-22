@@ -14,12 +14,12 @@ const roboto = Roboto({
 export default async function Page() {
   return (
     <>
-      <div>
+      {/* <div>
       <Link href={'/learningPath'}>
           <SendButton className={`${roboto.className} ${styles.registerButton} `} buttonText={'LEARNING PATH'}>
           </SendButton>
       </Link>
-      </div>
+      </div> */}
       <div className="container">
         <div className={`${styles.base} row`}>
           <div className={`${styles.welcomeSection} col-12`}>

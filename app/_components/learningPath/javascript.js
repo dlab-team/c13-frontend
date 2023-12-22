@@ -7,15 +7,13 @@ import Footer from "@/app/Footer";
 import Image from "next/image";
 import SqlExecuter from "@/app/_components/_exercises/sqlExecuter";
 import executeCode from "./codeExecution";
-import Link from "next/link";
-import styles from "/app/learning-path.module.css";
 
-const JavascriptPrueba = () => {
+const JavascriptEjercicio = () => {
   const editorRef = useRef(null);
   const [exercise, setExercise] = useState(""); // La variable exercise se inicializa aquí
   const [ejercicio, setEjercicio] = useState("");
   const [resultado, setResultado] = useState(
-    `"Estos datos provienen de la evaluación del codigo"`
+    "El resultado de tu ejercicio irá aquí"
   );
   const [toExecute, setToExecute] = useState(false);
   const [isExecuting, setIsExecuting] = useState(false);
@@ -36,22 +34,19 @@ const JavascriptPrueba = () => {
   return (
     <>
       <div className="container">
-        <div className={`${styles.contenedorBotonesLearningPath} text-center my-5`}>
-          <button className={`${styles.BotonesLeaningPath} rounded-5 w-50`}>
+        <div className="text-center my-5">
+          <button
+            className="btn btn-dark rounded-0 w-50"
+            style={{ background: "#739e2d" }}
+          >
             JavaScript
           </button>
-          <Link className={`${styles.BotonesLeaningPath} rounded-5 w-50`} href={"/categorias/html"}>
-            Básico
-          </Link>
+          <button className="btn btn-secondary rounded-0 w-50">Básico</button>
         </div>
+
         <div className="row">
-          <div className="col-md-6" 
-          style={{
-            backgroundColor: "#FFF",
-            borderColor: "#739e2d",
-            borderStyle: "solid",
-            }}>
-            <h3 className="m-2">Ejercicio: Hola Mundo</h3>
+          <div className="col-md-6" style={{ background: "#FFF" }}>
+            <h3 className="m-2">Ejercicio 1: Hola Mundo</h3>
             <p className="m-2">
               <strong>Objetivo:</strong> Escribe y ejecuta tu primer código en
               JavaScript para mostrar el mensaje {text}
@@ -63,25 +58,11 @@ const JavascriptPrueba = () => {
                 <li>
                   Si ves el mensaje, ¡felicidades! Has completado tu primer
                   programa en JavaScript.
-                  <br></br>
-                  <br></br>
                 </li>
               </ul>
-              <div className="container bg-white">
-                <Image
-                  width={95}
-                  height={95}
-                  src={"/images/Hint.png"}
-                  alt="desafiolatam"
-                  priority={true}
-                  className={"hintImage mt-4"}
-                />
-                <p className="tip" style={{ height: "100px" }}>
-                  *Tip por si hay un error en tu respuesta
-                </p>
-              </div>
             </div>
           </div>
+
           <div className="col-md-6">
             <Editor
               id="inputTexto"
@@ -89,7 +70,7 @@ const JavascriptPrueba = () => {
               name="script"
               theme="vs-dark"
               defaultLanguage="javascript"
-              height="80vh"
+              height="40vh"
               options={{
                 fontSize: "16px",
               }}
@@ -97,21 +78,8 @@ const JavascriptPrueba = () => {
               onMount={handleEditorDidMount}
             />
             <div className="text-white bg-dark">
-              <h6 className="text-center pt-4">Consola</h6>
-              <p className="m-2 text-center pt-5">{resultado}</p>
-              <div className="d-flex align-items-start">
-                <div className="container">
-                  <p
-                    className="tip text-center"
-                    style={{ height: "90px", marginTop: "30px" }}
-                  >
-                    
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className={`text-white ${styles.seccionTips}`}>
-              <p className={`${styles.seccionTipsTitulos} m-2 text-center`}>{resultado}</p>
+              <h6>Consola</h6>
+              <p className="m-2">{resultado}</p>
               <div className="d-flex align-items-start">
                 <Image
                   width={50}
@@ -123,8 +91,8 @@ const JavascriptPrueba = () => {
                 />
                 <div className="container">
                   <p
-                    className={`${styles.seccionTipsTitulos} m-2 tip text-center`}
-                    
+                    className="tip"
+                    style={{ height: "90px", marginTop: "30px" }}
                   >
                     *Tip por si hay un error en tu respuesta
                   </p>
@@ -180,4 +148,4 @@ const JavascriptPrueba = () => {
   );
 };
 
-export default JavascriptPrueba;
+export default JavascriptEjercicio;

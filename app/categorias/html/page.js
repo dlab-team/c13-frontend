@@ -6,11 +6,11 @@ import SendButton from "../../_components/sendButton";
 import Footer from "@/app/Footer";
 import Image from "next/image";
 import SqlExecuter from "@/app/_components/_exercises/sqlExecuter";
-import executeCode from "./codeExecution";
-import Link from "next/link";
 import styles from "/app/learning-path.module.css";
+// import executeCode from "./codeExecution";
+import Link from "next/link";
 
-const JavascriptPrueba = () => {
+const Basico = () => {
   const editorRef = useRef(null);
   const [exercise, setExercise] = useState(""); // La variable exercise se inicializa aquí
   const [ejercicio, setEjercicio] = useState("");
@@ -33,83 +33,62 @@ const JavascriptPrueba = () => {
     setToExecute(false);
   }
 
+  const [codigoHTML, setCodigoHTML] = useState("");
+  const handleEditorChange = (value) => {
+    // Actualiza el estado con el nuevo código HTML
+    setCodigoHTML(value);
+    setIframeUrl(`data:text/html;charset=utf-8,${encodeURIComponent(value)}`);
+  };
+  const [iframeUrl, setIframeUrl] = useState('');
+
   return (
     <>
       <div className="container">
-        <div className={`${styles.contenedorBotonesLearningPath} text-center my-5`}>
-          <button className={`${styles.BotonesLeaningPath} rounded-5 w-50`}>
-            JavaScript
-          </button>
-          <Link className={`${styles.BotonesLeaningPath} rounded-5 w-50`} href={"/categorias/html"}>
-            Básico
+        <div className={`${styles.contenedorBotonesLearningPath} text-center my-5`} >
+          <Link className={`${styles.BotonesLeaningPath}   rounded-5`} href={"/categorias/javascript"}>
+           HTML
           </Link>
+          <button className={`${styles.BotonesLeaningPath} rounded-5`}>Básico</button>
         </div>
+
         <div className="row">
-          <div className="col-md-6" 
-          style={{
-            backgroundColor: "#FFF",
-            borderColor: "#739e2d",
-            borderStyle: "solid",
-            }}>
-            <h3 className="m-2">Ejercicio: Hola Mundo</h3>
+
+          <div className="col-md-4" style={{
+							backgroundColor: "#FFF",
+							borderColor: "#739e2d",
+							borderStyle: "solid",
+						}}>
+            <h3 className="m-2">Ejercicio: Visualiza HTML</h3>
             <p className="m-2">
-              <strong>Objetivo:</strong> Escribe y ejecuta tu primer código en
-              JavaScript para mostrar el mensaje {text}
+              <strong>Objetivo:</strong> Escribe tu primer código en
+              HTML para mostrar el mensaje {text}
             </p>
             <div className="m-2">
               <strong>Esperado:</strong>
               <ul>
-                <li>Deberías ver en la consola el mensaje {text}.</li>
+                <li>Deberías ver en el DOM el mensaje {text}.</li>
                 <li>
                   Si ves el mensaje, ¡felicidades! Has completado tu primer
                   programa en JavaScript.
-                  <br></br>
-                  <br></br>
                 </li>
               </ul>
-              <div className="container bg-white">
-                <Image
-                  width={95}
-                  height={95}
-                  src={"/images/Hint.png"}
-                  alt="desafiolatam"
-                  priority={true}
-                  className={"hintImage mt-4"}
-                />
-                <p className="tip" style={{ height: "100px" }}>
-                  *Tip por si hay un error en tu respuesta
-                </p>
-              </div>
             </div>
           </div>
-          <div className="col-md-6">
+
+          <div className="col-4">
             <Editor
               id="inputTexto"
               type="text"
               name="script"
               theme="vs-dark"
-              defaultLanguage="javascript"
+              defaultLanguage="html"
               height="80vh"
               options={{
                 fontSize: "16px",
               }}
-              onChange={(value) => setEjercicio(value)}
+              onChange={handleEditorChange}
               onMount={handleEditorDidMount}
             />
-            <div className="text-white bg-dark">
-              <h6 className="text-center pt-4">Consola</h6>
-              <p className="m-2 text-center pt-5">{resultado}</p>
-              <div className="d-flex align-items-start">
-                <div className="container">
-                  <p
-                    className="tip text-center"
-                    style={{ height: "90px", marginTop: "30px" }}
-                  >
-                    
-                  </p>
-                </div>
-              </div>
-            </div>
             <div className={`text-white ${styles.seccionTips}`}>
               <p className={`${styles.seccionTipsTitulos} m-2 text-center`}>{resultado}</p>
               <div className="d-flex align-items-start">
@@ -123,7 +102,7 @@ const JavascriptPrueba = () => {
                 />
                 <div className="container">
                   <p
-                    className={`${styles.seccionTipsTitulos} m-2 tip text-center`}
+                    className={`${styles.seccionTipsTitulos} m-2 tip`}
                     
                   >
                     *Tip por si hay un error en tu respuesta
@@ -131,6 +110,19 @@ const JavascriptPrueba = () => {
                 </div>
               </div>
             </div>
+          </div>
+          <div className="col-md-4" style={{
+							backgroundColor: "#FFF",
+							borderColor: "#739e2d",
+							borderStyle: "solid",
+						}}>
+            <h3 className="text-center m-2">HTML</h3>
+            <iframe
+              title="Vista HTML"
+              src={iframeUrl}
+              style={{ width: '100%', height: '400px', border: 'none' }}
+            ></iframe>
+            {/* <div dangerouslySetInnerHTML={{ __html: codigoHTML }}></div> */}
           </div>
         </div>
 
@@ -180,4 +172,4 @@ const JavascriptPrueba = () => {
   );
 };
 
-export default JavascriptPrueba;
+export default Basico;
