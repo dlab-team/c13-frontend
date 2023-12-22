@@ -65,7 +65,6 @@ const JavascriptPrueba = () => {
                   programa en JavaScript.
                   <br></br>
                   <br></br>
-                  "Estos datos provienen de la API"
                 </li>
               </ul>
               <div className="container bg-white">
