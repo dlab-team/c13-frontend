@@ -1,0 +1,82 @@
+[
+   {
+     "lenguaje": "SQL",
+     "description": "SQL, que significa \"Structured Query Language\" (Lenguaje de Consulta Estructurado), es un lenguaje de programación diseñado para gestionar y manipular bases de datos relacionales. Fue desarrollado originalmente por IBM en la década de 1970 y ha evolucionado desde entonces. SQL se utiliza para realizar diversas operaciones en bases de datos, como la creación y modificación de tablas, la inserción, actualización y eliminación de datos, y la recuperación de información de la base de datos. Las principales categorías de comandos SQL se dividen en: 1. **DDL (Lenguaje de definición de datos):** Contiene comandos que definen y gestionan la estructura de la base de datos, como CREATE (crear), ALTER (alterar) y DROP ( eliminar). 2. *",
+     "content": {
+       "Un lenguaje universal": "La mayoría de las bases de datos de renombre, ya sean MySQL, PostgreSQL u Oracle, utilizan SQL.",
+       "Fundamental para aprender programación": "SQL es una introducción accesible y valiosa que sienta las bases para futuros estudios en desarrollo web y ciencia de datos.",
+       "Elegancia y sencillez": "Imagina un lenguaje que es intuitivo y claro, donde cada consulta se siente como si estuvieras charlando con la base de datos. Así es SQL. No es solo técnico, es artístico.",
+       "Versatilidad": "SQL es ese compañero de equipo que todos quieren. Funciona según especificaciones estándar y puede interactuar con casi cualquier sistema de gestión de bases de datos.",
+       "Gurú del Análisis": "Las empresas confían en SQL para destilar datos en insights valiosos. Cada consulta puede desentrañar tendencias y patrones que impulsan decisiones críticas.",
+       "Integración impecable": "Los desarrolladores adoran a SQL porque se entrelaza sin problemas con aplicaciones, fortaleciendo la persistencia y búsqueda de datos."
+     },
+     "que_aprenderas": {
+       "Conceptos Básicos de SQL": "Aprenderás los conceptos fundamentales de SQL, como qué es una base de datos, una tabla, una fila, una columna, un registro y una consulta.",
+       "Manipulación de Datos": "Aprenderás a insertar, actualizar y eliminar datos en una base de datos utilizando instrucciones SQL. Esto es esencial para administrar la información en una base de datos.",
+       "Consulta de Datos": "Te familiarizarás con cómo realizar consultas para recuperar datos específicos de una base de datos. Aprenderás a usar la cláusula SELECT, filtros WHERE, ordenamiento de resultados y cómo agrupar y resumir datos.",
+       "Relaciones y Joins": "Entenderás cómo funcionan las relaciones entre tablas en una base de datos relacional y cómo realizar uniones (joins) entre tablas para combinar datos de múltiples fuentes.",
+       "Funciones y Agregaciones": "Conocerás las funciones SQL que te permiten realizar cálculos y agregaciones en los datos, como SUM, COUNT, AVG, MAX y MIN.",
+       "Subconsultas": "Aprenderás a realizar subconsultas, que son consultas anidadas dentro de otras consultas. Esto es útil para consultar datos de manera más compleja y obtener resultados específicos."
+     }
+   },
+   {
+     "lenguaje": "JavaScript",
+     "description": "JavaScript es un lenguaje de programación de alto nivel, interpretado y orientado a objetos. Es principalmente conocido por ser el lenguaje de scripting que se utiliza para agregar interactividad a las páginas web. JavaScript permite a los desarrolladores crear aplicaciones web dinámicas y mejorar la experiencia del usuario mediante la manipulación del contenido y el comportamiento de las páginas web.",
+     "content": {
+       "Versatilidad": "JavaScript es versátil y puede ejecutarse en el navegador del usuario, lo que permite la manipulación del DOM para actualizar la interfaz de usuario de manera interactiva.",
+       "Amplia adopción": "Es uno de los lenguajes de programación más utilizados en el desarrollo web. Casi todos los navegadores modernos admiten la ejecución de código JavaScript.",
+       "Asincronía": "JavaScript es conocido por su naturaleza asincrónica, lo que permite realizar operaciones no bloqueantes, como solicitudes a servidores, sin detener la ejecución del código.",
+       "Frameworks populares": "Existen numerosos frameworks y bibliotecas, como React, Angular y Vue.js, que facilitan el desarrollo de aplicaciones web complejas con JavaScript.",
+       "Comunidad activa": "La comunidad de desarrolladores de JavaScript es grande y activa, lo que significa que hay una gran cantidad de recursos y ayuda disponible en línea.",
+       "Node.js": "JavaScript también puede ejecutarse en el servidor a través de Node.js, lo que permite construir aplicaciones de extremo a extremo utilizando un solo lenguaje de programación."
+     },
+     "que_aprenderas": {
+       "Fundamentos de JavaScript": "Aprenderás los conceptos básicos de JavaScript, como variables, tipos de datos, operadores y estructuras de control.",
+       "Manipulación del DOM": "Entenderás cómo interactuar con el Document Object Model (DOM) para modificar dinámicamente el contenido y la apariencia de las páginas web.",
+       "Asincronía con Promesas": "Aprenderás a manejar la asincronía en JavaScript utilizando promesas, lo que es crucial para realizar operaciones no bloqueantes.",
+       "Frameworks de JavaScript": "Explorarás frameworks populares como React, Angular o Vue.js, y comprenderás cómo simplifican el desarrollo de aplicaciones web.",
+       "Node.js y Backend con JavaScript": "Introducción a Node.js para ejecutar JavaScript en el servidor y construir aplicaciones de servidor con un lenguaje unificado."
+     }
+   },
+   {
+     "lenguaje": "HTML",
+     "description": "HTML, que significa \"Hypertext Markup Language\" (Lenguaje de Marcado de Hipertexto), es el estándar principal para la creación y el diseño de páginas web y aplicaciones web. Fue creado por el World Wide Web Consortium (W3C) y la Web Hypertext Application Technology Working Group (WHATWG). HTML proporciona una estructura básica que define la organización del contenido en una página web, utilizando una serie de elementos y etiquetas.Los documentos HTML están compuestos por una serie de elementos que representan diferentes partes de la página, como encabezados, párrafos, enlaces, imágenes, formularios, listas, tablas, entre otros. Cada elemento se define mediante etiquetas, que son palabras o caracteres encerrados entre corchetes angulares (\"<>\" y \"</>\"). La mayoría de las etiquetas HTML tienen una etiqueta de apertura y una etiqueta de cierre para delimitar el contenido al que se aplica la etiqueta.",
+     "content": {
+       "Base del desarrollo web": "HTML es la base fundamental del desarrollo web. Define la estructura básica de una página, incluyendo encabezados, párrafos, listas, enlaces, imágenes y otros elementos.",
+       "Facilidad de aprendizaje": "Es fácil de aprender y entender, lo que lo convierte en una excelente opción para quienes están comenzando en el desarrollo web.",
+       "Compatibilidad": "HTML es compatible con todos los navegadores web modernos. Los documentos HTML son interpretados de manera consistente en diferentes plataformas.",
+       "Integración con otros lenguajes": "HTML se combina con CSS (Cascading Style Sheets) para controlar la presentación y con JavaScript para añadir interactividad.",
+       "Marcado semántico": "HTML proporciona elementos semánticos que describen el significado de cada parte del contenido, lo que mejora la accesibilidad y la indexación en motores de búsqueda.",
+       "Evolución continua": "A lo largo del tiempo, HTML ha evolucionado con nuevas versiones que introducen características y mejoras para adaptarse a las necesidades cambiantes de la web."
+     },
+     "que_aprenderas": {
+       "Estructura básica HTML": "Aprenderás la estructura básica de un documento HTML, incluyendo etiquetas como <!DOCTYPE html>, <html>, <head>, y <body>.",
+       "Elementos y atributos": "Conocerás los diversos elementos HTML, como encabezados, párrafos, listas, enlaces, imágenes, formularios, y entenderás cómo usar atributos para personalizar estos elementos.",
+       "Formularios y entradas": "Aprenderás a crear formularios HTML para recopilar información del usuario, utilizando elementos como <form>, <input>, <select>, y <textarea>.",
+       "Multimedia": "Explorarás la inclusión de contenido multimedia, como imágenes y videos, utilizando las etiquetas <img> y <video>.",
+       "Enlaces y navegación": "Comprenderás cómo crear enlaces internos y externos para facilitar la navegación dentro de un sitio web.",
+       "HTML semántico": "Explorarás el uso de elementos semánticos como <article>, <section>, <header>, <footer>, y <nav> para proporcionar un significado estructurado al contenido."
+     }
+   },
+   {
+     "lenguaje": "Python",
+     "description": "Python es un lenguaje de programación interpretado, de alto nivel y generalista. Es conocido por su sintaxis clara y legible, lo que facilita la escritura de código y su mantenimiento.",
+     "content": {
+       "Legibilidad y simplicidad": "La filosofía de diseño de Python se centra en la legibilidad del código y la simplicidad del lenguaje. Esto facilita la colaboración y el mantenimiento del código.",
+       "Amplio uso en desarrollo web": "Python se utiliza en el desarrollo web a través de frameworks como Django y Flask, permitiendo la creación de aplicaciones web de manera eficiente.",
+       "Ciencia de datos y aprendizaje automático": "Python es muy popular en la ciencia de datos y el aprendizaje automático. Bibliotecas como NumPy, Pandas y TensorFlow son fundamentales en estas áreas.",
+       "Comunidad activa": "Python cuenta con una comunidad activa y una gran cantidad de bibliotecas y recursos disponibles. Esto facilita el desarrollo de proyectos y la resolución de problemas.",
+       "Versatilidad": "Python es versátil y se utiliza en una variedad de campos, incluyendo desarrollo web, automatización, análisis de datos, inteligencia artificial y más.",
+       "Compatibilidad con plataformas": "Python es compatible con varias plataformas, lo que significa que el código escrito en Python puede ejecutarse en diferentes sistemas operativos sin modificaciones significativas."
+     },
+     "que_aprenderas": {
+       "Sintaxis de Python": "Aprenderás la sintaxis clara y legible de Python, incluyendo la declaración de variables, estructuras de control y funciones.",
+       "Desarrollo web con Python": "Explorarás el desarrollo web con Python a través de frameworks como Django y Flask, comprendiendo la creación de rutas, controladores y plantillas.",
+       "Ciencia de datos con Python": "Introducción a la ciencia de datos con Python, utilizando bibliotecas como NumPy y Pandas para el análisis y manipulación de datos.",
+       "Aprendizaje automático": "Te familiarizarás con el uso de Python en el aprendizaje automático, explorando bibliotecas como TensorFlow y scikit-learn.",
+       "Automatización de tareas": "Aprenderás a utilizar Python para la automatización de tareas, desde scripts simples hasta procesos más complejos.",
+       "Proyectos prácticos": "Participarás en proyectos prácticos para aplicar los conocimientos adquiridos en el desarrollo de soluciones y aplicaciones."
+     }
+   }
+ ]
+ 

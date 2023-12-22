@@ -10,8 +10,6 @@ async function getData() {
   const jsonData = await fsPromises.readFile(filePath);
   // Parse data as json
   const data = JSON.parse(jsonData);
-
-  console.log(data);
   return data;
 }
 

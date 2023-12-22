@@ -68,6 +68,19 @@ const JavascriptPrueba = () => {
                   "Estos datos provienen de la API"
                 </li>
               </ul>
+              <div className="container bg-white">
+                <Image
+                  width={95}
+                  height={95}
+                  src={"/images/Hint.png"}
+                  alt="desafiolatam"
+                  priority={true}
+                  className={"hintImage mt-4"}
+                />
+                <p className="tip" style={{ height: "100px" }}>
+                  *Tip por si hay un error en tu respuesta
+                </p>
+              </div>
             </div>
           </div>
           <div className="col-md-6">
