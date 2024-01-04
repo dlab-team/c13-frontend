@@ -61,6 +61,7 @@ export default function Page() {
             return (
               <HomeCard
                 key={"cart_home" + index}
+                lenguage={e.lenguage}
                 url_img={e.url}
               ></HomeCard>
             )
