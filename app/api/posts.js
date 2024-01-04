@@ -17,8 +17,7 @@ export const createPostRequest = async (post) => {
     content: post.content,
     expected_result: post.expected_result,
     exercise_type: post.exercise_type,
-    fun: post.fun,
-    key: post.key,
+    // fun: post.fun,
   })
   console.log("resp 18", resp)
   return resp.data
