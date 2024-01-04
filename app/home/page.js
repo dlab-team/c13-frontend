@@ -5,6 +5,7 @@ import style from "./styles.module.css"
 import HomeCard from "../_components/home-card";
 import Footer from "../Footer";
 import Image from "next/image";
+import Testimonios from "../_components/testimonio-home";
 
 const roboto = Roboto({
   weight: ['300', '700'],
@@ -24,7 +25,7 @@ export default function Page() {
   return (
     <>
       <main className={style.home_content}>
-        <section className={style.intro}>
+        <section className={`${style.intro} ${style.welcome_to_int}`}>
           <div>
             <h1 className={`${style.title_text}`}>
               ¡Tu puerta de entrada al mundo del Análisis de Datos y Desarrollo Web!
@@ -70,60 +71,38 @@ export default function Page() {
           >
           </HomeCard>
         </section>
-      </main>
 
-      <main className={style.home_survey}>
-        <section className={style.intro}>
-          <h1 className={style.title_survey}>
-            Resultado de encuestas o informaciones varias
+        <section className={`${style.intro} ${style.home_survey}`}>
+          <h1 className={`${style.title_survey} ${style.frase}`}>
+            &quot;¡Regístrate y participa en nuestra encuesta para elegir el próximo curso a publicar! ¿Python o TypeScript?
+            Aprende con nosotros y contribuye a lanzar el próximo curso.&quot;
           </h1>
         </section>
-      </main>
 
-      <main className={style.home_witness}>
-        <section className={style.intro}>
+        <section className={style.section_witness}>
           <h1 className={style.title_survey}>
             Testimonios
           </h1>
-        </section>
-
-        <section className={style.section_witness}>
-          <div className={style.image_witness}>
-
+          <div className={style.testimonios_content}>
+            <Testimonios
+            src_perfil="/images/testimonios/950fb9a18d5dec232e6d5a05b9cb6d12.jpeg"
+            src_test="/images/testimonios/f466da486810bf7fdffc7e731a7f8552.png"
+            ></Testimonios>
+            <Testimonios
+            src_perfil="/images/testimonios/950fb9a18d5dec232e6d5a05b9cb6d12.jpeg"
+            src_test="/images/testimonios/f466da486810bf7fdffc7e731a7f8552.png"
+            ></Testimonios>
+            <Testimonios
+            src_perfil="/images/testimonios/950fb9a18d5dec232e6d5a05b9cb6d12.jpeg"
+            src_test="/images/testimonios/f466da486810bf7fdffc7e731a7f8552.png"
+            ></Testimonios>
           </div>
-          <p className={style.witness_text}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi porta lacus ante, at congue eros mattis eget.
-            Maecenas vitae ultricies nisi.
-          </p>
         </section>
 
-        <section className={style.section_witness}>
-          <div className={style.image_witness}>
-
-          </div>
-          <p className={style.witness_text}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi porta lacus ante, at congue eros mattis eget.
-            Maecenas vitae ultricies nisi.
-          </p>
-        </section>
-
-        <section className={style.section_witness}>
-          <div className={style.image_witness}>
-
-          </div>
-          <p className={style.witness_text}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi porta lacus ante, at congue eros mattis eget.
-            Maecenas vitae ultricies nisi.
-          </p>
-        </section>
-
-
+        <div className={`${style.botSection} col-12`}>
+          <Footer />
+        </div>
       </main>
-
-      <div className={`${style.botSection} col-12`}>
-        <Footer />
-      </div>
-
     </>
 
   )
