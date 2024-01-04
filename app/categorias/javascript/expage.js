@@ -1,7 +1,7 @@
 "use client";
 
 import Editor from "@monaco-editor/react";
-import { useRef, useState, useEffect } from "react"
+import { useRef, useState } from "react";
 import SendButton from "../../_components/sendButton";
 import Footer from "@/app/Footer";
 import Image from "next/image";
@@ -9,8 +9,6 @@ import SqlExecuter from "@/app/_components/_exercises/sqlExecuter";
 import executeCode from "./codeExecution";
 import Link from "next/link";
 import styles from "/app/learning-path.module.css";
-
-import { getPostsRequest, createPostRequest } from "../../api/posts"
 
 const JavascriptPrueba = () => {
   const editorRef = useRef(null);
@@ -24,9 +22,6 @@ const JavascriptPrueba = () => {
   const [tokenContent, setTokenContent] = useState(null);
   const text = '"Hola Mundo"';
 
-  let [test, setTest] = useState(3388)
-  const [exeApi, setExeApi] = useState({})
-
   function handleEditorDidMount(editor, monaco) {
     editorRef.current = editor;
   }
@@ -37,24 +32,6 @@ const JavascriptPrueba = () => {
     // enviar ejercicio para su ejecución
     setToExecute(false);
   }
-
-  useEffect(() => {
-    ;(async () => {
-      console.log(test)
-      const res = await getPostsRequest()
-      // const dataExe = res.data[test] // ****
-      const dataExe = res.data // ****
-      console.log("getPosts", dataExe)
-      if (dataExe) {
-        setExeApi(dataExe)
-
-        // setPosts(res.data)
-      } else {
-        alert("sin ejercicio")
-        setTest(0)
-      }
-    })()
-  }, [test])
 
   return (
     <>
