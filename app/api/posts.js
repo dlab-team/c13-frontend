@@ -16,7 +16,6 @@ export const createPostRequest = async (post) => {
   const resp = await axios.post(`${process.env.BASEPUP}/api/posts`, {
     content: post.content,
     expected_result: post.expected_result,
-    exercise_type: post.exercise_type,
     // fun: post.fun,
   })
   console.log("resp 18", resp)
