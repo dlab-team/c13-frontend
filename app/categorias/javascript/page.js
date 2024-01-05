@@ -37,20 +37,16 @@ const Basico = () => {
   if (toExecute == true) {
     setErrado('')
     setMensaje('')
-    console.log("ejecutar")
     setEjercicio(ejercicio)
     setResultado(ejercicio)
     // alert("ejecutar script: \n" + ejercicio)
     // enviar ejercicio para su ejecución
     ;(async () => {
       try {
-        console.log("ejercicio") // tomar captura ejercicio completo
-        console.log(ejercicio)
         
         const objeto = {
           content: ejercicio,
-          // expected_result: exeApi.expected_result,
-          expected_result: exeApi.test_cases[0].results, // 10
+          expected_result: exeApi.test_cases[0].results,
           // fun: exeApi.fun,
         }
 
@@ -78,8 +74,6 @@ const Basico = () => {
   const [codigoHTML, setCodigoHTML] = useState("")
   const handleEditorChange = (value) => {
     setEjercicio(value)
-    console.log("value") // ***********************************************************************************
-    console.log(value) // ***********************************************************************************
 
     // Actualiza el estado con el nuevo código HTML
     setCodigoHTML(value)
@@ -93,69 +87,18 @@ const Basico = () => {
       const res = await getPostsRequest()
       // const dataExe = res.data[test] // ****
       const dataExe = res.data // ****
-      console.log("getPosts", dataExe)
-
       
 
       if (dataExe) {
         setExeApi(dataExe)
+        const wrapperHtml = dataExe.wrapper
+          .split("\\r\\n")
+          .join("\r\n")
+          .split("\\")
+          .join("")
 
-        /* const wrap = dataExe.wrapper.split(
-          '<!DOCTYPE html>\\r\\n<html lang=\\"en\\">\\r\\n<head>\\r\\n    <meta charset=\\"UTF-8\\">\\r\\n    <meta name=\\"viewport\\" content=\\"width=device-width, initial-scale=1.0\\">\\r\\n    <title>Document'
-        )
-        const wrap2 = wrap[1].split(
-          "<\\/title>\\r\\n<\\/head>\\r\\n<body>\\r\\n    "
-        )
-        const wrapp = wrap2[1].replace(/['\\"]+/g, "")
+        setValor(wrapperHtml)
 
-        document.getElementById("ht").innerHTML = wrapp
-        let index = wrap2[1].indexOf("script")
-        let porcion = wrap2[1].slice(index + 19)
-
-        // setValor("function main(){ escribe }")
-        setValor(porcion) */
-
-        const wx = dataExe.wrapper
-        /* '<!DOCTYPE html>\\r\\n<html lang=\\"en\\">\\r\\n<head>\\r\\n    <meta charset=\\"UTF-8\\">\\r\\n    <meta name=\\"viewport\\" content=\\"width=device-width, initial-scale=1.0\\">\\r\\n    <title>Document</title>\\r\\n</head>\\r\\n<body>\\r\\n    <input id=\\"numero\\" />\\r\\n    <script>\\r\\n        function main() {\\r\\n            //Escribe entre estas líneas\\r\\n\\r\\n\\r\\n            //Escribe entre estas líneas\\r\\n        }\\r\\n        main();\\r\\n    </script>\\r\\n</body>\\r\\n</html>' */
-
-        const w = wx.split("\\r\\n").join("\r\n").split("\\").join("")
-        // const w2 = w.replace(/\ /, '')
-        const wrappx = wx.split("\\").join("")
-        console.log("wrappx")
-        console.log(wrappx)
-        console.log("w")
-        console.log(w)
-
-        /* const wp =
-          '<!DOCTYPE html>\r\n<html lang="en">\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <title>Document</title>\r\n</head>\r\n<body>\r\n    <input id="numero" />\r\n    <script>\r\n        function main() {\r\n            //Escribe entre estas l\u00EDneas\r\n\r\n\r\n            //Escribe entre estas l\u00EDneas\r\n        }\r\n        main();\r\n    </script>\r\n</body>\r\n</html>'
-        const wrapx = wp.replace(/(\r\n|\n|\r|\ )/gm, "")
-        console.log("wrapx")
-        console.log(wrapx) */
-        // setValor(wrapx)
-        setValor(w)
-
-        // const wp = new DOMParser().parseFromString(dataExe.wrapper, "text/html")
-
-        // console.log('wp')
-        // console.log(wp)
-        /* const wrapx = wp.split("\n").join("")
-        console.log('wrapx')
-        console.log(wrapx)
-        setValor(wrapx) */
-        /* var sin_salto = wrapx.split("\n").join("")
-        alert(sin_salto) */
-
-        // const cambio = wrapx.replace(/(\r\n|\n|\r)/gm, "")
-        // const cambio = wrapx.replace(/(\r\n|\n|\r|\)/gm, "")
-        // console.log("cambio")
-        // console.log(cambio)
-        // const rtrim = /^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g
-        // console.log(wrapx.replace(rtrim, ""))
-
-        // const sin_salto = wrapx.split("\r\n").join("")
-        // setValor(sin_salto)
-        // console.log('sin_salto')
-        // console.log(sin_salto)
       } else {
         alert("sin ejercicio")
         setTest(0)
@@ -247,19 +190,6 @@ const Basico = () => {
                 ) : (
                   <>{}</>
                 )}
-                {/* <Image
-                  width={50}
-                  height={50}
-                  src={"/images/HintRed.png"}
-                  alt="desafiolatam"
-                  priority={true}
-                  className={"hintImage mt-4"}
-                />
-                <div className="container">
-                  <p className={` m-2 tip`}>
-                    *Tip por si hay un error en tu respuesta
-                  </p>
-                </div> */}
               </div>
             </div>
           </div>
