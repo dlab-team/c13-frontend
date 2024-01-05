@@ -6,10 +6,15 @@
     height: auto;
     gap: 30px;
     margin-bottom: 79px;
+    padding: 0;
+}
+
+.welcome_to_int {
+    padding: 10px;
 }
 
 .home_content > section {
-    width:100%;
+    width: 100%;
 }
 
 .home_survey {
@@ -19,6 +24,8 @@
     width: 100%;
     gap: 30px;
     background-color: #739e2d;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .home_witness {
@@ -31,12 +38,16 @@
     position: relative;
 }
 
-.section_witness {
-
+.testimonios_content {
     display: flex;
-    max-width: 800px;
-    /* Ajusta el ancho máximo según tus necesidades */
-    margin: auto;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.section_witness {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 
 .image_witness {
@@ -85,17 +96,20 @@
 }
 
 .title_survey {
+    font-family: Uni Neue Heavy Italic, Helvetica, Arial, sans-serif;
+    font-size: 2rem;
     text-align: center;
+    padding: 0%;
+    color: #729E2E;
 }
 
-/* .lenguage_carts {
-    display: flex;
-    gap: 30px;
-    flex-direction: column;
-} */
+.frase {
+    color: #fff;
+}
 
 .buttons_container {
     display: flex;
+    justify-content: center;
     gap: 68px;
 }
 
@@ -107,7 +121,7 @@
     flex-shrink: 0;
     color: #729E2E;
     width: 8rem;
-    
+
     font-size: 0.938rem;
     font-family: Inter;
     font-weight: 400;
@@ -136,7 +150,7 @@
     justify-items: center;
 }
 
-.welcome_img{
+.welcome_img {
     display: none;
 }
 
@@ -145,16 +159,20 @@
         flex-direction: row;
     }
 
-    .welcome_img{
+    .welcome_img {
         display: block;
     }
 
-    .lenguage_carts{
+    .lenguage_carts {
         gap: 50px;
     }
 
-    .home_content > section {
-        width:80%;
+    .home_survey {
+        width: 100% !important;
+    }
+
+    .home_content>section {
+        width: 80%;
     }
 
     .text {
@@ -162,8 +180,18 @@
         text-align: start;
     }
 
-    .title_text{
+    .title_text {
         text-align: start;
         font-size: 2.8rem;
+    }
+
+    .title_survey {
+        text-align: center;
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+    
+    .buttons_container {
+        justify-content: start;
     }
 }
