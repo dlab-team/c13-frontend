@@ -75,7 +75,7 @@ const Basico = () => {
             </div>
           </div>
 
-          <div className="col-4">
+          <div className="col-12 col-md-4 ">
             <Editor
               id="inputTexto"
               type="text"
