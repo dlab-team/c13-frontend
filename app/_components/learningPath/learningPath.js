@@ -10,8 +10,6 @@ const roboto = Roboto({
   weight: ["300", "700"],
 });
 
-
-
   const LearningPath = ({ learningPath }) => {
     
     // console.log(getData)
@@ -30,9 +28,9 @@ const roboto = Roboto({
       }
 
       const getCategoryBySubId = (subId) => {
-        if (subId >= 3100 && subId <= 3106) {
+        if (subId >= 3371 && subId <= 3380) {
           return '/javascript';
-        } else if (subId >= 3107 && subId <= 3309) {
+        } else if (subId >= 3380 && subId <= 3387) {
           return '/html';
         } else {
           
@@ -74,7 +72,7 @@ const roboto = Roboto({
                 Texto por definir para cada categoria
               </p> */}
               <ul key={learningPath.id} className={`${active[index] ? "submenu active" : "d-none"}  `}>
-                {element.exercises.map((sub) => (
+                {learningPath.map((sub) => (
                     <li key={sub.id}
                     >
                       <Link
