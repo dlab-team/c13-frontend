@@ -2,6 +2,7 @@
 import LearningPath from "../_components/learningPath/learningPath";
 
 async function getData() {
+
   try {
 
     const apiUrl = "https://tutorial-interactivo-sql-2.onrender.com/api/v2/courses/2/categories/351/exercises/";
@@ -21,6 +22,7 @@ async function getData() {
     console.error("Error al obtener datos:", error);
     throw error;
   }
+
 }
 
 export default async function Page() {
