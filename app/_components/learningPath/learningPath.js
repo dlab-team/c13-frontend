@@ -11,7 +11,6 @@ const roboto = Roboto({
 });
 
   const LearningPath = ({ learningPath }) => {
-    
     // console.log(getData)
 
     const [active, setActive] = useState([true, ...Array(learningPath.length - 1).fill(false)]);
