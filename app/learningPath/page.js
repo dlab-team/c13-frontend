@@ -1,20 +1,38 @@
 //"use client";
-import fsPromises from "fs/promises";
-import path from "path";
 import LearningPath from "../_components/learningPath/learningPath";
 
 async function getData() {
-  // Get the path of the json file
-  const filePath = path.join(process.cwd(), "app/learningPath/data.json");
-  // Read the json file
-  const jsonData = await fsPromises.readFile(filePath);
-  // Parse data as json
-  const data = JSON.parse(jsonData);
-  return data;
+
+  try {
+
+    const apiUrl = "https://tutorial-interactivo-sql-2.onrender.com/api/v2/courses/2/categories/351/exercises/";
+    // const apiUrlDos = "https://tutorial-interactivo-sql-2.onrender.com/api/v2/courses/2/categories/";
+    const response = await fetch(apiUrl);
+
+    if (!response.ok) {
+      throw new Error(`¡Error HTTP! Estado: ${response.status}`);
+    }
+
+    // Parseando la respuesta a JSON
+    const data = await response.json();
+
+    console.log(data);
+    return data;
+  } catch (error) {
+    console.error("Error al obtener datos:", error);
+    throw error;
+  }
+
 }
 
 export default async function Page() {
-  const data = await getData();
+  try {
+    const data = await getData();
 
-  return <LearningPath learningPath={data} />;
+    return <LearningPath learningPath={data} />;
+  } catch (error) {
+    // Manejando mensajes de error
+    console.error("Error en la página:", error);
+    return <div>Error cargando datos</div>;
+  }
 }

@@ -4,1100 +4,310 @@
         "name": "Ejercicios Javascript",
         "exercises": [
             {
-                "id": 3100,
-                "title": "Primer Ejercicio de Javascript",
-                "url": "",
-                "description": "Aprendiendo a utilizar la sintaxis básica de SELECT para recuperar datos de una tabla",
-                "completed": false
-            },
-            {
-                "id": 3101,
-                "title": "Segundo Ejercicio de Javascript",
-                "url": null,
-                "description": "Aprendiendo a utilizar la sintaxis básica de SELECT para recuperar datos de una tabla",
-                "completed": false
-            },
-            {
-                "id": 3102,
-                "title": "Tercer Ejercicio de Javascirpt",
-                "url": null,
-                "description": "Aprendiendo a utilizar la sintaxis básica de SELECT para recuperar datos de una tabla",
-                "completed": false
-            },
-            {
-                "id": 3103,
-                "title": "Cuarto Ejercicio de Javascirpt",
-                "url": null,
-                "description": "Aprendiendo a utilizar la sintaxis básica de SELECT para recuperar datos de una tabla",
-                "completed": false
-            },
-            {
-                "id": 3104,
-                "title": "Quinto Ejercicio de Javascirpt",
-                "url": "",
-                "description": "Aprendiendo a utilizar la sintaxis básica de SELECT para recuperar datos de una tabla",
-                "completed": false
-            },
-            {
-                "id": 3105,
-                "title": "Sexto Ejercicio de Javascirpt",
-                "url": "",
-                "description": "Aprendiendo a utilizar la sintaxis básica de SELECT para recuperar datos de una tabla",
-                "completed": false
-            },
-            {
-                "id": 3106,
-                "title": "Septimo Ejercicio de Javascirpt",
-                "url": "",
-                "description": "Aprendiendo a utilizar la sintaxis básica de SELECT para recuperar datos de una tabla",
-                "completed": false
-            }
-        ]
-    },
-    {
-        "id": 331,
-        "name": "Ejercicios con HTML",
-        "exercises": [
-            {
-                "id": 3126,
-                "title": "Primer ejercicio con HTMl",
-                "url": null,
-                "description": "Cómo recuperar datos específicos de una tabla utilizando la cláusula SELECT junto con la cláusula WHERE para filtrar y seleccionar solo las filas que cumplen con ciertas condiciones o criterios especificados, permitiendo obtener resultados más precisos y relevantes de la base de datos.",
-                "completed": false
-            },
-            {
-                "id": 3127,
-                "title": "Segundo ejercicio con HTMl",
-                "url": "",
-                "description": "Cómo recuperar datos específicos de una tabla utilizando la cláusula SELECT junto con la cláusula WHERE para filtrar y seleccionar solo las filas que cumplen con ciertas condiciones o criterios especificados, permitiendo obtener resultados más precisos y relevantes de la base de datos.",
-                "completed": false
-            },
-            {
-                "id": 3107,
-                "title": "Tercer ejercicio con HTMl",
-                "url": "",
-                "description": "Cómo recuperar datos específicos de una tabla utilizando la cláusula SELECT junto con la cláusula WHERE para filtrar y seleccionar solo las filas que cumplen con ciertas condiciones o criterios especificados, permitiendo obtener resultados más precisos y relevantes de la base de datos.",
-                "completed": false
-            },
-            {
-                "id": 3108,
-                "title": "Cuarto ejercicio con HTMl",
-                "url": null,
-                "description": "Cómo recuperar datos específicos de una tabla utilizando la cláusula SELECT junto con la cláusula WHERE para filtrar y seleccionar solo las filas que cumplen con ciertas condiciones o criterios especificados, permitiendo obtener resultados más precisos y relevantes de la base de datos.",
-                "completed": false
-            },
-            {
-                "id": 3109,
-                "title": "Quinto ejercicio con HTMl",
-                "url": "",
-                "description": "Cómo recuperar datos específicos de una tabla utilizando la cláusula SELECT junto con la cláusula WHERE para filtrar y seleccionar solo las filas que cumplen con ciertas condiciones o criterios especificados, permitiendo obtener resultados más precisos y relevantes de la base de datos.",
-                "completed": false
-            },
-            {
-                "id": 3110,
-                "title": "Sexto ejercicio con HTMl",
-                "url": "",
-                "description": "Cómo recuperar datos específicos de una tabla utilizando la cláusula SELECT junto con la cláusula WHERE para filtrar y seleccionar solo las filas que cumplen con ciertas condiciones o criterios especificados, permitiendo obtener resultados más precisos y relevantes de la base de datos.",
-                "completed": false
-            },
-            {
-                "id": 3111,
-                "title": "Septimo ejercicio con HTMl",
-                "url": null,
-                "description": "Cómo recuperar datos específicos de una tabla utilizando la cláusula SELECT junto con la cláusula WHERE para filtrar y seleccionar solo las filas que cumplen con ciertas condiciones o criterios especificados, permitiendo obtener resultados más precisos y relevantes de la base de datos.",
-                "completed": false
-            },
-            {
-                "id": 3113,
-                "title": "Octavo ejercicio con HTMl",
-                "url": "",
-                "description": "Cómo recuperar datos específicos de una tabla utilizando la cláusula SELECT junto con la cláusula WHERE para filtrar y seleccionar solo las filas que cumplen con ciertas condiciones o criterios especificados, permitiendo obtener resultados más precisos y relevantes de la base de datos.",
-                "completed": false
-            },
-            {
-                "id": 3112,
-                "title": "Noveno ejercicio con HTMl",
-                "url": "",
-                "description": "Cómo recuperar datos específicos de una tabla utilizando la cláusula SELECT junto con la cláusula WHERE para filtrar y seleccionar solo las filas que cumplen con ciertas condiciones o criterios especificados, permitiendo obtener resultados más precisos y relevantes de la base de datos.",
-                "completed": false
-            },
-            {
-                "id": 3287,
-                "title": "Seleccionando filas bajo una condición de igualdad (tipo de dato booleano true)",
-                "url": null,
-                "description": "Cómo recuperar datos específicos de una tabla utilizando la cláusula SELECT junto con la cláusula WHERE para filtrar y seleccionar solo las filas que cumplen con ciertas condiciones o criterios especificados, permitiendo obtener resultados más precisos y relevantes de la base de datos.",
-                "completed": false
-            },
-            {
-                "id": 3288,
-                "title": "Seleccionando filas bajo una condición de igualdad (tipo de dato booleano false)",
-                "url": null,
-                "description": "Cómo recuperar datos específicos de una tabla utilizando la cláusula SELECT junto con la cláusula WHERE para filtrar y seleccionar solo las filas que cumplen con ciertas condiciones o criterios especificados, permitiendo obtener resultados más precisos y relevantes de la base de datos.",
-                "completed": false
-            },
-            {
-                "id": 3116,
-                "title": "Utilizando dos condiciones con operador \"and\"",
-                "url": null,
-                "description": "Cómo recuperar datos específicos de una tabla utilizando la cláusula SELECT junto con la cláusula WHERE para filtrar y seleccionar solo las filas que cumplen con ciertas condiciones o criterios especificados, permitiendo obtener resultados más precisos y relevantes de la base de datos.",
-                "completed": false
-            },
-            {
-                "id": 3117,
-                "title": "Utilizando dos condiciones con operador \"and\" parte 2",
-                "url": null,
-                "description": "Cómo recuperar datos específicos de una tabla utilizando la cláusula SELECT junto con la cláusula WHERE para filtrar y seleccionar solo las filas que cumplen con ciertas condiciones o criterios especificados, permitiendo obtener resultados más precisos y relevantes de la base de datos.",
-                "completed": false
-            },
-            {
-                "id": 3118,
-                "title": "Utilizando operador \"OR\"",
-                "url": null,
-                "description": "Cómo recuperar datos específicos de una tabla utilizando la cláusula SELECT junto con la cláusula WHERE para filtrar y seleccionar solo las filas que cumplen con ciertas condiciones o criterios especificados, permitiendo obtener resultados más precisos y relevantes de la base de datos.",
-                "completed": false
-            },
-            {
-                "id": 3119,
-                "title": "Utilizando dos condiciones con operador \"or\"",
-                "url": null,
-                "description": "Cómo recuperar datos específicos de una tabla utilizando la cláusula SELECT junto con la cláusula WHERE para filtrar y seleccionar solo las filas que cumplen con ciertas condiciones o criterios especificados, permitiendo obtener resultados más precisos y relevantes de la base de datos.",
-                "completed": false
-            },
-            {
-                "id": 3120,
-                "title": "Seleccionando una fecha",
-                "url": null,
-                "description": "Cómo recuperar datos específicos de una tabla utilizando la cláusula SELECT junto con la cláusula WHERE para filtrar y seleccionar solo las filas que cumplen con ciertas condiciones o criterios especificados, permitiendo obtener resultados más precisos y relevantes de la base de datos.",
-                "completed": false
-            },
-            {
-                "id": 3121,
-                "title": "Seleccionando datos entre dos valores con \"between\"",
-                "url": null,
-                "description": "Cómo recuperar datos específicos de una tabla utilizando la cláusula SELECT junto con la cláusula WHERE para filtrar y seleccionar solo las filas que cumplen con ciertas condiciones o criterios especificados, permitiendo obtener resultados más precisos y relevantes de la base de datos.",
-                "completed": false
-            },
-            {
-                "id": 3122,
-                "title": "Seleccionando filas con \"like\"",
-                "url": null,
-                "description": "Cómo recuperar datos específicos de una tabla utilizando la cláusula SELECT junto con la cláusula WHERE para filtrar y seleccionar solo las filas que cumplen con ciertas condiciones o criterios especificados, permitiendo obtener resultados más precisos y relevantes de la base de datos.",
-                "completed": false
-            },
-            {
-                "id": 3123,
-                "title": "Seleccionando con comodin al principio",
-                "url": "",
-                "description": "Cómo recuperar datos específicos de una tabla utilizando la cláusula SELECT junto con la cláusula WHERE para filtrar y seleccionar solo las filas que cumplen con ciertas condiciones o criterios especificados, permitiendo obtener resultados más precisos y relevantes de la base de datos.",
-                "completed": false
-            },
-            {
-                "id": 3124,
-                "title": "Seleccionando registros sin valores nulos",
-                "url": null,
-                "description": "Cómo recuperar datos específicos de una tabla utilizando la cláusula SELECT junto con la cláusula WHERE para filtrar y seleccionar solo las filas que cumplen con ciertas condiciones o criterios especificados, permitiendo obtener resultados más precisos y relevantes de la base de datos.",
-                "completed": false
-            },
-            {
-                "id": 3125,
-                "title": "Seleccionando registros con valores nulos",
-                "url": null,
-                "description": "Cómo recuperar datos específicos de una tabla utilizando la cláusula SELECT junto con la cláusula WHERE para filtrar y seleccionar solo las filas que cumplen con ciertas condiciones o criterios especificados, permitiendo obtener resultados más precisos y relevantes de la base de datos.",
-                "completed": false
-            }
-        ]
-    },
-    {
-        "id": 332,
-        "name": "Ordenando resultados (orden y limit)",
-        "exercises": [
-            {
-                "id": 3128,
-                "title": "Ordenando filas",
-                "url": null,
-                "description": "Clasificando los datos recuperados de una tabla en función de una o más columnas, ya sea en orden ascendente o descendente para organizar los resultados de una consulta en un orden específico.",
-                "completed": false
-            },
-            {
-                "id": 3129,
-                "title": "Ordenando filas asc explicito",
-                "url": null,
-                "description": "Clasificando los datos recuperados de una tabla en función de una o más columnas, ya sea en orden ascendente o descendente para organizar los resultados de una consulta en un orden específico.",
-                "completed": false
-            },
-            {
-                "id": 3130,
-                "title": "Ordenando filas desc",
-                "url": null,
-                "description": "Clasificando los datos recuperados de una tabla en función de una o más columnas, ya sea en orden ascendente o descendente para organizar los resultados de una consulta en un orden específico.",
-                "completed": false
-            },
-            {
-                "id": 3131,
-                "title": "Ordenando filas con valores nulos",
-                "url": null,
-                "description": "Clasificando los datos recuperados de una tabla en función de una o más columnas, ya sea en orden ascendente o descendente para organizar los resultados de una consulta en un orden específico.",
-                "completed": false
-            },
-            {
-                "id": 3132,
-                "title": "Ordenando con nulos al final",
-                "url": null,
-                "description": "Clasificando los datos recuperados de una tabla en función de una o más columnas, ya sea en orden ascendente o descendente para organizar los resultados de una consulta en un orden específico.",
-                "completed": false
-            },
-            {
-                "id": 3133,
-                "title": "Combinaciones de orden",
-                "url": null,
-                "description": "Clasificando los datos recuperados de una tabla en función de una o más columnas, ya sea en orden ascendente o descendente para organizar los resultados de una consulta en un orden específico.",
-                "completed": false
-            },
-            {
-                "id": 3134,
-                "title": "Combinaciones de orden asc y desc",
-                "url": null,
-                "description": "Clasificando los datos recuperados de una tabla en función de una o más columnas, ya sea en orden ascendente o descendente para organizar los resultados de una consulta en un orden específico.",
-                "completed": false
-            }
-        ]
-    },
-    {
-        "id": 333,
-        "name": "Limit",
-        "exercises": [
-            {
-                "id": 3135,
-                "title": "Limitando la cantidad de resultados",
-                "url": null,
-                "description": "Especificando el número máximo de filas recuperadas de una tabla para limitar la cantidad de resultados mostrados y optimizar el rendimiento de la consulta.  ",
-                "completed": false
-            },
-            {
-                "id": 3136,
-                "title": "Obtener los primeros alumnos con mejor nota",
-                "url": null,
-                "description": "Especificando el número máximo de filas recuperadas de una tabla para limitar la cantidad de resultados mostrados y optimizar el rendimiento de la consulta.  ",
-                "completed": false
-            },
-            {
-                "id": 3137,
-                "title": "Obtener el nombre del concierto con más entradas vendidas",
-                "url": null,
-                "description": "Especificando el número máximo de filas recuperadas de una tabla para limitar la cantidad de resultados mostrados y optimizar el rendimiento de la consulta.  ",
-                "completed": false
-            }
-        ]
-    },
-    {
-        "id": 335,
-        "name": "Operaciones con strings",
-        "exercises": [
-            {
-                "id": 3141,
-                "title": "Transformando un string a mayúsculas",
-                "url": null,
-                "description": "Buscar, extraer, concatenar, manipular y cambiar el formato de datos almacenados de tipo texto o cadenas de caracteres",
-                "completed": false
-            },
-            {
-                "id": 3142,
-                "title": "Trasformando un string a minúsculas",
-                "url": null,
-                "description": "Buscar, extraer, concatenar, manipular y cambiar el formato de datos almacenados de tipo texto o cadenas de caracteres",
-                "completed": false
-            },
-            {
-                "id": 3143,
-                "title": "Quitando espacios en blanco de un string",
-                "url": null,
-                "description": "Buscar, extraer, concatenar, manipular y cambiar el formato de datos almacenados de tipo texto o cadenas de caracteres",
-                "completed": false
-            },
-            {
-                "id": 3144,
-                "title": "Combinando funciones",
-                "url": null,
-                "description": "Buscar, extraer, concatenar, manipular y cambiar el formato de datos almacenados de tipo texto o cadenas de caracteres",
-                "completed": false
-            },
-            {
-                "id": 3145,
-                "title": "Obteniendo el largo de un string",
-                "url": null,
-                "description": "Buscar, extraer, concatenar, manipular y cambiar el formato de datos almacenados de tipo texto o cadenas de caracteres",
-                "completed": false
-            },
-            {
-                "id": 3146,
-                "title": "Obteniendo el nombre mas largo de la tabla",
-                "url": null,
-                "description": "Buscar, extraer, concatenar, manipular y cambiar el formato de datos almacenados de tipo texto o cadenas de caracteres",
-                "completed": false
-            },
-            {
-                "id": 3147,
-                "title": "Ordenando todos los datos y la funcion",
-                "url": null,
-                "description": "Buscar, extraer, concatenar, manipular y cambiar el formato de datos almacenados de tipo texto o cadenas de caracteres",
-                "completed": false
-            },
-            {
-                "id": 3148,
-                "title": "Concatenar strings ",
-                "url": null,
-                "description": "Buscar, extraer, concatenar, manipular y cambiar el formato de datos almacenados de tipo texto o cadenas de caracteres",
-                "completed": false
-            },
-            {
-                "id": 3149,
-                "title": "Seleccionando caracteres de un string con SUBSTR",
-                "url": null,
-                "description": "Buscar, extraer, concatenar, manipular y cambiar el formato de datos almacenados de tipo texto o cadenas de caracteres",
-                "completed": false
-            },
-            {
-                "id": 3150,
-                "title": "Seleccionando caracteres",
-                "url": null,
-                "description": "Buscar, extraer, concatenar, manipular y cambiar el formato de datos almacenados de tipo texto o cadenas de caracteres",
-                "completed": false
-            }
-        ]
-    },
-    {
-        "id": 334,
-        "name": "Operaciones con fechas",
-        "exercises": [
-            {
-                "id": 3138,
-                "title": "Obteniendo la fecha de hoy",
-                "url": null,
-                "description": "Cómo manipular y operar con datos de tipo fecha para filtrar datos según rangos de fechas específicas ",
-                "completed": false
-            },
-            {
-                "id": 3139,
-                "title": "Obteniendo la fecha de mañana",
-                "url": null,
-                "description": "Cómo manipular y operar con datos de tipo fecha para filtrar datos según rangos de fechas específicas ",
-                "completed": false
-            },
-            {
-                "id": 3140,
-                "title": "Obteniendo la fecha de ayer",
-                "url": null,
-                "description": "Cómo manipular y operar con datos de tipo fecha para filtrar datos según rangos de fechas específicas ",
-                "completed": false
-            },
-            {
-                "id": 3312,
-                "title": "Extracción del año",
-                "url": null,
-                "description": "Cómo manipular y operar con datos de tipo fecha para filtrar datos según rangos de fechas específicas ",
-                "completed": false
-            },
-            {
-                "id": 3313,
-                "title": "Extracción del mes",
-                "url": null,
-                "description": "Cómo manipular y operar con datos de tipo fecha para filtrar datos según rangos de fechas específicas ",
-                "completed": false
-            },
-            {
-                "id": 3337,
-                "title": "Extracción del mes y año",
-                "url": null,
-                "description": "Cómo manipular y operar con datos de tipo fecha para filtrar datos según rangos de fechas específicas ",
-                "completed": false
-            },
-            {
-                "id": 3311,
-                "title": "Extracciones y where",
-                "url": "",
-                "description": "Cómo manipular y operar con datos de tipo fecha para filtrar datos según rangos de fechas específicas ",
-                "completed": false
-            }
-        ]
-    },
-    {
-        "id": 346,
-        "name": "Funciones de agregación",
-        "exercises": [
-            {
-                "id": 3151,
-                "title": "El mayor valor de una columna",
-                "url": null,
-                "description": "Conociendo las funciones de agregación y su uso",
-                "completed": false
-            },
-            {
-                "id": 3153,
-                "title": "El menor valor de una columna",
-                "url": "",
-                "description": "Conociendo las funciones de agregación y su uso",
-                "completed": false
-            },
-            {
-                "id": 3156,
-                "title": "Suma de elementos en una columna",
-                "url": null,
-                "description": "Conociendo las funciones de agregación y su uso",
-                "completed": false
-            },
-            {
-                "id": 3160,
-                "title": "Promedio de una columna",
-                "url": null,
-                "description": "Conociendo las funciones de agregación y su uso",
-                "completed": false
-            },
-            {
-                "id": 3286,
-                "title": "Contando elementos en una tabla",
-                "url": null,
-                "description": "Conociendo las funciones de agregación y su uso",
-                "completed": false
-            },
-            {
-                "id": 3314,
-                "title": "Ejercicio 1 : Funciones de agregacion con where",
-                "url": "",
-                "description": "Conociendo las funciones de agregación y su uso",
-                "completed": false
-            },
-            {
-                "id": 3315,
-                "title": "Ejercicio 2 : Funciones de agregacion con where",
-                "url": "",
-                "description": "Conociendo las funciones de agregación y su uso",
-                "completed": false
-            },
-            {
-                "id": 3316,
-                "title": "Ejercicio 3 : Funciones de agregacion con where",
-                "url": null,
-                "description": "Conociendo las funciones de agregación y su uso",
-                "completed": false
-            },
-            {
-                "id": 3317,
-                "title": "Ejercicio 4 : Funciones de agregacion con where",
-                "url": null,
-                "description": "Conociendo las funciones de agregación y su uso",
-                "completed": false
-            },
-            {
-                "id": 3155,
-                "title": "Conteo con condiciones con string",
-                "url": null,
-                "description": "Conociendo las funciones de agregación y su uso",
-                "completed": false
-            }
-        ]
-    },
-    {
-        "id": 347,
-        "name": "Distinct",
-        "exercises": [
-            {
-                "id": 3157,
-                "title": "Seleccionar filtrando datos repetidos",
-                "url": null,
-                "description": "Cómo eliminar los registros duplicados de una consulta utilizando la cláusula DISTINCT",
-                "completed": false
-            },
-            {
-                "id": 3318,
-                "title": "Seleccionando correos únicos",
-                "url": null,
-                "description": "Cómo eliminar los registros duplicados de una consulta utilizando la cláusula DISTINCT",
-                "completed": false
-            },
-            {
-                "id": 3319,
-                "title": "Seleccionar distintos años",
-                "url": null,
-                "description": "Cómo eliminar los registros duplicados de una consulta utilizando la cláusula DISTINCT",
-                "completed": false
-            },
-            {
-                "id": 3158,
-                "title": "Contar los valores distintos",
-                "url": null,
-                "description": "Cómo eliminar los registros duplicados de una consulta utilizando la cláusula DISTINCT",
-                "completed": false
-            },
-            {
-                "id": 3320,
-                "title": "Contando correos únicos ",
-                "url": null,
-                "description": "Cómo eliminar los registros duplicados de una consulta utilizando la cláusula DISTINCT",
-                "completed": false
-            },
-            {
-                "id": 3321,
-                "title": "Distinct con múltiples columnas",
-                "url": null,
-                "description": "Cómo eliminar los registros duplicados de una consulta utilizando la cláusula DISTINCT",
-                "completed": false
-            }
-        ]
-    },
-    {
-        "id": 348,
-        "name": "Introducción a grupos",
-        "exercises": [
-            {
-                "id": 3322,
-                "title": "Agrupando valores con GROUP BY",
-                "url": null,
-                "description": "Cómo agrupar los resultados de una consulta en función de una o más columnas, utilizando la cláusula GROUP BY.",
-                "completed": false
-            },
-            {
-                "id": 3323,
-                "title": "Agrupar y contar",
-                "url": "",
-                "description": "Cómo agrupar los resultados de una consulta en función de una o más columnas, utilizando la cláusula GROUP BY.",
-                "completed": false
-            },
-            {
-                "id": 3324,
-                "title": "Ejercitando agrupar y contar",
-                "url": "",
-                "description": "Cómo agrupar los resultados de una consulta en función de una o más columnas, utilizando la cláusula GROUP BY.",
-                "completed": false
-            },
-            {
-                "id": 3325,
-                "title": "Agrupar y sumar",
-                "url": null,
-                "description": "Cómo agrupar los resultados de una consulta en función de una o más columnas, utilizando la cláusula GROUP BY.",
-                "completed": false
-            },
-            {
-                "id": 3326,
-                "title": "Agrupar y promediar",
-                "url": null,
-                "description": "Cómo agrupar los resultados de una consulta en función de una o más columnas, utilizando la cláusula GROUP BY.",
-                "completed": false
-            },
-            {
-                "id": 3327,
-                "title": "Máximo por grupo",
-                "url": null,
-                "description": "Cómo agrupar los resultados de una consulta en función de una o más columnas, utilizando la cláusula GROUP BY.",
-                "completed": false
-            },
-            {
-                "id": 3328,
-                "title": "Mínimo por grupo",
-                "url": "",
-                "description": "Cómo agrupar los resultados de una consulta en función de una o más columnas, utilizando la cláusula GROUP BY.",
-                "completed": false
-            },
-            {
-                "id": 3329,
-                "title": "Funciones de agregación y fechas",
-                "url": null,
-                "description": "Cómo agrupar los resultados de una consulta en función de una o más columnas, utilizando la cláusula GROUP BY.",
-                "completed": false
-            },
-            {
-                "id": 3338,
-                "title": "Ejercitando funciones de agregación con fechas",
-                "url": null,
-                "description": "Cómo agrupar los resultados de una consulta en función de una o más columnas, utilizando la cláusula GROUP BY.",
-                "completed": false
-            },
-            {
-                "id": 3339,
-                "title": "Agrupando sin indicar el nombre de las columnas",
-                "url": null,
-                "description": "Cómo agrupar los resultados de una consulta en función de una o más columnas, utilizando la cláusula GROUP BY.",
-                "completed": false
-            },
-            {
-                "id": 3340,
-                "title": "Agrupando por múltiples columnas",
-                "url": null,
-                "description": "Cómo agrupar los resultados de una consulta en función de una o más columnas, utilizando la cláusula GROUP BY.",
-                "completed": false
-            }
-        ]
-    },
-    {
-        "id": 344,
-        "name": "Having",
-        "exercises": [
-            {
-                "id": 3161,
-                "title": "Introducción a Having",
-                "url": "",
-                "description": "Cómo filtrar los resultados de una consulta agrupada utilizando la cláusula HAVING.",
-                "completed": false
-            },
-            {
-                "id": 3330,
-                "title": "Buscando duplicados",
-                "url": null,
-                "description": "Cómo filtrar los resultados de una consulta agrupada utilizando la cláusula HAVING.",
-                "completed": false
-            },
-            {
-                "id": 3331,
-                "title": "Having y cuenta",
-                "url": null,
-                "description": "Cómo filtrar los resultados de una consulta agrupada utilizando la cláusula HAVING.",
-                "completed": false
-            },
-            {
-                "id": 3332,
-                "title": "Having y promedio",
-                "url": "",
-                "description": "Cómo filtrar los resultados de una consulta agrupada utilizando la cláusula HAVING.",
-                "completed": false
-            },
-            {
-                "id": 3368,
-                "title": "Having y order",
-                "url": null,
-                "description": "Cómo filtrar los resultados de una consulta agrupada utilizando la cláusula HAVING.",
-                "completed": false
-            },
-            {
-                "id": 3369,
-                "title": "Having y order 2",
-                "url": null,
-                "description": "Cómo filtrar los resultados de una consulta agrupada utilizando la cláusula HAVING.",
-                "completed": false
-            }
-        ]
-    },
-    {
-        "id": 349,
-        "name": "Subconsultas",
-        "exercises": [
-            {
-                "id": 3333,
-                "title": "Introduccion a subconsultas",
-                "url": "",
-                "description": "Cómo utilizar subconsultas para recuperar datos de una tabla utilizando los resultados de otra consulta.",
-                "completed": false
-            },
-            {
-                "id": 3334,
-                "title": "Subconsultas y where parte 1",
-                "url": null,
-                "description": "Cómo utilizar subconsultas para recuperar datos de una tabla utilizando los resultados de otra consulta.",
-                "completed": false
-            },
-            {
-                "id": 3335,
-                "title": "Subconsultas y where parte 2",
-                "url": null,
-                "description": "Cómo utilizar subconsultas para recuperar datos de una tabla utilizando los resultados de otra consulta.",
-                "completed": false
-            },
-            {
-                "id": 3336,
-                "title": "Subconsultas y where parte 3",
-                "url": null,
-                "description": "Cómo utilizar subconsultas para recuperar datos de una tabla utilizando los resultados de otra consulta.",
-                "completed": false
-            },
-            {
-                "id": 3353,
-                "title": "Subconsultas con IN",
-                "url": null,
-                "description": "Cómo utilizar subconsultas para recuperar datos de una tabla utilizando los resultados de otra consulta.",
-                "completed": false
-            },
-            {
-                "id": 3354,
-                "title": "Subconsultas con IN parte 2",
-                "url": null,
-                "description": "Cómo utilizar subconsultas para recuperar datos de una tabla utilizando los resultados de otra consulta.",
-                "completed": false
-            },
-            {
-                "id": 3355,
-                "title": "Subconsultas con IN parte 3",
-                "url": null,
-                "description": "Cómo utilizar subconsultas para recuperar datos de una tabla utilizando los resultados de otra consulta.",
-                "completed": false
-            },
-            {
-                "id": 3356,
-                "title": "Subconsultas en el FROM",
-                "url": null,
-                "description": "Cómo utilizar subconsultas para recuperar datos de una tabla utilizando los resultados de otra consulta.",
-                "completed": false
-            },
-            {
-                "id": 3357,
-                "title": "Subconsultas en el FROM parte2",
-                "url": null,
-                "description": "Cómo utilizar subconsultas para recuperar datos de una tabla utilizando los resultados de otra consulta.",
-                "completed": false
-            }
-        ]
-    },
-    {
-        "id": 350,
-        "name": "Combinación de consultas",
-        "exercises": [
-            {
-                "id": 3359,
-                "title": "Introducción a la cláusula unión de SQL",
-                "url": null,
-                "description": null,
-                "completed": false
-            },
-            {
-                "id": 3360,
-                "title": "Eliminar duplicados con union",
-                "url": null,
-                "description": null,
-                "completed": false
-            },
-            {
-                "id": 3361,
-                "title": "Union vs Union all",
-                "url": null,
-                "description": null,
-                "completed": false
-            },
-            {
-                "id": 3362,
-                "title": "Introducción a intersección",
-                "url": null,
-                "description": null,
-                "completed": false
-            },
-            {
-                "id": 3367,
-                "title": "El operador Except",
-                "url": null,
-                "description": null,
-                "completed": false
-            }
-        ]
-    },
-    {
-        "id": 337,
-        "name": "Inserción de registros",
-        "exercises": [
-            {
-                "id": 3289,
-                "title": "Añadir un registro en una tabla",
-                "url": "",
-                "description": null,
-                "completed": false
-            },
-            {
-                "id": 3370,
-                "title": "Añadir un registro en una tabla parte 2",
-                "url": null,
-                "description": null,
-                "completed": false
-            },
-            {
-                "id": 3371,
-                "title": "Especificando valores nulos",
-                "url": null,
-                "description": null,
-                "completed": false
-            },
-            {
-                "id": 3372,
-                "title": "Añadir un registro especificando columnas",
-                "url": null,
-                "description": null,
-                "completed": false
-            },
-            {
-                "id": 3291,
-                "title": "Añadir un registro especificando solo algunas columnas",
-                "url": "",
-                "description": null,
-                "completed": false
-            },
-            {
-                "id": 3373,
-                "title": "Añadir fecha de hoy a un registro",
-                "url": null,
-                "description": null,
-                "completed": false
-            },
-            {
-                "id": 3374,
-                "title": "Añadiendo fecha y hora al insertar",
-                "url": null,
-                "description": null,
-                "completed": false
-            },
-            {
-                "id": 3375,
-                "title": "Añadir múltiples valores",
-                "url": "",
-                "description": null,
-                "completed": false
-            },
-            {
-                "id": 3290,
-                "title": "Crear un registro con un campo autoincremental",
-                "url": "",
-                "description": null,
-                "completed": false
-            },
-            {
-                "id": 3292,
-                "title": "Añadir un registro asumiendo un valor por defecto",
-                "url": "",
-                "description": null,
-                "completed": false
-            }
-        ]
-    },
-    {
-        "id": 345,
-        "name": "Borrado y modificación de registros",
-        "exercises": [
-            {
-                "id": 3293,
-                "title": "Borrar todos los registros de una tabla",
-                "url": "",
-                "description": "Cómo eliminar y modificar registros de una tabla.",
-                "completed": false
-            },
-            {
-                "id": 3294,
-                "title": "Borrar un registro con where",
-                "url": "",
-                "description": "Cómo eliminar y modificar registros de una tabla.",
-                "completed": false
-            },
-            {
-                "id": 3295,
-                "title": "Editar registros",
-                "url": "",
-                "description": "Cómo eliminar y modificar registros de una tabla.",
-                "completed": false
-            },
-            {
-                "id": 3376,
-                "title": "Editar todos los registros utilizando where",
-                "url": null,
-                "description": "Cómo eliminar y modificar registros de una tabla.",
-                "completed": false
-            },
-            {
-                "id": 3296,
-                "title": "Editar múltiples columnas",
-                "url": "",
-                "description": "Cómo eliminar y modificar registros de una tabla.",
-                "completed": false
-            }
-        ]
-    },
-    {
-        "id": 351,
-        "name": "Tablas",
-        "exercises": [
-            {
-                "id": 3389,
-                "title": "Nuestra primera tabla",
-                "url": "",
-                "description": null,
-                "completed": false
-            },
-            {
-                "id": 3390,
-                "title": "Una tabla con múltiples columnas",
-                "url": null,
-                "description": null,
-                "completed": false
-            },
-            {
-                "id": 3391,
-                "title": "Tablas con distintos tipos de datos",
-                "url": null,
-                "description": null,
-                "completed": false
-            },
-            {
-                "id": 3392,
-                "title": "Tipos reales",
-                "url": null,
-                "description": null,
-                "completed": false
-            },
-            {
-                "id": 3403,
-                "title": "Borrar un tabla",
-                "url": null,
-                "description": null,
-                "completed": false
-            },
-            {
-                "id": 3404,
-                "title": "Actualizar una tabla",
-                "url": null,
-                "description": null,
-                "completed": false
-            }
-        ]
-    },
-    {
-        "id": 352,
-        "name": "Restricciones",
-        "exercises": [
-            {
-                "id": 3393,
-                "title": "Introducción a restricciones",
-                "url": null,
-                "description": null,
-                "completed": false
-            },
-            {
-                "id": 3409,
-                "title": "Agregar una restricción a una tabla existente",
-                "url": null,
-                "description": null,
-                "completed": false
-            },
-            {
-                "id": 3410,
-                "title": "Borrar una restricción",
-                "url": "",
-                "description": null,
-                "completed": false
-            },
-            {
-                "id": 3394,
-                "title": "Restricción unique",
-                "url": null,
-                "description": null,
-                "completed": false
-            },
-            {
-                "id": 3395,
-                "title": "Restricciones con check",
-                "url": null,
-                "description": null,
-                "completed": false
-            },
-            {
-                "id": 3407,
-                "title": "Clave unica",
-                "url": null,
-                "description": null,
-                "completed": false
-            },
-            {
-                "id": 3408,
-                "title": "Autoincremental",
-                "url": null,
-                "description": null,
-                "completed": false
-            },
-            {
-                "id": 3405,
-                "title": "Autoincremental parte 2",
-                "url": null,
-                "description": null,
-                "completed": false
-            },
-            {
-                "id": 3406,
-                "title": "Primary key y texto",
-                "url": null,
-                "description": null,
-                "completed": false
-            }
-        ]
-    },
-    {
-        "id": 340,
-        "name": "Consultas en múltiples tablas",
-        "exercises": [
-            {
-                "id": 3301,
-                "title": "Múltiples tablas",
-                "url": "",
-                "description": null,
-                "completed": false
-            },
-            {
-                "id": 3302,
-                "title": "Múltiples tablas: utilizando atributo del mismo nombre",
-                "url": "",
-                "description": null,
-                "completed": false
-            },
-            {
-                "id": 3303,
-                "title": "Seleccionando algunos atributos",
-                "url": "",
-                "description": null,
-                "completed": false
-            },
-            {
-                "id": 3304,
-                "title": "Join sin resultados",
-                "url": "",
-                "description": null,
-                "completed": false
-            },
-            {
-                "id": 3305,
-                "title": "Orden de cláusulas",
-                "url": "",
-                "description": null,
-                "completed": false
-            },
-            {
-                "id": 3310,
-                "title": "Agrupar por múltiples columnas",
-                "url": "",
-                "description": null,
-                "completed": false
-            }
-        ]
-    },
-    {
-        "id": 342,
-        "name": "Tipos de join",
-        "exercises": [
-            {
-                "id": 3306,
-                "title": "Inner Join",
-                "url": "",
-                "description": "Conociendo los diferentes tipos de JOIN y sus diferencias",
-                "completed": false
-            },
-            {
-                "id": 3307,
-                "title": "Left Join",
-                "url": "",
-                "description": "Conociendo los diferentes tipos de JOIN y sus diferencias",
-                "completed": false
-            },
-            {
-                "id": 3308,
-                "title": "Right Join",
-                "url": "",
-                "description": "Conociendo los diferentes tipos de JOIN y sus diferencias",
-                "completed": false
-            },
-            {
-                "id": 3309,
-                "title": "Left Join y Right Join ",
-                "url": "",
-                "description": "Conociendo los diferentes tipos de JOIN y sus diferencias",
-                "completed": false
+            "id": 3371,
+            "title": "Declarar mi primera variable",
+            "url": "js-1",
+            "content": "El operador de asignación es una herramienta fundamental en la programación, ya que nos permite asignar un valor a una variable. \r\n\r\nPara realizar esta acción utilizaremos el signo igual (=). \r\n\r\nPor ejemplo, si queremos asignar el valor 5 a una variable llamada \"\"numero\"\", escribiríamos:\r\n\r\n```\r\nvar numero = 5;\r\n```\r\n\r\nEn este caso, estamos declarando la variable \"\"numero\"\" y asignándole el valor 5. \r\n\r\nNota: Es importante tener en cuenta que el operador de asignación no es lo mismo que el operador de comparación (== o ===), que se utiliza para comparar dos valores.\r\n\r\nAhora, como ya aprendimos a declarar una variable, vamos a asignarle un valor utilizando el operador =\r\n\r\nEjercicio:\r\n\r\n1. Crea una variable llamada \"\"num\"\" usando la palabra especial var y asígnale con el signo igual (=) el valor numérico 10.\r\n",
+            "base_query": "",
+            "assert_query": "",
+            "assert_result": "",
+            "position": 10,
+            "category_id": 351,
+            "created_at": "2023-12-26T13:44:57.415-03:00",
+            "updated_at": "2024-01-02T19:15:47.750-03:00",
+            "exercise_type": 1,
+            "modifiers": "",
+            "code": "",
+            "wrapper": "function main(){   \\n  // Escribe Aquí \\n    return num }",
+            "wrapper_visibility": false
+            },
+            {
+            "id": 3372,
+            "title": "Declara una variable de tipo texto",
+            "url": "js-2",
+            "content": "En JavaScript existen varios tipos de datos que se utilizan para almacenar información. Los tipos de datos más comunes son: números, cadenas de texto, booleanos, objetos y arreglos.\r\n\r\nEl tipo de dato texto, también conocido como cadena de caracteres, es utilizado para representar información en forma de palabras, frases o párrafos. \r\n\r\nEn JavaScript, las cadenas de texto se definen entre comillas simples o dobles y pueden ser manipuladas mediante diferentes métodos.\r\n\r\nEjemplo:\r\n\r\n```\r\nlet miPrimeraCadena = \"\"Esta es una cadena de texto\"\";\r\n```\r\n\r\nEjercicio:\r\n\r\nCrea una variable llamada miFrase usando la palabra reservada let que reciba como parámetro la siguiente cadena de texto: \"\"Hola Mundo\"\".\r\n",
+            "base_query": "",
+            "assert_query": "",
+            "assert_result": "",
+            "position": 20,
+            "category_id": 351,
+            "created_at": "2023-12-26T16:55:06.530-03:00",
+            "updated_at": "2023-12-26T16:55:06.530-03:00",
+            "exercise_type": 1,
+            "modifiers": "",
+            "code": "",
+            "wrapper": "\"function main(){     // Escribe Aquí     return miFrase }\"",
+            "wrapper_visibility": false
+            },
+            {
+            "id": 3373,
+            "title": "Declara una variable de tipo numérico",
+            "url": "js-3",
+            "content": "Los datos de tipo numérico son aquellos que representan valores numéricos, como enteros o decimales. \r\nEstos datos se pueden utilizar para realizar operaciones matemáticas, como sumas, restas, multiplicaciones y divisiones. También se pueden comparar para determinar si un valor es mayor, menor o igual a otro valor numérico.\r\n\r\nEjemplo:\r\n\r\n```\r\nvar num = 10;\r\n```\r\n\r\nEjercicio:\r\n\r\nDeclara un variable usando la palabra reservada let con el nombre miNumero y asignale el valor 8.",
+            "base_query": "",
+            "assert_query": "",
+            "assert_result": "",
+            "position": 30,
+            "category_id": 351,
+            "created_at": "2023-12-26T17:33:34.935-03:00",
+            "updated_at": "2023-12-26T17:33:34.935-03:00",
+            "exercise_type": 1,
+            "modifiers": "",
+            "code": "",
+            "wrapper": "function main(){     // Escribe Aquí     return miNumero }",
+            "wrapper_visibility": true
+            },
+            {
+            "id": 3374,
+            "title": "Mostrar la suma de dos valores",
+            "url": "js-4",
+            "content": "Para trabajar con números en JavaScript, se pueden utilizar operadores aritméticos como suma (+), resta (-), multiplicación (*) y división (/). También existen operadores más avanzados como el módulo (%) y el operador de incremento/decremento (++/--).\r\n\r\nComo ejemplo podemos realizar una simple resta.\r\n```\r\nlet a = 10;\r\nlet b = 3;\r\n\r\nlet resultado = a - b\r\n```\r\nAhora la variable resultado tiene guardado el valor de la resta entre a y b.\r\n\r\n\r\nEjercicio: \r\n\r\nRealiza una suma de variables de tipo numéricas:\r\n\r\n1. Declara una variable usando la palabra reservada let con el nombre primerNum y asignale el valor 4.\r\n2. Declara una variable usando la palabra reservada let con el nombre segundoNum y asignale el valor 10.\r\n3. Declara una tercera variable usando la palabra reservada const con el nombre resultado y suma primerNum con segundoNum.\r\n",
+            "base_query": "",
+            "assert_query": "",
+            "assert_result": "",
+            "position": 40,
+            "category_id": 351,
+            "created_at": "2023-12-26T17:34:40.353-03:00",
+            "updated_at": "2023-12-26T18:06:18.206-03:00",
+            "exercise_type": 1,
+            "modifiers": "",
+            "code": "",
+            "wrapper": "\"function main(){     // Escribe Aquí     return resultado }\"",
+            "wrapper_visibility": false
+            },
+            {
+            "id": 3375,
+            "title": "Multiplicación de valores",
+            "url": "js-5",
+            "content": "En el ejemplo anterior realizamos una suma de variables. Del mismo modo podemos realizar otras operaciones.\r\n\r\nComo ejemplo podemos realizar una simple resta.\r\n```\r\nlet resta = 10 - 5\r\n```\r\nAhora esta variable posee el resultado de la resta de ambos números.\r\n\r\nEjercicio: \r\n\r\nDeclara una variable con la palabra reservada let que se llame miOperacion y ejecuta la multiplicación de los números 20, 30 y 150.",
+            "base_query": "",
+            "assert_query": "",
+            "assert_result": "",
+            "position": 50,
+            "category_id": 351,
+            "created_at": "2023-12-26T18:08:44.025-03:00",
+            "updated_at": "2023-12-26T18:08:44.025-03:00",
+            "exercise_type": 1,
+            "modifiers": "",
+            "code": "",
+            "wrapper": "\"function main(){     // Escribe Aquí     return miOperacion }\"",
+            "wrapper_visibility": false
+            },
+            {
+            "id": 3376,
+            "title": "Incrementar el valor de un número",
+            "url": "js-6",
+            "content": "Para incrementar el valor de un número, se puede utilizar el operador incremental (++) y de esta forma, aumentamos en 1 el valor de nuestra variable numérica.\r\n\r\nEjemplo:\r\n\r\nSi tenemos una variable a, con el valor 10, y queremos sumar 1 a esta variable, podemos aplicar el operador ++:\r\n```\r\nlet a = 10;\r\na++\r\n```\r\nDe esta forma, a la variable \"\"a\"\", se le suma 1.\r\n\r\nPasa lo mismo si es que queremos disminuir un valor, salvo que utilizaremos el operador decremental (--).\r\n\r\nEjercicio:\r\n\r\n1. Declara una variable num con let, y asignale el valor 20.\r\n2. Utilizando el operador decremental restale 1 a esa variable.\r\n\r\n",
+            "base_query": "",
+            "assert_query": "",
+            "assert_result": "",
+            "position": 60,
+            "category_id": 351,
+            "created_at": "2023-12-26T18:17:15.186-03:00",
+            "updated_at": "2023-12-26T18:17:15.186-03:00",
+            "exercise_type": 1,
+            "modifiers": "",
+            "code": "",
+            "wrapper": "\"function main(){     // Escribe Aquí     return num }\"",
+            "wrapper_visibility": false
+            },
+            {
+            "id": 3377,
+            "title": "Utilizando el operador += para sumar",
+            "url": "js-7",
+            "content": "Javascript permite sumar un numero de manera facil y rápida utilizando el operador +=. Este operador es una abreviación de la operación de suma y asignación, lo que significa que se puede sumar un valor a una variable existente y asignar el resultado a la misma variable en una sola línea de código.\r\n\r\n```\r\nlet num = 10;\r\nnum += 5;\r\n\r\n```\r\nAl realizar la suma y asignación al mismo tiempo, obtendremos la suma de 10+5 utilizando menos código..\r\n\r\n\r\nEjercicio:\r\n\r\n1. Crea una variable llamada miNumero usando la palabra reservada let y asignale el valor numérico 20.\r\n2. Luego usando el operador += súmale el número necesario para que el resultado sea 30.",
+            "base_query": "",
+            "assert_query": "",
+            "assert_result": "",
+            "position": 70,
+            "category_id": 351,
+            "created_at": "2023-12-26T18:18:16.969-03:00",
+            "updated_at": "2023-12-26T18:18:16.969-03:00",
+            "exercise_type": 1,
+            "modifiers": "",
+            "code": "",
+            "wrapper": "\"function main(){     // Escribe Aquí     return num }\"",
+            "wrapper_visibility": false
+            },
+            {
+            "id": 3378,
+            "title": "Asigna el valor de una variable a otra",
+            "url": "js-8",
+            "content": "En programación, es común necesitar asignar el valor de una variable a otra. Esto se hace para poder manipular el valor de una variable sin perder su valor original. Es importante tener en cuenta que el programa se lee de arriba hacia abajo, por lo que si una instrucción reasigna un valor de una variable, esta simplemente se cambia.\r\n\r\nPara asignar el valor de una variable a otra en JavaScript, se utiliza el operador de asignación (=). Por ejemplo:\r\n\r\n```\r\nlet variable1 = 5;\r\nlet variable2 = 7;\r\n\r\nvariable2 = variable1\r\n```\r\n\r\nEn este caso, se está asignando el valor de la variable1 a la variable2. Ahora, el valor de variable2 fue reemplazado por el valor de variable1.\r\n\r\n\r\nEjercicio:\r\n\r\nDeclara dos variables utilizando let:\r\n1. \"\"variable1\"\" con el valor 4.\r\n2. \"\"variable2\"\" con el texto \"\"JavaScript\"\". \r\n\r\nLuego asigna el valor de variable1 a la variable2.\r\n",
+            "base_query": "",
+            "assert_query": "",
+            "assert_result": "",
+            "position": 80,
+            "category_id": 351,
+            "created_at": "2023-12-26T18:19:31.908-03:00",
+            "updated_at": "2023-12-26T18:22:50.069-03:00",
+            "exercise_type": 1,
+            "modifiers": "",
+            "code": "",
+            "wrapper": "\"function main(){     // Escribe Aquí     return variable2 }\"",
+            "wrapper_visibility": false
+            },
+            {
+            "id": 3379,
+            "title": "Comparación de dos valores",
+            "url": "js-9",
+            "content": "En este ejercicio de JavaScript, vamos a trabajar con la comparación de dos valores. Es importante tener en cuenta que comparar y asignar valores son cosas distintas. \r\n\r\nPara asignar un valor a una variable, utilizamos el operador =, mientras que para comparar dos valores, utilizamos el operador ==.\r\n\r\nPara entenderlo mejor, vamos a declarar dos variables y les asignaremos los siguientes valores:\r\n\r\n```\r\nlet valor1 = 10\r\nlet valor2 = 5\r\n\r\n```\r\nA continuación, para compararlas vamos a utilizar el operador ==\r\n\r\n```\r\nvalor1 == valor2 // el resultado de esta comparacion es false, ya que son diferentes números\r\n\r\n```  \r\n\r\nEjercicio:\r\n\r\nDeclara dos variables: \r\n\r\n1. Declara la variable var1 con la palabra reservada let y asignale el valor 500.\r\n2. Declara la variable var2 con la palabra reservada let y asignale el valor 100.\r\n3. Reasigna el valor a var2 utilizando el operador = para que tenga el mismo valor que var1.\r\n3. Declara una tercera variable con la palabra reservada let llamada resultado, y realiza una comparación entre ambos valores.\r\n\r\n\r\nCon este ejercicio, hemos aprendido a comparar dos valores en JavaScript utilizando el operador ==. También hemos visto la diferencia entre comparar y asignar valores, y cómo utilizar cada operador en su contexto correspondiente.",
+            "base_query": "",
+            "assert_query": "",
+            "assert_result": "",
+            "position": 90,
+            "category_id": 351,
+            "created_at": "2023-12-26T18:20:22.279-03:00",
+            "updated_at": "2023-12-26T18:23:05.023-03:00",
+            "exercise_type": 1,
+            "modifiers": "",
+            "code": "",
+            "wrapper": "\"function main(){     // Escribe Aquí     return resultado }\"",
+            "wrapper_visibility": false
+            },
+            {
+            "id": 3380,
+            "title": "Concatenando cadenas de texto",
+            "url": "js-10",
+            "content": "Se pueden sumar palabras o frases en JavaScript utilizando el operador de concatenación (+). \r\n\r\nEs importante tener en cuenta que al unir strings, se deben utilizar comillas para indicar que se trata de texto y no de variables o números.\r\n\r\nEjemplo:\r\n\r\n```\r\nconst primFrase = \"\"Tutorial \"\"\r\nconst segFrase = \"\"de JavaScript\"\"\r\n\r\nconst fraseFinal = primFrase + segFrase  \r\n\r\n```\r\nEl resultado de esa concatenación será \"\"Tutorial de Javascript\"\"\r\n\r\nNota: Si estas concatenando palabras seguidas, ten en cuenta agregar los espacios al terminar la frase para que las palabras no queden juntas.\r\n\r\n\r\nEjercicio:\r\n\r\n1. Crea una variable con let que tenga el nombre miFrase.\r\n2. Asignale las siguientes cadenas de texto concatenándolas: \"\"Estoy uniendo \"\" y \"\"dos frases\"\"",
+            "base_query": "",
+            "assert_query": "",
+            "assert_result": "",
+            "position": 100,
+            "category_id": 351,
+            "created_at": "2023-12-26T18:21:37.148-03:00",
+            "updated_at": "2023-12-26T18:23:15.226-03:00",
+            "exercise_type": 1,
+            "modifiers": "",
+            "code": "",
+            "wrapper": "function main(){     // Escribe Aquí     return miFrase }",
+            "wrapper_visibility": false
+            },
+            {
+            "id": 3381,
+            "title": "Concatenando cadenas de texto con el operador +=",
+            "url": "js-11",
+            "content": "Una forma de ahorrar pasos al momento de realizar ciertas operaciones es usar el operador +=. Este operador permite agregar un string a otro sin tener que crear una nueva variable.\r\n\r\n```\r\nvar miPalabra = \"\"Buenas\"\";\r\nmiPalabra += \"\"Tardes\"\"\r\n\r\n```\r\nComo podemos ver, podemos agregar directamente una cadena de texto a la variable \"\"miPalabra\"\".\r\n\r\n\r\nEjercicio:\r\n\r\n1. Crea una variable llamada miLenguaje usando la palabra reservada let y asignale la cadena de texto \"\"Mi lenguaje es \"\".\r\n2. Luego usando el operador += agrega la cadena \"\"JavaScript\"\"\r\n\r\nNota: Recuerda que las cadenas de texto distinguen de mayúsculas y minúsculas, y además recuerda agregar un espacio al final de la primera cadena de texto.\r\n",
+            "base_query": "",
+            "assert_query": "",
+            "assert_result": "",
+            "position": 110,
+            "category_id": 351,
+            "created_at": "2023-12-26T18:24:23.028-03:00",
+            "updated_at": "2023-12-26T18:24:23.028-03:00",
+            "exercise_type": 1,
+            "modifiers": "",
+            "code": "",
+            "wrapper": "\"function main(){     // Escribe Aquí     return miLenguaje }\"",
+            "wrapper_visibility": false
+            },
+            {
+            "id": 3382,
+            "title": "Obteniendo la longitud de mi cadena de texto",
+            "url": "js-12",
+            "content": "En JavaScript, existen propiedades que nos permiten obtener información específica sobre nuestros elementos.\r\n\r\nUna de estas propiedades es length, que usándola en nuestra cadena de texto nos permite obtener el número de caracteres que contiene.\r\n\r\nEs importante saber la longitud de una cadena de texto para poder manipularla de manera adecuada y realizar operaciones específicas sobre ella. \r\n\r\nEjemplo:\r\n\r\nEn este ejemplo, creamos la variable palabra y le asignamos el string \"\"Hola\"\".\r\nLuego creamos otra variable para almacenar la cantidad de caracteres que contiene nuestra cadena.\r\nPara poder utilizar la propiedad length, debemos escribir la variable, poner un punto y escribir la propiedad length\r\n\r\n```\r\nlet palabra = \"\"Hola\"\";\r\nlet totalDePalabras = palabra.length \r\n\r\n```\r\nDe esta forma, totalDePalabras va a tomar el valor 4, la cantidad de caracteres de la cadena \"\"Hola\"\".\r\n\r\n\r\nEjercicio:\r\n\r\n1. Declara una variable con let que tenga por nombre texto.\r\n2. Asigna dentro de esa variable la palabra \"\"JavaScript ADL\"\"\r\n3. Declara una nueva variable con let que tenga por nombre total y utilizando la variable texto, aplica la propiedad length.\r\n",
+            "base_query": "",
+            "assert_query": "",
+            "assert_result": "",
+            "position": 120,
+            "category_id": 351,
+            "created_at": "2023-12-26T18:34:36.564-03:00",
+            "updated_at": "2023-12-26T18:34:36.564-03:00",
+            "exercise_type": 1,
+            "modifiers": "",
+            "code": "",
+            "wrapper": "\"function main(){     // Escribe Aquí     return total }\"",
+            "wrapper_visibility": false
+            },
+            {
+            "id": 3383,
+            "title": "Utilizando corchetes en cadenas de texto",
+            "url": "js-13",
+            "content": "Vimos en el ejercicio anterior que podemos medir la cantidad de caracteres en una cadena de texto. \r\n\r\nAhora, con el fin de manejar los datos que tenemos, es importante saber como se posicionan los elementos que lo componen.\r\n\r\nPor ejemplo: \r\n```\r\nSi tenemos la cadena de texto \"\"Casa\"\"\r\n\r\nY separamos las letras según su posición:\r\n\r\n- C está en la posición 0.\r\n- a está en la posición 1.\r\n- s está en la posición 2.\r\n- a está en la posición 3.\r\n```\r\nLo importante de las posiciones, es que sabemos que en el indice 0 va a estar el primer caracter.\r\n\r\nAhora, JavaScript nos entrega una forma más fácil de encontrar los caracteres que están en alguna posición. Utilizando la notación de corchetes [ ].\r\n\r\nPor ejemplo, si se tiene la cadena de texto \"\"Hola mundo\"\" y se desea obtener la letra \"\"m\"\", se puede utilizar la siguiente sintaxis: \"\"Hola mundo\"\"[6], ya que la letra m está en la posición 6.\r\n\r\nDe la misma forma, si tenemos una variable declarada con una cadena de texto, podemos utilizar la notación de corchetes sobre la variable en la posición que nosotros estimemos conveniente.\r\n\r\nPor ejemplo:\r\n```\r\nlet palabra = \"\"Hola mundo\"\"\r\npalabra[0] // va a tener el valor \"\"H\"\", ya que 0 es el valor inicial.\r\n```\r\n\r\nEjercicio:\r\n\r\n1. Declara una variable con let que tenga por nombre texto.\r\n2. Asigna dentro de esa variable la palabra \"\"Aprendiendo JavaScript\"\"\r\n3. Declara una nueva variable con let que tenga por nombre posicion y busca la posición de la letra v utilizando la notación de corchetes.\r\n",
+            "base_query": "",
+            "assert_query": "",
+            "assert_result": "",
+            "position": 130,
+            "category_id": 351,
+            "created_at": "2023-12-26T18:36:08.963-03:00",
+            "updated_at": "2023-12-26T18:36:08.963-03:00",
+            "exercise_type": 1,
+            "modifiers": "",
+            "code": "",
+            "wrapper": "function main(){     // Escribe Aquí     return posicion }",
+            "wrapper_visibility": false
+            },
+            {
+            "id": 3384,
+            "title": "Utilizando corchetes en cadenas de texto parte 2",
+            "url": "js-14",
+            "content": "Vimos en el ejercicio anterior que podemos encontrar caracteres según su posición.\r\nEncontrar el primer elemento es fácil, pero ¿Cómo encontramos el último elemento?\r\n\r\nVimos también que podemos conocer el largo total de una cadena con la propiedad length.\r\n\r\nUtilizando lo aprendido, sabemos dos cosas:\r\n1. La primera posición parte en el índice 0.\r\n2. Si las posiciones parten en el índice 0, eso quiere decir que el último índice en una cadena de caracteres es igual al total de caracteres menos 1.\r\n\r\nResumiendo: Si al total de caracteres le restamos 1, vamos a obtener la posición final de una cadena.\r\n\r\nEjemplo:\r\n```\r\nconst miPalabra = \"\"Desafío\"\";\r\nconst ultimaLetra = miPalabra[miPalabra.length - 1];\r\n```\r\nDentro de la notación de corchetes utilizamos la propiedad length para conocer el total de caracteres y le restamos 1 para poder obtener la última posición del caracter.\r\n\r\n\r\nEjercicio:\r\n\r\n1. Declara una variable con let que tenga por nombre palabra.\r\n2. Asigna dentro de esa variable la frase \"\"Quiero el valor final\"\"\r\n3. Declara una nueva variable con let que tenga por nombre posicionFinal y busca el caracter en la última posición utilizando corchetes y length.\r\n",
+            "base_query": "",
+            "assert_query": "",
+            "assert_result": "",
+            "position": 140,
+            "category_id": 351,
+            "created_at": "2023-12-26T18:37:18.183-03:00",
+            "updated_at": "2023-12-26T18:37:18.183-03:00",
+            "exercise_type": 1,
+            "modifiers": "",
+            "code": "",
+            "wrapper": "function main(){     // Escribe Aquí     return posicionFinal }",
+            "wrapper_visibility": false
+            },
+            {
+            "id": 3385,
+            "title": "Declarando un arreglo",
+            "url": "js-15",
+            "content": "Los arreglos son una estructura de datos que nos permiten almacenar múltiples valores en una sola variable. \r\n\r\nLa forma de declarar los valores de un arreglo, es agruparlos entre dos corchetes [], y cada elemento dentro del arreglo debe estar separado por una coma.\r\n\r\n```\r\nconst miArreglo = [elemento1, elemento2, elemento3]\r\n```\r\n\r\nAsí, dentro de miArreglo tenemos varios elementos, que pueden ser cadenas de texto, números, etc.\r\n\r\nNota: Cada valor en un arreglo se identifica por un índice numérico, comenzando desde cero, así, la posición del elemento1 es 0, la posición del elemento2 es 1 y la posición del elemento3 es 2.\r\nEjercicio:\r\n\r\n1. Declara una variable con let que tenga por nombre arr.\r\n2. Asigna dentro de un arreglo los siguientes elementos: \r\n- La cadena de texto \"\"manzana\"\"\r\n- El número: 4\r\n- El numero: 20",
+            "base_query": "",
+            "assert_query": "",
+            "assert_result": "",
+            "position": 150,
+            "category_id": 351,
+            "created_at": "2023-12-26T18:38:26.562-03:00",
+            "updated_at": "2023-12-26T18:38:26.562-03:00",
+            "exercise_type": 1,
+            "modifiers": "",
+            "code": "",
+            "wrapper": "function main(){     // Escribe Aquí     return arr }",
+            "wrapper_visibility": false
+            },
+            {
+            "id": 3386,
+            "title": "Tipos de datos booleanos",
+            "url": "js-16",
+            "content": "Los datos booleanos son un tipo de dato en programación que solo puede tener dos valores posibles: verdadero (true) o falso (false). Estos datos son muy útiles en la toma de decisiones en el código, ya que permiten evaluar si una condición es verdadera o falsa y ejecutar diferentes acciones en consecuencia.\r\n\r\nPara utilizar datos booleanos en JavaScript, se pueden utilizar operadores de comparación como == (igual a), != (distinto de), > (mayor que), < (menor que), >= (mayor o igual que) y <= (menor o igual que). Estos operadores devolverán un valor booleano dependiendo de si la comparación es verdadera o falsa.\r\n\r\nEjemplo: \r\n\r\nYa vimos anteriormente el operador de comparación (==), que se encarga de preguntar si ambos valores son iguales.\r\n```\r\nlet a = 3;\r\nlet b = 5;\r\n\r\nLa comparación de a con b resulta en un valor booleano false, ya que no son iguales.\r\nlet resultado = a == b\r\n```\r\nEl valor de resultado es false, ya que a y b son diferentes.\r\n\r\nEjercicio:\r\n\r\n1. En pantalla se observan dos variables: num1 y num2.\r\n2. Modifica num2 para que el resultado de la comparación sea true.",
+            "base_query": "",
+            "assert_query": "",
+            "assert_result": "",
+            "position": 160,
+            "category_id": 351,
+            "created_at": "2023-12-26T18:39:25.918-03:00",
+            "updated_at": "2023-12-26T18:39:25.918-03:00",
+            "exercise_type": 1,
+            "modifiers": "",
+            "code": "",
+            "wrapper": "function main(){      // Modifica acá abajo let num1 = 10; let num2 = 15     // Modifica arriba     return num1 == num2 }",
+            "wrapper_visibility": false
+            },
+            {
+            "id": 3387,
+            "title": "Operador booleano \"Distinto a\"",
+            "url": "url-17",
+            "content": "El operador booleano \"\"!=\"\" se utiliza para comparar dos valores y determinar si son diferentes. Este operador devuelve un valor booleano, es decir, verdadero o falso, dependiendo de si los valores son diferentes o no.\r\n\r\nEjemplo:\r\n```\r\nlet valor1 = 100;\r\nlet valor2 = 200;\r\n\r\nlet resultado = valor1 != valor2; // Esta operación debería darnos como resultado el booleano true, ya que ambos son diferentes.\r\n\r\n```\r\n\r\nEjercicio:\r\n\r\n1. En pantalla se observan dos variables: num1 y num2.\r\n2. Modifica num2 para que el resultado de la comparación sea false.",
+            "base_query": "",
+            "assert_query": "",
+            "assert_result": "",
+            "position": 170,
+            "category_id": 351,
+            "created_at": "2023-12-26T18:42:51.784-03:00",
+            "updated_at": "2023-12-26T18:48:41.370-03:00",
+            "exercise_type": 1,
+            "modifiers": "",
+            "code": "",
+            "wrapper": "function main(){      // Modifica acá abajo let num1 = 10; let num2 = 15;     // Modifica arriba     return num1 != num2 }",
+            "wrapper_visibility": true
             }
         ]
     }
