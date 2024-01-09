@@ -6,8 +6,8 @@ import SendButton from "../../_components/sendButton"
 import Footer from "@/app/Footer"
 import Image from "next/image"
 import SqlExecuter from "@/app/_components/_exercises/sqlExecuter"
-// import styles from "/app/learning-path.module.css"
-// import executeCode from "./codeExecution"
+import styles from "/app/learning-path.module.css"
+import executeCode from "./codeExecution"
 import Link from "next/link"
 
 import { getPostsRequest, createPostRequest } from "../../api/posts"
@@ -25,7 +25,7 @@ const Basico = () => {
   const [tokenContent, setTokenContent] = useState(null)
   const text = '"Hola Mundo"'
 
-  let [test, setTest] = useState(3388)
+  // let [test, setTest] = useState(3388)
   const [exeApi, setExeApi] = useState({})
   const [valor, setValor] = useState("const a")
   const [mensaje, setMensaje] = useState("")
@@ -43,7 +43,7 @@ const Basico = () => {
     // enviar ejercicio para su ejecución
     ;(async () => {
       try {
-        
+        // enviar desarrollo del usuario y resultado esperado a la apipup*
         const objeto = {
           content: ejercicio,
           expected_result: exeApi.test_cases[0].results,
@@ -83,7 +83,7 @@ const Basico = () => {
 
   useEffect(() => {
     ;(async () => {
-      console.log(test)
+      // console.log(test)
       const res = await getPostsRequest()
       // const dataExe = res.data[test] // ****
       const dataExe = res.data // ****
@@ -101,10 +101,10 @@ const Basico = () => {
 
       } else {
         alert("sin ejercicio")
-        setTest(0)
+        // setTest(0)
       }
     })()
-  }, [test])
+  }, [])// test
 
   return (
     <>
@@ -131,7 +131,7 @@ const Basico = () => {
             </p>
           </div>
 
-          <div className="col-4">
+          <div className="col-md-4">
             <Editor
               id="inputTexto"
               type="text"
@@ -147,14 +147,14 @@ const Basico = () => {
               onMount={handleEditorDidMount}
             />
             <div className={`text-black `}>
-              <p className={` m-2 text-center`}>
+              <h5 className={` m-2 text-center`}>
                 {errado ? (
                   // {resultado ? (
                   <>{}</>
                 ) : (
                   <div>
                     <br />
-                    <h5>El resultado de tu ejercicio:</h5>
+                    <p>El resultado de tu ejercicio:</p>
 
                     {mensaje ? (
                       <>
@@ -167,7 +167,7 @@ const Basico = () => {
                     )}
                   </div>
                 )}
-              </p>
+              </h5>
               <div className="d-flex align-items-start">
                 {errado ? (
                   <div className="d-flex align-items-start bg-secondary">
