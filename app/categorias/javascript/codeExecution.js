@@ -1,15 +1,18 @@
-// CodeExecution.js
-
-//corregir el caso donde la palabra console por si sola da una buena ejecucion
+import Cookies from "js-cookie";
 
 async function executeCode(
   inputValue,
   setTokenContent,
   setToExecute,
-  languageId
+  languageId,
+  setResultado,
+  setError
 ) {
+  let exerciseData;
+  const code = inputValue + " console.log(main());";
+  console.log(code);
   const jsonData = {
-    source_code: inputValue,
+    source_code: code,
     language_id: languageId,
   };
 
@@ -30,7 +33,11 @@ async function executeCode(
     setTokenContent(token);
     setToExecute(true);
 
-    // Realizar la solicitud GET adicional con espera
+    const exerciseEndpoint =
+      "https://tutorial-interactivo-sql-2.onrender.com/api/v2/courses/1/categories/351/exercises/3371";
+    const exerciseResponse = await fetch(exerciseEndpoint);
+    exerciseData = await exerciseResponse.json();
+
     try {
       if (token) {
         let accepted = false;
@@ -43,32 +50,49 @@ async function executeCode(
           console.log(getData.status.id);
           switch (getData.status.id) {
             case 1:
-              // En Queue, volver a intentarlo
               await new Promise((resolve) => setTimeout(resolve, 1000));
               break;
             case 2:
-              // Processing, volver a preguntar
               await new Promise((resolve) => setTimeout(resolve, 1000));
               break;
             case 3:
-              // Accepted, mostrar la respuesta en la consola y alerta de éxito y datos de salida (stdout)
-              console.log("Respuesta de la solicitud GET:", getData);
-              alert(
-                "Código ejecutado correctamente. Salida (stdout): " +
-                  getData.stdout
-              );
+              if (
+                exerciseData &&
+                exerciseData.test_cases &&
+                exerciseData.test_cases.length > 0
+              ) {
+                const testCase = exerciseData.test_cases[0];
+                const expectedOutput = testCase.results;
+
+                if (getData.stdout.trim() === expectedOutput.trim()) {
+                  if (
+                    inputValue.trim() ===
+                      "console.log(" + expectedOutput.trim() + ")" ||
+                    inputValue.trim ===
+                      "console.log('" + expectedOutput.trim() + "')"
+                  ) {
+                    setError("Hiciste trampa");
+                  } else {
+                    setError("Resultado Exitoso");
+                  }
+                } else {
+                  console.log(
+                    "Error: La salida no coincide con el resultado esperado."
+                  );
+                  setError(
+                    "Error: La salida no coincide con el resultado esperado."
+                  );
+                }
+              }
               accepted = true;
-              break;
-            case 4:
-              // Wrong Answer, mostrar alerta de error y datos de error (stderr)
-              console.log("Error en tu código:", getData.stderr);
-              accepted = true;
+              setResultado(getData.stdout);
               break;
             default:
-              // Cualquier otro código de estado, mostrar alerta de error genérico
               console.log("Respuesta inesperada del servidor:", getData.stderr);
+              setError(getData.stderr);
+              setResultado("Error: Tu codigo parece estar mal");
 
-              accepted = true; // Salir del bucle en caso de error genérico
+              accepted = true;
               break;
           }
         }
