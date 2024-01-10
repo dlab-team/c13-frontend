@@ -15,7 +15,8 @@ async function getData() {
     // Parseando la respuesta a JSON
     const data = await response.json();
 
-    console.log(data);
+    console.log('data');
+    console.log(data)
     return data;
   } catch (error) {
     console.error("Error al obtener datos:", error);
