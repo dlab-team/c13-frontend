@@ -180,9 +180,9 @@ export default function Footer({ props }) {
             </div>
           </div>
         </div>
-        <Link href="/creditos/" className="footer-button">
+        {/* <Link href="/creditos/" className="footer-button">
             <button className="btn ">Desarrollado por:</button>
-        </Link>
+        </Link> */}
       </footer>
     </>
   );
