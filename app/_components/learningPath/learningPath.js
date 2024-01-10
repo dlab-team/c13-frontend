@@ -71,7 +71,7 @@ const roboto = Roboto({
                 Texto por definir para cada categoria
               </p> */}
               <ul key={learningPath.id} className={`${active[index] ? "submenu active" : "d-none"}  `}>
-                {learningPath.map((sub) => (
+                {element.exercises.map((sub) => (
                     <li key={sub.id}
                     >
                       <Link
