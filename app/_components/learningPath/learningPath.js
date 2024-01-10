@@ -27,7 +27,7 @@ const roboto = Roboto({
       }
 
       const getCategoryBySubId = (subId) => {
-        if (subId >= 3371 && subId <= 3380) {
+        if (subId >= 3371 && subId <= 3389) {
           return '/javascript';
         } else if (subId >= 3380 && subId <= 3387) {
           return '/html';

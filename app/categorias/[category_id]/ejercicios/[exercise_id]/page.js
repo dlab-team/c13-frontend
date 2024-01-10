@@ -25,6 +25,7 @@ const fetcher = (url) => {
 };
 
 export default function Page({ params }) {
+  console.log('categorias')
   const url = `${process.env.API_BASE_URL}/categories/${params["category_id"]}/exercises/${params["exercise_id"]}`;
   const { data: exercise, error, isValidating } = useSWR(url, fetcher, {
     revalidateOnFocus: false
