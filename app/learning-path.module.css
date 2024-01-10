@@ -79,3 +79,16 @@
 .seccionTipsTitulos{
   color: #739e2d;
 }
+
+/* Consulta de medios para dispositivos móviles */
+@media screen and (max-width: 768px) {
+  .sidebar {
+    display: block; /* Mostrar sidebar en móviles */
+  }
+
+  .content {
+    display: none; /* Ocultar contenido de ejercicios en móviles */
+  }
+
+  /* Aquí también podrías añadir estilos adicionales específicos para móviles */
+}
