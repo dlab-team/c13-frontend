@@ -7,71 +7,126 @@ import Footer from "@/app/Footer";
 import Image from "next/image";
 import SqlExecuter from "@/app/_components/_exercises/sqlExecuter";
 import executeCode from "./codeExecution";
-import Link from "next/link";
-import styles from "/app/learning-path.module.css";
+import { useEffect } from "react";
 
 const JavascriptPrueba = () => {
   const editorRef = useRef(null);
   const [exercise, setExercise] = useState(""); // La variable exercise se inicializa aquí
   const [ejercicio, setEjercicio] = useState("");
   const [resultado, setResultado] = useState(
-    `"Estos datos provienen de la evaluación del codigo"`
+    "El resultado de tu ejercicio irá aquí"
+  );
+  const [error, setError] = useState(
+    "*Tip por si hay un error en tu respuesta"
   );
   const [toExecute, setToExecute] = useState(false);
   const [isExecuting, setIsExecuting] = useState(false);
   const [tokenContent, setTokenContent] = useState(null);
   const text = '"Hola Mundo"';
+  const [exerciseData, setExerciseData] = useState(null);
+
+  useEffect(() => {
+    const exerciseEndpoint =
+      "https://tutorial-interactivo-sql-2.onrender.com/api/v2/courses/1/categories/351/exercises/3371";
+
+    const fetchData = async () => {
+      try {
+        // Realizar la solicitud GET usando fetch
+        const response = await fetch(exerciseEndpoint);
+
+        // Verificar si la solicitud fue exitosa (código de respuesta en el rango 200-299)
+        if (!response.ok) {
+          throw new Error(`Error de red: ${response.status}`);
+        }
+
+        // Convertir la respuesta a formato JSON
+        const data = await response.json();
+
+        // Manejar los datos obtenidos
+        // console.log("Datos obtenidos:", data);
+
+        // Guardar los datos en el estado
+        setExerciseData(data);
+      } catch (error) {
+        // Manejar errores de red u otros errores
+        console.error("Error en la solicitud:", error);
+      }
+    };
+
+    // Llamar a la función fetchData cuando el componente se monte
+    fetchData();
+  }, []);
+
+  let wrapperContent = exerciseData?.wrapper || "";
+  wrapperContent = wrapperContent.replace(/\\n/g, "\n");
+
+  const params = exerciseData?.test_cases[0]?.params;
+  const paramName = params ? Object.keys(params)[0] : null;
+  const paramValue = params ? params[paramName] : null;
 
   function handleEditorDidMount(editor, monaco) {
     editorRef.current = editor;
   }
 
   if (toExecute == true) {
-    setResultado(ejercicio);
-    // alert("ejecutar script: \n" + ejercicio)
-    // enviar ejercicio para su ejecución
     setToExecute(false);
+    setError("*Tip por si hay un error en tu respuesta");
+    setResultado("El resultado de tu ejercicio irá aquí");
   }
 
   return (
     <>
       <div className="container">
-        <div className={`${styles.contenedorBotonesLearningPath} text-center my-5`}>
-          <button className={`${styles.BotonesLeaningPath} rounded-5 w-50`}>
+        <div className="text-center my-5">
+          <button
+            className="btn btn-dark rounded-0 w-50"
+            style={{ background: "#739e2d" }}
+          >
             JavaScript
           </button>
-          <Link className={`${styles.BotonesLeaningPath} rounded-5 w-50`} href={"/categorias/html"}>
-            Básico
-          </Link>
+          <button className="btn btn-secondary rounded-0 w-50">Básico</button>
         </div>
+
         <div className="row">
-          <div className="col-md-6" 
-          style={{
-            backgroundColor: "#FFF",
-            borderColor: "#739e2d",
-            borderStyle: "solid",
-            }}>
-            <h3 className="m-2">Ejercicio: Hola Mundo</h3>
-            <p className="m-2">
-              <strong>Objetivo:</strong> Escribe y ejecuta tu primer código en
-              JavaScript para mostrar el mensaje {text}
+          <div className="col-md-6" style={{ background: "#FFF" }}>
+            {exerciseData && <h3 className="m-2">{exerciseData.title}</h3>}
+            <p className="m-2m-2">
+              {exerciseData && <strong>{exerciseData.content}</strong>}{" "}
             </p>
             <div className="m-2">
               <strong>Esperado:</strong>
               <ul>
-                <li>Deberías ver en la consola el mensaje {text}.</li>
+                {" "}
+                <li>Imprima su resultado por consola.</li>
                 <li>
-                  Si ves el mensaje, ¡felicidades! Has completado tu primer
-                  programa en JavaScript.
-                  <br></br>
-                  <br></br>
+                  Nombra una variable como: <strong>{paramName}</strong> y
+                  asigna un valor de <strong>{paramValue}</strong>.
+                </li>
+                <li>
+                  {exerciseData && exerciseData.test_cases[0]?.results && (
+                    <p>
+                      Deberías ver en la consola el mensaje:{" "}
+                      {exerciseData.test_cases[0].results}.
+                    </p>
+                  )}
                 </li>
               </ul>
               <div className="container bg-white">
-                
+                <Image
+                  width={95}
+                  height={95}
+                  src={"/images/Hint.png"}
+                  alt="desafiolatam"
+                  priority={true}
+                  className={"hintImage mt-4"}
+                />
+                <p className="tip" style={{ height: "100px" }}>
+                  {/* {error} */}
+                </p>
               </div>
             </div>
           </div>
+
           <div className="col-md-6">
             <Editor
               id="inputTexto"
@@ -79,45 +134,37 @@ const JavascriptPrueba = () => {
               name="script"
               theme="vs-dark"
               defaultLanguage="javascript"
-              height="80vh"
+              height="40vh"
+              value={wrapperContent}
               options={{
                 fontSize: "16px",
               }}
               onChange={(value) => setEjercicio(value)}
               onMount={handleEditorDidMount}
+              pre={true}
             />
-            <div className="text-white bg-dark">
-              <h6 className="text-center pt-4">Consola</h6>
-              <p className="m-2 text-center pt-5">{resultado}</p>
-              <div className="d-flex align-items-start">
-                <div className="container">
-                  <p
-                    className="tip text-center"
-                    style={{ height: "90px", marginTop: "30px" }}
-                  >
-                    
-                  </p>
-                </div>
+            <div className="text-white bg-dark ">
+              <h6 className="mx-2">Consola:</h6>
+              <div className="px-3">
+                <p>{resultado}</p>
               </div>
-            </div>
-            <div className={`text-white ${styles.seccionTips}`}>
-              <p className={`${styles.seccionTipsTitulos} m-2 text-center`}>{resultado}</p>
-              <div className="d-flex align-items-start">
-                <Image
-                  width={50}
-                  height={50}
-                  src={"/images/HintRed.png"}
-                  alt="desafiolatam"
-                  priority={true}
-                  className={"hintImage mt-4"}
-                />
-                <div className="container">
-                  <p
-                    className={`${styles.seccionTipsTitulos} m-2 tip text-center`}
-                    
-                  >
-                    *Tip por si hay un error en tu respuesta
-                  </p>
+              <div className="col-12 row">
+                <div className="col-2 d-flex align-items-center justify-content-center">
+                  <Image
+                    width={75}
+                    height={75}
+                    src={"/images/HintRed.png"}
+                    alt="desafiolatam"
+                    priority={true}
+                    className="hintImage"
+                  />
+                </div>
+                <div className="d-flex align-items-start overflow-auto console col-10 ">
+                  <div className="container">
+                    <p className="tip" style={{ height: "90px" }}>
+                      {error}
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -136,7 +183,9 @@ const JavascriptPrueba = () => {
                 inputValue,
                 setTokenContent,
                 setToExecute,
-                languageId
+                languageId,
+                setResultado,
+                setError
               );
             }}
             buttonText={"Ejecuta tu consulta"}
@@ -144,13 +193,7 @@ const JavascriptPrueba = () => {
             Ejecutar consulta
           </SendButton>
         </div>
-        <SqlExecuter
-          exercise={exercise}
-          toExecute={toExecute}
-          setToExecute={setToExecute}
-          editorRef={editorRef}
-          setIsExecuting={setIsExecuting}
-        />
+
         <div className="d-flex justify-content-between my-5">
           <button
             className="btn btn-secondary"
