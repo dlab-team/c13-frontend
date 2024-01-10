@@ -4,8 +4,7 @@ import LearningPath from "../_components/learningPath/learningPath";
 async function getData() {
   try {
 
-    const apiUrl = "https://tutorial-interactivo-sql-2.onrender.com/api/v2/courses/2/categories/351/exercises/";
-    // const apiUrlDos = "https://tutorial-interactivo-sql-2.onrender.com/api/v2/courses/2/categories/";
+    const apiUrl = "https://tutorial-interactivo-sql-2.onrender.com/api/v2/courses/2/categories/menu";
     const response = await fetch(apiUrl);
 
     if (!response.ok) {
@@ -34,3 +33,4 @@ export default async function Page() {
     return <div>Error cargando datos</div>;
   }
 }
+

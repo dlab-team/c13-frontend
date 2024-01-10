@@ -51,7 +51,7 @@ const JavascriptPrueba = () => {
             borderColor: "#739e2d",
             borderStyle: "solid",
             }}>
-            <h3 className="m-2">Ejercicio: Hola Mundo</h3>
+            <h3 className="m-2">Asignar mi primer input - Ejercicio DOM</h3>
             <p className="m-2">
               <strong>Objetivo:</strong> Escribe y ejecuta tu primer código en
               JavaScript para mostrar el mensaje {text}
