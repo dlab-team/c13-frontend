@@ -94,7 +94,7 @@ const Basico = () => {
               <p className={`${styles.seccionTipsTitulos} m-2 text-center`}>{resultado}</p>
               <div className="d-flex align-items-start">
                 <Image
-                  width={50}
+                  width={50} 
                   height={50}
                   src={"/images/HintRed.png"}
                   alt="desafiolatam"

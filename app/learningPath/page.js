@@ -5,8 +5,7 @@ async function getData() {
 
   try {
 
-    const apiUrl = "https://tutorial-interactivo-sql-2.onrender.com/api/v2/courses/2/categories/351/exercises/";
-    // const apiUrlDos = "https://tutorial-interactivo-sql-2.onrender.com/api/v2/courses/2/categories/";
+    const apiUrl = "https://tutorial-interactivo-sql-2.onrender.com/api/v2/courses/2/categories/menu";
     const response = await fetch(apiUrl);
 
     if (!response.ok) {
@@ -16,7 +15,8 @@ async function getData() {
     // Parseando la respuesta a JSON
     const data = await response.json();
 
-    console.log(data);
+    console.log('data');
+    console.log(data)
     return data;
   } catch (error) {
     console.error("Error al obtener datos:", error);
@@ -36,3 +36,4 @@ export default async function Page() {
     return <div>Error cargando datos</div>;
   }
 }
+
