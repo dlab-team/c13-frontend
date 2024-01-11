@@ -10,10 +10,7 @@ const roboto = Roboto({
   weight: ["300", "700"],
 });
 
-
-
   const LearningPath = ({ learningPath }) => {
-    
     // console.log(getData)
 
     const [active, setActive] = useState([true, ...Array(learningPath.length - 1).fill(false)]);
@@ -29,10 +26,12 @@ const roboto = Roboto({
         setApiId(subId);
       }
 
-      const getCategoryBySubId = (subId) => {
-        if (subId >= 3100 && subId <= 3106) {
+    const getCategoryBySubId = (subId) => {
+        if (subId == 3388) {
+          return "/dom"
+        } else if (subId >= 3371 && subId <= 3380) {
           return '/javascript';
-        } else if (subId >= 3107 && subId <= 3309) {
+        } else if (subId >= 3380 && subId <= 3387) {
           return '/html';
         } else {
           

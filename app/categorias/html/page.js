@@ -41,6 +41,7 @@ const Basico = () => {
   };
   const [iframeUrl, setIframeUrl] = useState('');
 
+
   return (
     <>
       <div className="container">
@@ -75,7 +76,7 @@ const Basico = () => {
             </div>
           </div>
 
-          <div className="col-12 col-md-4 ">
+          <div className="col-md-4">
             <Editor
               id="inputTexto"
               type="text"
@@ -93,7 +94,7 @@ const Basico = () => {
               <p className={`${styles.seccionTipsTitulos} m-2 text-center`}>{resultado}</p>
               <div className="d-flex align-items-start">
                 <Image
-                  width={50}
+                  width={50} 
                   height={50}
                   src={"/images/HintRed.png"}
                   alt="desafiolatam"
